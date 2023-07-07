@@ -25,3 +25,80 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* Zen Maru Gothic */
+
+@font-face {
+  font-family: "Zen Maru Gothic";
+  src: url("/fonts/ZenMaruGothic-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Zen Maru Gothic";
+  src: url("/fonts/ZenMaruGothic-Bold.ttf");
+  font-weight: 700;
+}
+
+/* Ed Mentasta */
+
+@font-face {
+  font-family: "Ed Mentasta";
+  src: url("/fonts/ed-mentasta-regular.otf");
+}
+
+/* Junicode */
+
+@font-face {
+  font-family: "Junicode";
+  src: url("/fonts/Junicode.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Junicode";
+  src: url("/fonts/Junicode-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Junicode";
+  src: url("/fonts/Junicode-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Junicode";
+  src: url("/fonts/Junicode-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Junicode Condensed */
+
+@font-face {
+  font-family: "Junicode Condensed";
+  src: url("/fonts/Junicode-RegularCondensed.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Junicode Condensed";
+  src: url("/fonts/Junicode-ItalicCondensed.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Junicode Condensed";
+  src: url("/fonts/Junicode-BoldCondensed.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Junicode Condensed";
+  src: url("/fonts/Junicode-BoldItalicCondensed.ttf");
+  font-weight: 700;
+  font-style: italic;
+}

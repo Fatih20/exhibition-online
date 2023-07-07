@@ -18,6 +18,12 @@ module.exports = {
         pink: "#F896B3",
         "white-ivory": "#F4EEE6",
       },
+      fontFamily: {
+        zmg: ["Zen Maru Gothic", "sans-serif"],
+        "ed-mentasta": ["Ed Mentasta", "sans-serif"],
+        junicode: ["Junicode", "sans-serif"],
+        "junicode-condensed": ["Junicode Condensed", "sans-serif"],
+      },
     },
   },
   plugins: [],

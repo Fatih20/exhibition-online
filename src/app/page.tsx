@@ -12,7 +12,11 @@ export default function Home() {
   return (
     <main className="relative flex h-screen bg-white-ivory items-end justify-start pr-24 pt-32">
       <div className="relative w-8/12 flex flex-grow flex-col items-start justify-end">
-        <div className="absolute inset-0 bg-red bg-opacity-60 z-10 mix-blend-lighten"></div>
+        <div
+          className={`absolute inset-0 bg-red bg-opacity-60 z-10 mix-blend-lighten ${
+            fillingForm ? "bg-opacity-60" : "bg-opacity-0"
+          } transition-all`}
+        ></div>
         <Image
           loading="eager"
           width={1920}

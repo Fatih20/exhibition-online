@@ -17,6 +17,7 @@ module.exports = {
         red: "#C72E2E",
         pink: "#F896B3",
         "white-ivory": "#F4EEE6",
+        yellow: "#FFE500",
       },
       fontFamily: {
         zmg: ["Zen Maru Gothic", "sans-serif"],

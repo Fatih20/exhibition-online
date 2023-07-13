@@ -17,7 +17,11 @@ export default function Home() {
             fillingForm ? "scale-100 opacity-100" : "scale-0 opacity-0"
           } transition-all`}
         >
-          <button className="self-end" onClick={() => setFillingForm(false)}>
+          <button
+            className="self-end"
+            type="button"
+            onClick={() => setFillingForm(false)}
+          >
             <Image
               width={21}
               height={21}
@@ -25,7 +29,7 @@ export default function Home() {
               alt="Close the form"
             />
           </button>
-          <FormEntry />
+          <FormEntry onSubmit={() => setFillingForm(false)} />
         </div>
       </div>
       {/* Text in the screen */}

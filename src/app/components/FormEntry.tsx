@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 
-function FormEntry() {
+function FormEntry({ onSubmit }: { onSubmit: () => void }) {
   const [name, setName] = useState("");
   const [origin, setOrigin] = useState("");
   const [knowFrom, setKnowFrom] = useState("");
+
   return (
     <form
-      onSubmit={() => null}
+      onSubmit={onSubmit}
       className="pointer-events-auto flex flex-col items-center justify-start"
     >
       <p className="font-junicode text-2xl text-center mb-6">

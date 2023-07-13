@@ -2,7 +2,9 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import FormEntry from "./components/FormEntry";
+import LoadingScreen from "./components/Loading/LoadingScreen";
 
 export default function Home() {
   const [isWelcome, setIsWelcome] = useState(false);

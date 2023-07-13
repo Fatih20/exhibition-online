@@ -10,7 +10,18 @@ export default function Home() {
   const [isWelcome, setIsWelcome] = useState(false);
   const [fillingForm, setFillingForm] = useState(false);
   return (
-    <main className="relative flex h-screen bg-white-ivory flex-col items-end justify-start pr-24 pt-32">
+    <main className="relative flex h-screen bg-white-ivory items-end justify-start pr-24 pt-32">
+      <div className="relative w-8/12 flex flex-grow flex-col items-start justify-end">
+        <div className="absolute inset-0 bg-red bg-opacity-60 z-10 mix-blend-lighten"></div>
+        <Image
+          loading="eager"
+          width={1920}
+          height={1543}
+          src={"/images/home/speakers_compressed.png"}
+          alt="Speakers of the event"
+          className="aspect-auto max-h-screen w-auto"
+        />
+      </div>
       <div className="absolute flex flex-col inset-0 justify-center items-center z-50 pointer-events-none">
         <div
           className={`bg-red w-[768px] p-4 box-border backdrop-blur-[100px] bg-opacity-[0.45] flex flex-col items-center justify-start pointer-events-auto ${
@@ -29,11 +40,11 @@ export default function Home() {
               alt="Close the form"
             />
           </button>
-          <FormEntry onSubmit={() => setFillingForm(false)} />
+          <FormEntry onSubmit={async () => setFillingForm(false)} />
         </div>
       </div>
       {/* Text in the screen */}
-      <div className="relative z-20 flex flex-col items-end justify-start text-red">
+      <div className="relative z-20 flex flex-col items-end justify-start text-red self-start">
         <h1 className=" font-junicode text-9xl text-right">
           asa, <br /> cerita,
           <br /> <em className="font-ed-mentasta">W </em>anita

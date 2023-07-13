@@ -32,39 +32,39 @@ body {
   font-family: "Zen Maru Gothic";
   src: url("/fonts/ZenMaruGothic-Regular.ttf");
   font-weight: 400;
+  font-display: fallback;
 }
-font-display: fallback;
 
 @font-face {
   font-family: "Zen Maru Gothic";
   src: url("/fonts/ZenMaruGothic-Bold.ttf");
   font-weight: 700;
+  font-display: fallback;
 }
-font-display: fallback;
 
 /* Ed Mentasta */
 
 @font-face {
   font-family: "Ed Mentasta";
   src: url("/fonts/ed-mentasta-regular.otf");
+  font-display: fallback;
 }
 
-font-display: fallback;
 /* Junicode */
 
 @font-face {
   font-family: "Junicode";
   src: url("/fonts/Junicode.ttf");
   font-weight: 400;
+  font-display: fallback;
 }
-font-display: fallback;
 
 @font-face {
   font-family: "Junicode";
   src: url("/fonts/Junicode-Bold.ttf");
   font-weight: 700;
+  font-display: fallback;
 }
-font-display: fallback;
 
 @font-face {
   font-family: "Junicode";
@@ -88,8 +88,8 @@ font-display: fallback;
   font-family: "Junicode Condensed";
   src: url("/fonts/Junicode-RegularCondensed.ttf");
   font-weight: 400;
+  font-display: fallback;
 }
-font-display: fallback;
 
 @font-face {
   font-family: "Junicode Condensed";
@@ -103,8 +103,8 @@ font-display: fallback;
   font-family: "Junicode Condensed";
   src: url("/fonts/Junicode-BoldCondensed.ttf");
   font-weight: 700;
+  font-display: fallback;
 }
-font-display: fallback;
 
 @font-face {
   font-family: "Junicode Condensed";

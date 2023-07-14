@@ -30,14 +30,7 @@ function FirstChaper() {
             (scrollRight / totalDocScrollLength) * 100
           );
 
-          console.log(scrollPostion);
-
-          //   console.log(scrollPostion);
-
           setPercent(scrollPostion);
-          //   requestAnimationFrame(() => {
-
-          //   });
         }}
       >
         <section className="min-w-[100vw] bg-black h-full flex items-center justify-center">

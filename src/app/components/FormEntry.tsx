@@ -67,7 +67,6 @@ function FormEntry({ onSubmit }: { onSubmit: () => Promise<void> }) {
         <select
           name="selectGender"
           value={gender === "" ? "Tuan/Puan" : gender}
-          defaultValue={"Tuan/Puan"}
           className="w-fit h-full outline-none bg-white text-red"
           onChange={(e) => setGender(e.target.value)}
         >

@@ -1,13 +1,13 @@
 .card-1 {
-  background: url('/images/chapter/2/card/kartu\ 1.png');
+  background: url('../../../../public/images/chapter/2/card/kartu\ 1.png');
 }
 
 .card-2 {
-  background: url('/images/chapter/2/card/kartu\ 2.png');
+  background: url('../../../../public/images/chapter/2/card/kartu\ 2.png');
 }
 
 .card-3 {
-  background: url('/images/chapter/2/card/kartu\ 3.png');
+  background: url('../../../../public/images/chapter/2/card/kartu\ 3.png');
 }
 
 .card-1-on {

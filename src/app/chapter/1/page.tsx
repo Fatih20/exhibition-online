@@ -1,12 +1,22 @@
 "use client";
 
 import RedBar from "@/app/components/RedBar";
+import useLocalStorage from "@/utils/useLocalStorage";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 function FirstChaper() {
   const [percent, setPercent] = useState(0);
+  const [scrollPosition, setScrollPosition] = useLocalStorage<number>(
+    "scrollPosition",
+    0
+  );
   const containerRef = useRef(null);
+
+  useEffect(() => {
+    console.log(scrollPosition);
+    (containerRef.current as any).scrollLeft = scrollPosition;
+  }, []);
 
   return (
     <div className="flex flex-nowrap whitespace-nowrap h-screen items-start justify-start w-screen scrollbar-hide">
@@ -34,6 +44,7 @@ function FirstChaper() {
             (scrollRight / totalDocScrollLength) * 100
           );
 
+          setScrollPosition(scrollRight);
           setPercent(scrollPostion);
         }}
       >
@@ -475,6 +486,14 @@ function FirstChaper() {
             Bu Evi memahami bahwa ia hidup pada zaman di mana persoalan masuk
             SMA favorit dapat menjadi titik balik hidup. Pendidikan digunakan
             sebagai alat mobilitas sosial.
+            <br />
+            <br />
+            Perihal kesenjangan gender di rumah saat masa kecil, Bu Evi mengakui
+            bahwa keluarganya tidak terlalu patriarki. Papanya membantu
+            pekerjaan domestik seperti memasak, mencuci baju, dan mengepel.
+            Namun, ia kesal karena biasanya Papa hanya menyuruhnya seorang,
+            alih-alih kedua kakak laki-lakinya, dalam melakukan
+            pekerjaan-pekerjaan ini.
           </p>
           <p className="col-start-8 col-span-3 row-start-4 translate-y-5 whitespace-break-spaces">
             Lulus S1 Ilmu Komunikasi UGM menjadi awal kariernya sebagai jurnalis

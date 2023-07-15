@@ -3,9 +3,11 @@
 import './21.css';
 import RedBar from '@/app/components/RedBar';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import React, { useRef, useState } from 'react';
 
 const SecondChapter: React.FC = () => {
+  const router = useRouter();
   const [percent, setPercent] = useState(0);
   const [currentCard, setCurrentCard] = useState(0);
   const containerRef = useRef(null);
@@ -231,7 +233,7 @@ const SecondChapter: React.FC = () => {
                 </button>
                 <button
                   className="bg-white-ivory text-red border-2 border-red  text-xl py-2 px-4"
-                  onClick={() => setCurrentCard(3)}
+                  onClick={() => router.push('chapter/2-2')}
                 >
                   NEXT
                 </button>

@@ -11,6 +11,14 @@ function FormEntry({ onSubmit }: { onSubmit: () => Promise<void> }) {
     undefined as FieldForm | undefined
   );
 
+  function reset() {
+    setName("");
+    setOrigin("");
+    setKnowFrom("");
+    setGender("");
+    setRecentFailure(undefined);
+  }
+
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
 
@@ -34,7 +42,25 @@ function FormEntry({ onSubmit }: { onSubmit: () => Promise<void> }) {
       return;
     }
 
-    await onSubmit();
+    const res = (
+      await fetch(`${process.env.NEXT_PUBLIC_FORM_ENDPOINT as string}/form`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          title: gender,
+          name: name,
+          origin: origin,
+          exhibition_info_source: knowFrom,
+        }),
+      })
+    ).status;
+
+    if (res === 200) {
+      reset();
+      await onSubmit();
+    }
   }
 
   return (

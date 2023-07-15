@@ -4,16 +4,19 @@ import Image from "next/image";
 import { useState } from "react";
 import { createPortal } from "react-dom";
 import FormEntry from "./components/FormEntry";
+import { useRouter } from "next/navigation";
 import LoadingScreen from "./components/Loading/LoadingScreen";
 
 export default function Home() {
   const [isWelcome, setIsWelcome] = useState(false);
   const [fillingForm, setFillingForm] = useState(false);
+  const router = useRouter();
+
   return (
     <main className="relative flex h-screen bg-white-ivory items-end justify-start pr-24 pt-32">
       <div className="relative w-8/12 flex flex-grow flex-col items-start justify-end">
         <div
-          className={`absolute inset-0 bg-red bg-opacity-60 z-10 mix-blend-lighten ${
+          className={`absolute inset-0 bg-red z-10 mix-blend-lighten ${
             fillingForm ? "bg-opacity-60" : "bg-opacity-0"
           } transition-all`}
         ></div>
@@ -35,7 +38,9 @@ export default function Home() {
           <button
             className="self-end"
             type="button"
-            onClick={() => setFillingForm(false)}
+            onClick={() => {
+              setFillingForm(false);
+            }}
           >
             <Image
               width={21}
@@ -44,7 +49,12 @@ export default function Home() {
               alt="Close the form"
             />
           </button>
-          <FormEntry onSubmit={async () => setFillingForm(false)} />
+          <FormEntry
+            onSubmit={async () => {
+              setFillingForm(false);
+              router.push("/chapter/1");
+            }}
+          />
         </div>
       </div>
       {/* Text in the screen */}

@@ -25,6 +25,9 @@ module.exports = {
         junicode: ["Junicode", "sans-serif"],
         "junicode-condensed": ["Junicode Condensed", "sans-serif"],
       },
+      gridTemplateRows: {
+        8: "repeat(8, minmax(0, 1fr))",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar-hide")],

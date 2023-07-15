@@ -26,6 +26,15 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.outline-text-white {
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+.grid-system-container {
+  @apply grid-cols-12 grid-rows-8 grid min-w-[100vw] gap-x-4 h-full gap-y-4 box-border;
+}
+
 /* Zen Maru Gothic */
 
 @font-face {

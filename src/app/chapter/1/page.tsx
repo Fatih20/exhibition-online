@@ -13,7 +13,7 @@ function FirstChaper() {
       <RedBar progressPercent={percent} />
       <main
         ref={containerRef}
-        className="flex overflow-x-auto items-start flex-nowrap whitespace-nowrap h-full justify-start scrollbar-hide"
+        className="flex overflow-x-auto overflow-y-hidden items-start flex-nowrap whitespace-nowrap h-full justify-start scrollbar-hide"
         onWheel={(e) => {
           (containerRef.current as any).scrollLeft += e.deltaY;
         }}
@@ -323,6 +323,210 @@ function FirstChaper() {
             Teknik Kimia di UGM. Terkait masa kecilnya, ia menggarisbawahi peran
             ibunya sebagai suri taulaudan di hidupnya. Kedua orangtuanya
             sama-sama bekerja sebagai insinyur.
+          </p>
+        </section>
+        <section className="grid-system-container bg-red  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
+          <p className="col-start-1 col-span-2 row-start-4 whitespace-break-spaces">
+            Dari pengalamannya menjadi salah satu ‘first female hire’ yang
+            bekerja di bidang lapangan suatu perusahaan energi, Kak Ayu
+            merupakan salah satu wanita yang membuka jalan dalam bidang STEM di
+            Indonesia. Berkontribusi kembali dengan mengisi kelas pada inisiatif
+            Jakarta Drilling School, suatu kursus profesional untuk sertifikasi
+            industri, Kak Ayu memiliki kebanggaan tersendiri melihat wanita lain
+            di bidangnya.
+          </p>
+          <h2 className="relative z-10 row-start-5 col-start-4 col-span-3 flex flex-col items-start justify-start">
+            <span className="text-6xl flex justify-start items-start font-junicode">
+              (6) <span className="text-[14.5rem]">Pritta</span>
+            </span>{" "}
+            <br />
+            <span className="text-[10rem] font-ed-mentasta -translate-x-20">
+              Puspitasari
+            </span>
+            <br />
+            <span className="flex w-full text-3xl font-junicode self-stretch mt-5">
+              <span className="flex-grow"> </span>
+              <span>(1986)</span>
+            </span>
+          </h2>
+          <h3 className="font-junicode text-4xl leading-none row-start-7 col-start-9 col-span-3 uppercase translate-y-3">
+            Konsultan <br /> Lingkungan
+          </h3>{" "}
+          <p className="col-start-10 col-span-3 row-start-4 whitespace-break-spaces">
+            Seorang ‘Sunda’ tulen, Kak Pritta lahir dan besar di Kopo, Bandung
+            dari kecil hingga masa perkuliahannya. Besar di keluarga yang cukup,
+            tapi tak berlebih membuat Kak Pritta dan keluarga paham tentang
+            nilai pendidikan. Ayah Kak Pritta berprofesi sebagai guru SMP yang
+            lalu bekerja di usaha mebel, sedangkan Ibu mengurus rumah tangga.
+            Meskipun, datang dari keluarga dengan latar belakang ekonomi
+            menengah ke bawah, fakta tersebut tidak membuat keluarga Kak Pritta
+            mengesampingkan persoalan pendidikan
+          </p>
+        </section>
+        <section className="grid-system-container bg-red  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
+          <p className="col-start-1 col-span-2 row-start-4 whitespace-break-spaces">
+            <span className="font-junicode">
+              <em>
+                “Dulu Ayah selalu berpesan, kamu harus membaca koran. Kamu harus
+                update dan tahu mengenai hal-hal di dunia.”
+              </em>
+            </span>
+            <br />
+            <br />
+            Dari Ayahnya pula Kak Pritta belajar tentang kejujuran dimanapun
+            lini pekerjaannya nanti beserta nilai disiplin waktu.
+            <br />
+            <br />
+            Seorang lulusan S1 Teknik Lingkungan ITB dan langsung melanjutkan
+            studi S2 ‘Urban Enviromental Management’ di Asian Institute of
+            Technology, Thailand, ia memulai kariernya sebagai konsultan
+            lingkungan. Kini kembali lagi ke perusahaan multinasional di Bangkok
+            sebagai konsultan lingkungan senior, ia menggerakan proyek-proyek
+            energi besar di Asia Tenggara.
+          </p>
+          <h2 className="relative z-10 row-start-6 col-start-8 col-span-3 flex flex-col items-start justify-start w-fit h-fit">
+            <span className="text-6xl flex justify-start items-start font-junicode w-fit">
+              <span className="text-[12.5rem] leading-none">Abigail</span>
+            </span>{" "}
+            <span className="h-fit w-full flex items-end justify-start">
+              {/* <span className="h-fit w-fit text-[9.375rem] leading-none font-ed-mentasta inline"> */}
+              <span className="text-[9.375rem] leading-none font-ed-mentasta -translate-x-40 -translate-y-20">
+                Limuria
+              </span>
+              <span className="flex-grow"></span>
+              <span className="text-4xl font-junicode self-start">1995</span>
+            </span>
+          </h2>
+          <h3 className="font-junicode text-4xl leading-none row-start-4 col-start-11 col-span-3 uppercase translate-y-3">
+            PENDIRI WIUI <br />
+            DAN BIJAK <br />
+            MEMILIH
+          </h3>{" "}
+        </section>
+        <section className="grid-system-container bg-red  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
+          <p className="col-start-1 col-span-3 row-start-4 whitespace-break-spaces">
+            Besar di lingkungan ibukota yang modern, Kak Abigail Limuria
+            merupakan anak pertama dari dua bersaudara. Ia besar dengan
+            nilai-nilai egalitarian. Kedua orangtua Kak Abigail sama-sama
+            lulusan kampus di Amerika Serikat, maka tak heran jika Kak Abigail
+            mulai berbicara Bahasa Indonesia dan Bahasa Inggris secara
+            bersamaan. Kak Abigail mengaku beruntung karena orangtuanya
+            senantiasa memupuk rasa ingin tahu yang ia miliki, sehingga ia
+            merasa leluasa untuk mempertanyakan lingkungan sekitar.
+          </p>
+          <p className="col-start-4 col-span-3 row-start-4 whitespace-break-spaces">
+            Lulus S1 dari Biola University, Amerika Serikat ia kembali dengan
+            mimpi untuk Indonesia. Ia menulis buku Lalita yang berisi wawancara
+            dengan 51 tokoh wanita Indonesia, mendirikan kanal media What is Up
+            Indonesia untuk mengangkat isu sosial politik yang aksesibel, hingga
+            Bijak Memilih yang bertujuan agar anak muda dapat membuat pilihan
+            kandidiat didasari informasi pada pemilu 2024 nanti.
+          </p>
+          <Image
+            src={"/images/chapter/1/lalita.png"}
+            className="col-start-4 col-span-3 row-start-7 translate-y-5"
+            width={163}
+            height={204}
+            alt="Lalita"
+          />
+        </section>
+        <section className="grid-system-container bg-black  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
+          <h2 className="relative z-10 row-start-2 col-start-1 col-span-4  w-fit h-fit flex items-end justify-start gap-1">
+            <span className=" w-fit h-fit flex flex-col items-end justify-end">
+              <span className="text-6xl flex justify-end items-start font-junicode w-full">
+                <span className="self-start text-5xl">(8)</span>
+                <span className="flex-grow"></span>
+                <span className="text-9xl uppercase">Evi</span>
+              </span>{" "}
+              <span className="h-fit w-full flex items-end justify-start">
+                <span className="text-[6.75rem] leading-none font-ed-mentasta text-right self-start -mt-10 -translate-x-2">
+                  Mariani
+                </span>
+              </span>
+            </span>
+            <span className="text-4xl font-junicode -translate-y-5">1976</span>
+          </h2>
+          <h3 className="font-junicode text-4xl leading-none row-start-4 col-start-1 col-span-3 uppercase translate-y-5">
+            jurnalis,
+            <br />
+            PENDIRI <br />
+            project <br />
+            multatuli
+          </h3>{" "}
+          <p className="col-start-1 col-span-4 row-start-6 whitespace-break-spaces">
+            Bu Evi Mariani lahir di Bandung dan dibesarkan dalam keluarga
+            Tionghoa-Indonesia beragama Katolik taat. Seorang anak ketiga dari
+            empat bersaudara, generasi Bu Evi merupakan generasi pertama di
+            keluarga yang dapat mengenyam pendidikan tinggi. Masa kecil Bu Evi
+            terbilang eksklusif, melihat pendidikan taman kanak-kanak hingga SMA
+            ia habiskan dalam lingkaran sekolah swasta. Datang dari keluarga
+            pedagang dengan kemampuan ekonomi menengah, sang ayah bekerja
+            sebagai pengusaha konveksi dan ibu mengurus warung kecil–membuat
+            masalah biaya sekolah jadi lumayan pelik.
+          </p>
+          <p className="col-start-5 col-span-3 row-start-4 translate-y-5 whitespace-break-spaces">
+            <span className="font-junicode">
+              <em>
+                “Dulu untuk masuk SMA diusahakan sekolah yang bagus. Mama dulu
+                ngutang sama tante-tante untuk sekolahku. Aku juga diuntungkan
+                oleh sistem subsidi silang di SMA Katolik swasta.”
+              </em>
+            </span>
+            Bu Evi memahami bahwa ia hidup pada zaman di mana persoalan masuk
+            SMA favorit dapat menjadi titik balik hidup. Pendidikan digunakan
+            sebagai alat mobilitas sosial.
+          </p>
+          <p className="col-start-8 col-span-3 row-start-4 translate-y-5 whitespace-break-spaces">
+            Lulus S1 Ilmu Komunikasi UGM menjadi awal kariernya sebagai jurnalis
+            selama dua dekade. Dari pengalamannya menjadi Managing Director di
+            kanal Jakarta Post, ia akhirnya tergerak untuk mendirikan inisiatif
+            jurnalisme sendiri, yaitu Project Multatuli. Project Multatuli
+            bergerak untuk mengangkat{" "}
+            <strong>
+              ‘suara yang dipinggirkan, komunitas yang diabaikan, dan isu
+              mendasar yang disisihkan’.
+            </strong>
+          </p>
+        </section>
+        <section className="grid-system-container bg-black  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
+          <h2 className="relative z-10 row-start-2 col-start-1 col-span-4  w-fit h-fit flex items-end justify-start gap-1">
+            <span className=" w-fit h-fit flex flex-col items-end justify-end">
+              <span className="text-6xl flex justify-end items-start font-junicode w-full">
+                <span className="flex-grow"></span>
+                <span className="text-9xl">Nurul</span>
+              </span>{" "}
+              <span className="h-fit w-full flex flex-col items-end justify-end relative left-full">
+                <span className="text-4xl font-junicode -mb-10">1980</span>
+                <span className="text-[9rem] leading-none font-ed-mentasta text-right">
+                  Izzati
+                </span>
+              </span>
+            </span>
+          </h2>
+          <h3 className="font-junicode text-4xl leading-none row-start-5 col-start-4 col-span-3 uppercase -translate-x-20 translate-y-5">
+            Wakil Rektor,
+            <br />
+            Biotechnologist,
+            <br />
+            Pendiri synbio.ID
+          </h3>{" "}
+          <p className="col-start-7 col-span-3 row-start-4 translate-y-5 whitespace-break-spaces">
+            Tumbuh besar dengan alam di antara laut dan sawah Sumbawa, kisah
+            Mbak Nurul adalah perjalanan ‘against all odds’. Ayahnya yang
+            bekerja sebagai guru SD dan ibunya seorang IRT, menekankan
+            kepentingan agama, attitude, dan kejujuran sejak kecil. Mengenai
+            peran perempuan yang ia lihat, Mbak Nurul menceritakan dinamika
+            lingkungan antara keluarga inti dan keluarga besarnya.
+          </p>
+          <p className="col-start-10 col-span-3 row-start-4 translate-y-5 whitespace-break-spaces">
+            Merantau untuk pendidikan S1 Kimia Murni di Malang, Mba Nurul
+            mendekatkan dirinya dengan bioteknologi selagi berkuliah S2
+            Bioteknologi di Universitas Lund, Swedia. Pengalamannya menjadi
+            ketua iGEM (International Genetically Engineered Machine) Lund,
+            kompetisi biologi sintetik paling bergengsi di dunia, menjadi salah
+            satu titik balik hidupnya. Ia kembali ke tanah Sumbawa sebagai wakil
+            rektor Universitas Teknologi Sumbawa dan mendirikan komunitas
+            biologi sintetik Indonesia melalui synbio.id.
           </p>
         </section>
       </main>

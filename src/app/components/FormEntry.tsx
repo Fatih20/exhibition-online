@@ -1,8 +1,6 @@
 import { FieldForm } from "@/utils/types";
 import { errorMessageGenerator } from "@/utils/utilities";
 import React, { FormEvent, useEffect, useState } from "react";
-import ReactDropdown from "react-dropdown";
-import Select from "react-dropdown-select";
 
 function FormEntry({ onSubmit }: { onSubmit: () => Promise<void> }) {
   const [gender, setGender] = useState("");

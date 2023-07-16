@@ -2,10 +2,9 @@
 
 import RedBar from "@/app/components/RedBar";
 import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
-import useLocalStorage from "@/utils/useLocalStorage";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 
 function FirstChaper() {
   const [percent, setPercent] = useState(0);
@@ -36,29 +35,6 @@ function FirstChaper() {
       <main
         ref={containerRef}
         className="flex overflow-x-auto overflow-y-hidden items-start flex-nowrap whitespace-nowrap h-full justify-start scrollbar-hide"
-        // onWheel={(e) => {
-        //   (containerRef.current as any).scrollLeft += e.deltaY;
-        // }}
-        // onScroll={(e) => {
-        //   const scrollRight = (containerRef.current as any).scrollLeft ?? 1;
-        //   const windowWidth = (containerRef.current as any).scrollWidth ?? 1;
-        //   const docWidth = Math.max(
-        //     document.body.scrollWidth,
-        //     document.documentElement.scrollWidth,
-        //     document.body.offsetWidth,
-        //     document.documentElement.offsetWidth,
-        //     document.body.clientWidth,
-        //     document.documentElement.clientWidth
-        //   );
-
-        //   const totalDocScrollLength = windowWidth - docWidth;
-        //   const scrollPostion = Math.ceil(
-        //     (scrollRight / totalDocScrollLength) * 100
-        //   );
-
-        //   setScrollPosition(scrollRight);
-        //   setPercent(scrollPostion);
-        // }}
       >
         <section className="bg-black grid-system-container">
           <h2 className="w-fit h-fit col-start-2 col-span-3 row-start-4 text-white">
@@ -714,11 +690,8 @@ function FirstChaper() {
                   telusuri pilihan yang <br /> diambil para narasumber
                 </em>
               </p>
-              <Link href={"/"}>
-                <button
-                  className="px-11 pt-2 pb-1 text-3xl bg-none  text-white-ivory border-white-ivory border-2 font-junicode hover:text-black hover:bg-white-ivory"
-                  onClick={() => {}}
-                >
+              <Link href={"/chapter/2-1"}>
+                <button className="px-11 pt-2 pb-1 text-3xl bg-none  text-white-ivory border-white-ivory border-2 font-junicode hover:text-black hover:bg-white-ivory">
                   <em>NEXT</em>
                 </button>
               </Link>

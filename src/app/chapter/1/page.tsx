@@ -3,6 +3,7 @@
 import RedBar from "@/app/components/RedBar";
 import useLocalStorage from "@/utils/useLocalStorage";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
 function FirstChaper() {
@@ -49,7 +50,7 @@ function FirstChaper() {
         }}
       >
         <section className="bg-black grid-system-container">
-          <h2 className="col-start-2 col-span-3 row-start-4 text-white">
+          <h2 className="w-fit h-fit col-start-2 col-span-3 row-start-4 text-white">
             <span className="text-[10rem] font-ed-mentasta outline-text-white text-black">
               <em>Wanita</em>
             </span>
@@ -74,11 +75,11 @@ function FirstChaper() {
         </section>
         <section className="grid-system-container bg-black font-zmg text-white text-sm p-5 text-justify">
           <Image
-            src={"/images/chapter/1/speaker_1.png"}
-            alt="Belanda"
+            src={"/images/chapter/1/speaker/1.png"}
+            alt="Karina Soemarwoto"
             className="row-start-2 col-start-1 col-span-3 translate-x-5"
             width={293}
-            height={430}
+            height={431}
           ></Image>
           <Image
             src={"/images/chapter/1/belanda.png"}
@@ -87,7 +88,7 @@ function FirstChaper() {
             width={216}
             height={264}
           ></Image>
-          <h2 className="relative z-10 text-red row-start-6 col-start-1 col-span-3 flex flex-col items-start justify-start -translate-y-5">
+          <h2 className="w-fit h-fit relative z-10 text-red row-start-6 col-start-1 col-span-3 flex flex-col items-start justify-start -translate-y-5">
             <span className="text-2xl row-start-4 col-start-1 col-span-3 flex justify-start items-start font-junicode">
               (1) <span className="text-8xl uppercase">Karina</span>
             </span>{" "}
@@ -139,18 +140,24 @@ function FirstChaper() {
           </p>
         </section>
         <section className="grid-system-container bg-black font-zmg text-white text-sm p-5 text-justify">
-          <h2 className="relative z-10 text-white row-start-7 col-start-3 col-span-4 flex flex-col items-start justify-start -translate-y-5">
-            <span className="text-2xl flex justify-start items-start font-junicode">
+          <h2 className="w-fit h-fit relative z-10 text-white row-start-7 col-start-2 col-span-4 flex flex-col items-end justify-start -translate-y-5">
+            <span className="text-4xl flex justify-start items-start font-junicode">
               (2) <span className="text-8xl uppercase">Wanda</span>
             </span>
-            <br />{" "}
-            <span className="text-[7.25rem] font-ed-mentasta -translate-x-24 -translate-y-5 flex items-start justify-start self-stretch">
-              <span>Roxanne</span>
+            <span className="text-[7.25rem] leading-none font-ed-mentasta flex items-start justify-start self-stretch w-full">
+              <span className="-translate-x-24 -translate-y-5">Roxanne</span>
               <span className="flex-grow"> </span>
               <span className="text-3xl font-junicode">1992</span>
             </span>
             <br />
           </h2>
+          <Image
+            src={"/images/chapter/1/speaker/2.png"}
+            alt="Wanda Roxanne"
+            className="row-start-4 col-start-3 col-span-3"
+            width={403}
+            height={532}
+          ></Image>
           <h3 className="uppercase text-[2.625rem] leading-none font-junicode col-start-2 col-span-1 row-start-2">
             penulis, <br /> pegiat <br /> gender
           </h3>
@@ -185,13 +192,20 @@ function FirstChaper() {
           </p>
         </section>
         <section className="grid-system-container bg-white-ivory  font-zmg text-red text-sm text-justify pr-8 box-border">
+          <Image
+            src={"/images/chapter/1/speaker/3.png"}
+            alt="Wiwien Wiyonoputri"
+            className="row-start-3 col-start-4 col-span-5 translate-y-2"
+            width={612 * 2}
+            height={559 * 2}
+          ></Image>
           <div className="row-start-1 col-start-1 col-span-3 text-w\ bg-black text-white row-span-full grid-rows-8 grid grid-cols-1 box-border px-10">
             <p className="col-start-1 whitespace-break-spaces col-span-1 row-start-6">
               Proses pendidikan menjadi pengalaman transformatif terhadap hidup
               Kak Wanda seterusnya.{" "}
             </p>
           </div>
-          <h2 className="relative z-10 row-start-2 col-start-4 col-span-4 flex items-start justify-start -translate-y-5">
+          <h2 className="w-fit h-fit relative z-10 row-start-2 col-start-4 col-span-4 flex items-start justify-start -translate-y-5">
             <span className="text-2xl flex flex-col-reverse justify-start items-start font-junicode">
               <span className="text-[2.625rem]">(3)</span>{" "}
               <span className="text-8xl uppercase">Wiwien</span>
@@ -203,7 +217,7 @@ function FirstChaper() {
             </span>
             <br />
           </h2>{" "}
-          <h3 className="uppercase row-start-4 -translate-y-9 col-start-7 col-span-2 font-junicode text-red text-2xl -translate-x-6">
+          <h3 className="uppercase row-start-4 col-start-7 col-span-2 font-junicode text-red text-2xl -translate-x-6">
             SPESIALIS INTERPRETASI <br /> HERITAGE DAN PARIWISATA <br />
             BERBASIS KOMUNITAS
           </h3>
@@ -234,6 +248,13 @@ function FirstChaper() {
           </p>
         </section>
         <section className="grid-system-container bg-white-ivory  font-zmg text-red text-sm text-justify p-5 box-border">
+          <Image
+            src={"/images/chapter/1/speaker/4.png"}
+            alt="Sri Izzati"
+            className="col-start-4 row-start-1 col-span-3"
+            width={303}
+            height={496}
+          ></Image>
           <p className="whitespace-break-spaces col-start-1 col-span-3 row-start-5">
             Lulus dari S1 Perencanaan Wilayah dan Kota ITB di bidang
             spesialisasi pariwisata, Bu Wiwien memulai karier sebagai peneliti.
@@ -245,14 +266,7 @@ function FirstChaper() {
             Indonesia, dari ujung barat Pulau Penyengat hingga ujung timur
             Wakatobi.
           </p>
-          <Image
-            alt="Sri Izzati"
-            src={"/images/chapter/1/speaker_4.png"}
-            width={303}
-            height={493}
-            className="col-start-4 row-start-1 col-span-3"
-          />
-          <h2 className="relative z-10 row-start-6 col-start-4 col-span-4 translate-x-5 translate-y-2 flex flex-col items-start justify-start">
+          <h2 className="w-fit h-fit relative z-10 row-start-6 col-start-4 col-span-4 translate-x-5 translate-y-2 flex flex-col items-start justify-start">
             <span className="flex justify-start items-start font-junicode">
               <span className="text-4xl self-start">(4)</span>{" "}
               <span className="text-[10rem] font-ed-mentasta">Sri</span>
@@ -262,7 +276,7 @@ function FirstChaper() {
             </span>
             <br />
           </h2>{" "}
-          <h3 className="relative z-10 row-start-[8] row-span-1 col-start-4 col-span-4 flex items-start justify-start">
+          <h3 className="w-fit h-fit relative z-10 row-start-[8] row-span-1 col-start-4 col-span-4 flex items-start justify-start">
             <span className="uppercase font-junicode text-6xl">Penulis</span>{" "}
             <span className="text-3xl font-junicode self-end">1995</span>
           </h3>
@@ -313,20 +327,36 @@ function FirstChaper() {
           </p>
         </section>
         <section className="grid-system-container bg-red  font-zmg text-white-ivory text-sm text-justify pr-5 box-border">
+          <Image
+            src={"/images/chapter/1/floral.png"}
+            alt="Floral"
+            className="row-start-1 col-start-4 col-span-2 -translate-x-5 z-0 relative"
+            width={212 * 2}
+            height={720 * 2}
+          ></Image>
+          <Image
+            src={"/images/chapter/1/speaker/5.png"}
+            alt="Ayu Utami"
+            className="row-start-1 col-start-5 col-span-5 relative z-10"
+            width={531 * 2}
+            height={689 * 2}
+          ></Image>
           <div className="bg-white-ivory row-span-full col-start-1 flex flex-col items-center justify-center col-span-3"></div>
-          <h2 className="relative z-10 row-start-3 col-start-5 col-span-4 flex items-start justify-start -translate-y-5">
-            <span className="flex justify-start items-start font-junicode">
+          <h2 className="w-fit h-fit relative z-20 row-start-2 col-start-6 col-span-4 flex items-start justify-start">
+            <span className="flex justify-start items-start font-junicode text-red">
               <span className="text-6xl">(5)</span>{" "}
-              <span className="text-[11rem]">Ayu</span>
+              <span className="text-[11rem] leading-none">Ayu</span>
             </span>{" "}
             <br />
-            <span className="text-[7.25rem] font-ed-mentasta translate-y-10 -translate-x-4 flex flex-col-reverse items-start justify-start self-stretch gap-3">
+            <span className="text-[7.25rem] leading-none font-ed-mentasta translate-y-24 flex flex-col items-start justify-start self-stretch -translate-x-24">
+              <span className="text-3xl font-junicode self-end translate-x-5 translate-y-5">
+                1992
+              </span>
               <span>Utami</span>{" "}
-              <span className="text-3xl font-junicode self-end">1992</span>
             </span>
             <br />
           </h2>{" "}
-          <h3 className="font-junicode text-[2.5rem] leading-none row-start-5 col-start-8 col-span-3 uppercase">
+          <h3 className="w-fit h-fit font-junicode text-[2.5rem] leading-none row-start-5 col-start-8 col-span-3 uppercase relative z-20">
             Insinyur <br /> Reservoir
           </h3>{" "}
           <p className="col-start-10 col-span-3 row-start-4 whitespace-break-spaces">
@@ -337,6 +367,13 @@ function FirstChaper() {
           </p>
         </section>
         <section className="grid-system-container bg-red  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
+          <Image
+            src={"/images/chapter/1/speaker/6.png"}
+            alt="Pritta Puspitasari"
+            className="row-start-1 col-start-4 col-span-5"
+            width={528 * 2}
+            height={689 * 2}
+          ></Image>
           <p className="col-start-1 col-span-2 row-start-4 whitespace-break-spaces">
             Dari pengalamannya menjadi salah satu ‘first female hire’ yang
             bekerja di bidang lapangan suatu perusahaan energi, Kak Ayu
@@ -346,7 +383,7 @@ function FirstChaper() {
             industri, Kak Ayu memiliki kebanggaan tersendiri melihat wanita lain
             di bidangnya.
           </p>
-          <h2 className="relative z-10 row-start-5 col-start-4 col-span-3 flex flex-col items-start justify-start">
+          <h2 className="w-fit h-fit relative z-10 row-start-5 col-start-4 col-span-3 flex flex-col items-start justify-start">
             <span className="text-6xl flex justify-start items-start font-junicode">
               (6) <span className="text-[14.5rem]">Pritta</span>
             </span>{" "}
@@ -360,7 +397,7 @@ function FirstChaper() {
               <span>(1986)</span>
             </span>
           </h2>
-          <h3 className="font-junicode text-4xl leading-none row-start-7 col-start-9 col-span-3 uppercase translate-y-3">
+          <h3 className="w-fit h-fit font-junicode text-4xl leading-none row-start-7 col-start-9 col-span-3 uppercase translate-y-3">
             Konsultan <br /> Lingkungan
           </h3>{" "}
           <p className="col-start-10 col-span-3 row-start-4 whitespace-break-spaces">
@@ -375,6 +412,18 @@ function FirstChaper() {
           </p>
         </section>
         <section className="grid-system-container bg-red  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
+          <div className="row-start-2 col-start-6 col-span-5 translate-x-5 w-fit h-fit relative">
+            <p className="absolute top-[5rem] left-4 text-5xl font-junicode">
+              (7)
+            </p>
+            <Image
+              src={"/images/chapter/1/speaker/7.png"}
+              alt="Abigail Limuria"
+              className=""
+              width={427 * 2}
+              height={594 * 2}
+            ></Image>
+          </div>
           <p className="col-start-1 col-span-2 row-start-4 whitespace-break-spaces">
             <span className="font-junicode">
               <em>
@@ -395,7 +444,7 @@ function FirstChaper() {
             sebagai konsultan lingkungan senior, ia menggerakan proyek-proyek
             energi besar di Asia Tenggara.
           </p>
-          <h2 className="relative z-10 row-start-6 col-start-8 col-span-3 flex flex-col items-start justify-start w-fit h-fit">
+          <h2 className=" relative z-10 row-start-6 col-start-8 col-span-3 flex flex-col items-start justify-start w-fit h-fit">
             <span className="text-6xl flex justify-start items-start font-junicode w-fit">
               <span className="text-[12.5rem] leading-none">Abigail</span>
             </span>{" "}
@@ -408,13 +457,13 @@ function FirstChaper() {
               <span className="text-4xl font-junicode self-start">1995</span>
             </span>
           </h2>
-          <h3 className="font-junicode text-4xl leading-none row-start-4 col-start-11 col-span-3 uppercase translate-y-3">
+          <h3 className="font-junicode text-4xl leading-none row-start-4 col-start-10 col-span-3 uppercase translate-y-3">
             PENDIRI WIUI <br />
             DAN BIJAK <br />
             MEMILIH
           </h3>{" "}
         </section>
-        <section className="grid-system-container bg-red  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
+        <section className="grid-system-container bg-red  font-zmg text-white-ivory text-sm text-justify pl-5 box-border">
           <p className="col-start-1 col-span-3 row-start-4 whitespace-break-spaces">
             Besar di lingkungan ibukota yang modern, Kak Abigail Limuria
             merupakan anak pertama dari dua bersaudara. Ia besar dengan
@@ -440,6 +489,20 @@ function FirstChaper() {
             height={204}
             alt="Lalita"
           />
+          <Image
+            src={"/images/chapter/1/floral_2.png"}
+            alt="Floral"
+            className="row-start-1 col-start-9 col-span-2 -translate-x-5 z-0 relative"
+            width={212 * 2}
+            height={720 * 2}
+          ></Image>
+          <Image
+            src={"/images/chapter/1/speaker/8.png"}
+            alt=""
+            className="row-start-1 col-start-10 col-span-5"
+            width={347 * 2.5}
+            height={677 * 2.5}
+          ></Image>
         </section>
         <section className="grid-system-container bg-black  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
           <h2 className="relative z-10 row-start-2 col-start-1 col-span-4  w-fit h-fit flex items-end justify-start gap-1">
@@ -508,13 +571,22 @@ function FirstChaper() {
           </p>
         </section>
         <section className="grid-system-container bg-black  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
-          <h2 className="relative z-10 row-start-2 col-start-1 col-span-4  w-fit h-fit flex items-end justify-start gap-1">
+          <div className="row-start-3 col-start-1 col-span-4 relative z-20 w-fit h-fit">
+            <p className="absolute left-0 top-10 font-junicode text-5xl">(9)</p>
+            <Image
+              src={"/images/chapter/1/speaker/9.png"}
+              alt="Wanda Roxanne"
+              className=""
+              width={354}
+              height={549}
+            ></Image>
+          </div>
+          <h2 className="relative z-10 row-start-2 -translate-y-5 col-start-1 col-span-4  w-fit h-fit flex items-end justify-start gap-1">
             <span className=" w-fit h-fit flex flex-col items-end justify-end">
               <span className="text-6xl flex justify-end items-start font-junicode w-full">
-                <span className="flex-grow"></span>
-                <span className="text-9xl">Nurul</span>
-              </span>{" "}
-              <span className="h-fit w-full flex flex-col items-end justify-end relative left-full">
+                <span className="text-[13rem] leading-none">Nurul</span>
+              </span>
+              <span className="h-fit w-full flex flex-col items-end justify-end relative left-1/3 -translate-y-10">
                 <span className="text-4xl font-junicode -mb-10">1980</span>
                 <span className="text-[9rem] leading-none font-ed-mentasta text-right">
                   Izzati
@@ -522,7 +594,7 @@ function FirstChaper() {
               </span>
             </span>
           </h2>
-          <h3 className="font-junicode text-4xl leading-none row-start-5 col-start-4 col-span-3 uppercase -translate-x-20 translate-y-5">
+          <h3 className="font-junicode text-4xl leading-none row-start-5 col-start-4 col-span-3 uppercase -translate-x-20 translate-y-5 relative z-30">
             Wakil Rektor,
             <br />
             Biotechnologist,
@@ -547,6 +619,100 @@ function FirstChaper() {
             rektor Universitas Teknologi Sumbawa dan mendirikan komunitas
             biologi sintetik Indonesia melalui synbio.id.
           </p>
+        </section>
+        <section className="grid-system-container bg-black  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
+          <Image
+            src={"/images/chapter/1/speaker/10.png"}
+            alt="Irawati Puteri"
+            className="row-start-1 col-start-3 col-span-5 "
+            width={502 * 2}
+            height={677 * 2}
+          ></Image>
+          <h2 className="relative z-10 row-start-5 col-start-3 col-span-4  w-fit h-fit flex flex-col items-start justify-start">
+            <span className="text-red font-junicode flex w-fit h-fit items-start justify-start">
+              <span className="text-5xl">(10)</span>
+              <span className="text-[12.5rem] leading-none">Irawati</span>
+            </span>
+            <span className="text-red font-junicode flex w-full min-w-fit h-fit items-start justify-start self-stretch -translate-y-8">
+              <span className="text-[9rem] leading-none font-ed-mentasta">
+                Puteri
+              </span>
+              <span className="flex-grow"></span>
+              <span className="text-4xl leading-none">1998</span>
+            </span>
+          </h2>
+          <h3 className="font-junicode text-4xl leading-none row-start-7 col-start-8 col-span-3 uppercase">
+            Kepala Legal &
+            <br />
+            kebijakan publik,
+            <br />
+            pendiri estafet
+            <br />
+            kebaikan 
+          </h3>{" "}
+          <p className="col-start-9 col-span-4 row-start-4 whitespace-break-spaces">
+            Kak Irawati Puteri, kerap disapa Kak Ira, adalah seorang sulung dari
+            tiga bersaudara yang dibesarkan dalam keluarga sederhana. Kedua
+            orang tua Kak Ira sendiri tidak memiliki latar belakang pendidikan,
+            tetapi memiliki kesadaran kepentingan hal tersebut dan mengutamakan
+            pendidikan terbaik di Jakarta untuknya. Tak pernah merasa terbatas
+            dengan peran gender, ia menitikberatkan ke tanggung jawabnya sebagai
+            anak sulung untuk memerdekakan dan mengangkat derajat keluarga.
+          </p>
+        </section>
+        <section className="grid-system-container bg-black  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
+          <p className="col-start-1 col-span-3 row-start-4 whitespace-break-spaces">
+            Tidak berpasrah dengan keadaan, Kak Ira pun telah menjadi tulang
+            punggung keluarga dengan bekerja sambilan dan mengikuti berbagai
+            perlombaan sedari umur 15 tahun demi memenuhi kebutuhan. Banting
+            tulang, mulai dari berjualan sticker, SPG freelance chicken nugget,
+            guru les, dan banyak perjuangan lainnya. Ia berdedikasi untuk
+            membiayai dana sekolah adiknya yang sempat mengalami putus sekolah.
+            Kuliah S1 di Hukum UI sambil bekerja, ia juga berkontribusi kembali
+            ke komunitas melalui inisiatif Estafet Kebaikan yang memberikan
+            donasi sosial dalam bingkisan kado yang dipersonalisasi.
+            <br />
+            <br />
+            <span className="font-junicode">
+              <em>
+                “Aku mengerti perasaan menjadi penerima bantuan. Mengemas dalam
+                bentuk kado menjadi upaya memanusiakan sesama.”
+              </em>
+            </span>
+          </p>
+          <p className="col-start-4 col-span-2 row-start-4 whitespace-break-spaces">
+            Tak hanya itu kontribusinya, ia menjadi kolaborator SejutaCita.id
+            untuk mendirikan beasiswa dengan harapan membantu pelajar yang
+            pernah dalam posisinya. Tembus 9 kampus top dunia untuk pendidikan
+            S2-nya, kini Kak Ira akan memulai pendidikannya di Stanford Law
+            School, Amerika Serikat.
+          </p>
+          <div className="row-start-3 row-span-full col-start-10 col-span-3 font-junicode flex flex-col justify-between items-end">
+            <p className="text-3xl whitespace-break-spaces ">
+              Permulaan cerita tidak mendefinisikan akhirnya. <br />
+              <br />
+              <span className="text-6xl">
+                <strong>Pilihan</strong>
+              </span>
+              <br />
+              kita yang menentukan.
+            </p>
+            <div className="flex flex-col items-end justify-end font-junicode text-2xl gap-5">
+              <p className="text-right">
+                <em>
+                  telusuri pilihan yang <br /> diambil para narasumber
+                </em>
+              </p>
+              <Link href={"/"}>
+                <button
+                  className="px-11 pt-2 pb-1 text-3xl bg-none  text-white-ivory border-white-ivory border-2 font-junicode hover:text-black hover:bg-white-ivory"
+                  onClick={() => {}}
+                >
+                  <em>NEXT</em>
+                </button>
+              </Link>
+            </div>
+          </div>
         </section>
       </main>
     </div>

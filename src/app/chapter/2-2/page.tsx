@@ -3,11 +3,14 @@
 import './22.css';
 import RedBar from '@/app/components/RedBar';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React, { useRef, useState } from 'react';
 
 const SecondPageSecond: React.FC = () => {
   const [percent, setPercent] = useState(0);
   const containerRef = useRef(null);
+  const router = useRouter();
 
   return (
     <div className="flex flex-nowrap whitespace-nowrap h-screen items-start justify-start w-screen scrollbar-hide">
@@ -38,7 +41,7 @@ const SecondPageSecond: React.FC = () => {
           setPercent(scrollPostion);
         }}
       >
-        {/* Section 1 */}
+        {/* Side Header */}
         <section className="min-w-[50vw] h-full bg-red whitespace-break-spaces flex justify-center items-center bg-flower">
           <div className="w-1/2">
             <p className="-rotate-90 font-ed-mentasta text-[10rem] translate-y-16 -translate-x-8">
@@ -53,7 +56,7 @@ const SecondPageSecond: React.FC = () => {
           </div>
         </section>
 
-        {/* Section 2 */}
+        {/* Section 1 */}
         <section className="min-w-[50vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col items-end text-red p-8">
           <p className="mt-16 font-junicode text-5xl">TUMBUH</p>
           <p className="font-junicode text-5xl">DALAM PERAN</p>
@@ -303,7 +306,7 @@ const SecondPageSecond: React.FC = () => {
             height={120}
           />
         </section>
-        <section className="min-w-[33vw] p-8 h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg">
+        <section className="min-w-[33vw] p-8 h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg relative">
           <p className="text-justify mt-8">
             MBAK EVI menjadi salah satu dari sedikit mahasiswa Tionghoa di
             kampus negeri, UGM, saat dekade 90an. Besar di sekolah swasta
@@ -316,6 +319,15 @@ const SecondPageSecond: React.FC = () => {
             Angeles, Amerika Serikat. Saat kuliah, ia berada di pusara gejolak
             politik gerakan feminis #MeTooMovement dan #BlackLivesMatter.
           </p>
+
+          <Link href={'/chapter/2-3'} className="mt-auto flex justify-end">
+            <button
+              className="bg-white-ivory text-red border-2 border-red hover:bg-red hover:text-white-ivory transition-colors  text-xl py-2 px-4 font-junicode"
+              onClick={() => router.push('/chapter/2-3')}
+            >
+              LANJUT
+            </button>
+          </Link>
         </section>
       </main>
     </div>

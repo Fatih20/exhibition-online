@@ -1,0 +1,6 @@
+.bg-flower {
+  background: url('../../../../public/images/chapter/2/bg-flower-2.png');
+  background-size:     cover; 
+  background-repeat:   no-repeat;
+  background-position: center center; 
+}

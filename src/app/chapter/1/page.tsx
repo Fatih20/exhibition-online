@@ -1,6 +1,7 @@
 "use client";
 
 import RedBar from "@/app/components/RedBar";
+import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
 import useLocalStorage from "@/utils/useLocalStorage";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,16 +9,26 @@ import React, { useEffect, useRef, useState } from "react";
 
 function FirstChaper() {
   const [percent, setPercent] = useState(0);
-  const [scrollPosition, setScrollPosition] = useLocalStorage<number>(
-    "scrollPosition",
-    0
-  );
-  const containerRef = useRef(null);
+  const containerRef = useHorizontalScroll({
+    callOnScroll: (scrollLeft) => {
+      const windowWidth = containerRef.current?.scrollWidth ?? 1;
+      const docWidth = Math.max(
+        document.body.scrollWidth,
+        document.documentElement.scrollWidth,
+        document.body.offsetWidth,
+        document.documentElement.offsetWidth,
+        document.body.clientWidth,
+        document.documentElement.clientWidth
+      );
 
-  useEffect(() => {
-    console.log(scrollPosition);
-    (containerRef.current as any).scrollLeft = scrollPosition;
-  }, []);
+      const totalDocScrollLength = windowWidth - docWidth;
+      const scrollPercent = Math.ceil(
+        (scrollLeft / totalDocScrollLength) * 100
+      );
+
+      setPercent(scrollPercent);
+    },
+  });
 
   return (
     <div className="flex flex-nowrap whitespace-nowrap h-screen items-start justify-start w-screen scrollbar-hide">
@@ -25,29 +36,29 @@ function FirstChaper() {
       <main
         ref={containerRef}
         className="flex overflow-x-auto overflow-y-hidden items-start flex-nowrap whitespace-nowrap h-full justify-start scrollbar-hide"
-        onWheel={(e) => {
-          (containerRef.current as any).scrollLeft += e.deltaY;
-        }}
-        onScroll={(e) => {
-          const scrollRight = (containerRef.current as any).scrollLeft ?? 1;
-          const windowWidth = (containerRef.current as any).scrollWidth ?? 1;
-          const docWidth = Math.max(
-            document.body.scrollWidth,
-            document.documentElement.scrollWidth,
-            document.body.offsetWidth,
-            document.documentElement.offsetWidth,
-            document.body.clientWidth,
-            document.documentElement.clientWidth
-          );
+        // onWheel={(e) => {
+        //   (containerRef.current as any).scrollLeft += e.deltaY;
+        // }}
+        // onScroll={(e) => {
+        //   const scrollRight = (containerRef.current as any).scrollLeft ?? 1;
+        //   const windowWidth = (containerRef.current as any).scrollWidth ?? 1;
+        //   const docWidth = Math.max(
+        //     document.body.scrollWidth,
+        //     document.documentElement.scrollWidth,
+        //     document.body.offsetWidth,
+        //     document.documentElement.offsetWidth,
+        //     document.body.clientWidth,
+        //     document.documentElement.clientWidth
+        //   );
 
-          const totalDocScrollLength = windowWidth - docWidth;
-          const scrollPostion = Math.ceil(
-            (scrollRight / totalDocScrollLength) * 100
-          );
+        //   const totalDocScrollLength = windowWidth - docWidth;
+        //   const scrollPostion = Math.ceil(
+        //     (scrollRight / totalDocScrollLength) * 100
+        //   );
 
-          setScrollPosition(scrollRight);
-          setPercent(scrollPostion);
-        }}
+        //   setScrollPosition(scrollRight);
+        //   setPercent(scrollPostion);
+        // }}
       >
         <section className="bg-black grid-system-container">
           <h2 className="w-fit h-fit col-start-2 col-span-3 row-start-4 text-white">

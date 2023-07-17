@@ -73,13 +73,14 @@ export default function Home() {
         <div className="mt-11">
           <button
             className="px-11 pt-2 pb-1 text-3xl bg-white-ivory text-red border-red border-2 font-junicode hover:bg-red hover:text-white-ivory"
+            disabled
             onClick={() => {
               setIsWelcome(true);
               setFillingForm(true);
             }}
           >
             <strong>
-              <em>{isWelcome ? "WELCOME" : "START"}</em>
+              <em>{isWelcome ? "WELCOME" : "COMING SOON!"}</em>
             </strong>
           </button>
         </div>

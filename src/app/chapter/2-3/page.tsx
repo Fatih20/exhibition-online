@@ -3,6 +3,7 @@
 import './23.css';
 import RedBar from '@/app/components/RedBar';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useRef, useState } from 'react';
 
@@ -271,14 +272,17 @@ const SecondPageThird: React.FC = () => {
             perempuan Muslim di ruang publik.
           </p>
 
-          <div className="mt-auto mb-8 flex justify-end">
+          <Link
+            href={'/chapter/2-4'}
+            className="mt-auto mb-8 flex justify-end w-full"
+          >
             <button
               className="bg-red text-white-ivory border-2 border-white-ivory hover:bg-white-ivory hover:text-red transition-colors text-xl py-2 px-4 font-junicode z-10"
               onClick={() => router.push('/chapter/2-4')}
             >
               LANJUT
             </button>
-          </div>
+          </Link>
 
           <Image
             src={'/images/chapter/2/art-butterfly.svg'}

@@ -143,13 +143,27 @@ export default function FourthChapter() {
               <div className="flex flex-col w-[20%] h-full">
                 <p className="text-justify">
                   <span className="font-junicode text-3xl">“PERTAMA,</span>{' '}
-                  adalah pada saat suatu plan [dalam konteks pelatihan
-                  pariwisata] berubah menjadi suatu experience. Contohnya,
-                  melihat nelayan yang dulu bergetar saat menulis di depan saya
-                  pada saat pelatihan, dapat berbicara dengan lantang di depan
-                  bupati, direktur bank, hingga artis-artis. Dalam perubahan
-                  tersebut, saya berkontribusi untuk memberi bekal hidup mereka
-                  ke depannya.
+                  adalah pada saat <span className="underline">suatu plan</span>{' '}
+                  [dalam konteks pelatihan pariwisata]{' '}
+                  <span className="underline">berubah</span>{' '}
+                  <span className="font-bold">menjadi suatu experience.</span>{' '}
+                  Contohnya, melihat nelayan yang dulu bergetar saat menulis di
+                  depan saya pada saat pelatihan, dapat{' '}
+                  <span className="font-junicode italic text-lg">
+                    berbicara dengan lantang
+                  </span>{' '}
+                  di depan{' '}
+                  <span className="font-junicode italic text-lg">
+                    bupati, direktur bank,
+                  </span>{' '}
+                  hingga{' '}
+                  <span className="font-junicode italic text-lg">
+                    artis-artis.
+                  </span>{' '}
+                  Dalam perubahan tersebut, saya{' '}
+                  <span className="underline">berkontribusi</span> untuk memberi{' '}
+                  <span className="font-junicode">bekal hidup</span> mereka ke
+                  depannya.
                 </p>
 
                 <Link href={'/'} className="flex mt-auto">
@@ -164,9 +178,25 @@ export default function FourthChapter() {
                 <div className="flex gap-4">
                   <p className="text-justify w-1/2">
                     <span className="font-junicode text-3xl">KEDUA,</span> pada
-                    saat saya bisa mengajak orang yang awalnya abai dengan
-                    sekitar menjadi tersadarkan atas signifikansi sejarah.
-                    Mereka jadi ingin melakukan sesuatu untuk tempat tinggalnya.
+                    saat saya bisa mengajak orang{' '}
+                    <span className="font-bold">
+                      yang awalnya{' '}
+                      <span className="font-junicode italic text-lg">abai</span>
+                    </span>{' '}
+                    dengan sekitar <span className="underline">menjadi</span>{' '}
+                    <span className="font-bold">
+                      tersadarkan atas signifikansi{' '}
+                      <span className="font-junicode italic text-lg">
+                        sejarah.{' '}
+                      </span>
+                    </span>
+                    Mereka jadi ingin{' '}
+                    <span className="underline">
+                      melakukan sesuatu untuk{' '}
+                      <span className="tracking-[0.25em]">
+                        tempat tinggalnya.
+                      </span>
+                    </span>
                   </p>
                   <Image
                     src={'/images/chapter/4/3.png'}
@@ -202,9 +232,13 @@ export default function FourthChapter() {
                   Dengan mendampingi orang-orang membuat cerita, kita banyak
                   belajar sejarah Indonesia dari Pulau Flores hingga Pulau
                   Penyengat. Banyak yang saya ketahui karena mengobrol dengan
-                  komunitas dan orang sekitar. Melalui cerita dan wisata,
-                  terdapat kesempatan untuk kita belajar dari budaya beragam.
-                  Proses ini yang saya rasakan.”
+                  komunitas dan orang sekitar. Melalui{' '}
+                  <span className="underline">cerita dan wisata</span>, terdapat
+                  kesempatan untuk kita belajar dari budaya beragam.
+                  <span className="font-bold">
+                    {' '}
+                    Proses ini yang saya rasakan.”
+                  </span>
                 </p>
               </div>
             </div>
@@ -213,8 +247,14 @@ export default function FourthChapter() {
           {/* Right */}
           <div className="w-1/4 flex flex-col">
             <p className="font-junicode text-justify text-4xl">
-              “Saya bertambah kaya bukan dalam arti rupiah, tapi kaya akan
-              pemahaman batin dan sejarah Indonesia melalui interpretasi.”
+              “Saya bertambah kaya{' '}
+              <span className="font-bold">bukan dalam arti rupiah,</span> tapi
+              kaya akan
+              <span className="font-bold">
+                {' '}
+                pemahaman batin dan sejarah Indonesia
+              </span>{' '}
+              melalui <span className="font-bold italic">interpretasi.</span>”
             </p>
 
             <p className="font-junicode mt-auto text-5xl text-end">WIWIEN</p>

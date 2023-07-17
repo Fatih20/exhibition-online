@@ -59,7 +59,7 @@ const FifthChapter: React.FC = () => {
 
     const data = await res.json();
 
-    console.log(data);
+    setWishes([...wishes, data]);
   }
 
   return (

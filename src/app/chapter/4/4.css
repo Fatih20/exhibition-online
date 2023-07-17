@@ -1,0 +1,6 @@
+.bg-banner-1 {
+  background: url('../../../../public/images/chapter/4/banner-1.png');
+  background-size:     cover; 
+  background-repeat:   no-repeat;
+  background-position: center center; 
+}

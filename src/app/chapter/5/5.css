@@ -1,0 +1,70 @@
+.bg-flower {
+  background: url('../../../../public/images/chapter/5/bg-flower.png');
+  background-size:     cover; 
+  background-repeat:   no-repeat;
+  background-position: center center; 
+}
+
+.use-scrollbar::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.use-scrollbar::-webkit-scrollbar-corner {
+  width: 0.5rem;
+}
+
+/* Track */
+.use-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.use-scrollbar::-webkit-scrollbar-thumb {
+  background: #c5c5c5;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.use-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #cbcbcb;
+}
+
+/* Mozilla */
+* {
+  scrollbar-width: 0.5rem;
+  scrollbar-color: #c5c5c5 #cbcbcb;
+}
+
+.use-scrollbar::-moz-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.use-scrollbar::-moz-scrollbar-corner {
+  width: 0.5rem;
+}
+
+/* Chrome, Edge, and Safari */
+.use-scrollbar::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+.use-scrollbar::-moz-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.use-scrollbar::-moz-scrollbar-thumb {
+  background: #c5c5c5;
+  background-color: #c5c5c5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+.use-scrollbar::-moz-scrollbar-thumb:hover {
+  background: #cbcbcb;
+}

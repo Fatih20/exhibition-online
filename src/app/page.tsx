@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import LoadingScreen from "./components/Loading/LoadingScreen";
 
 export default function Home() {
-  const [isWelcome, setIsWelcome] = useState(false);
+  const [isWelcome, setIsWelcome] = useState(true);
   const [fillingForm, setFillingForm] = useState(false);
   const router = useRouter();
 
@@ -73,7 +73,6 @@ export default function Home() {
         <div className="mt-11">
           <button
             className="px-11 pt-2 pb-1 text-3xl bg-white-ivory text-red border-red border-2 font-junicode hover:bg-red hover:text-white-ivory"
-            disabled
             onClick={() => {
               setIsWelcome(true);
               setFillingForm(true);

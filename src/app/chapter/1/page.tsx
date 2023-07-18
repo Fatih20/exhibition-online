@@ -87,11 +87,11 @@ function FirstChaper() {
               1993
             </span>
           </h2>
-          <h3 className="font-junicode text-4xl row-start-[8] col-start-1 col-span-3 uppercase">
-            Konsultan Investasi <br /> Berkelanjutan, Fisikawan
+          <h3 className="font-junicode text-4xl row-start-[8] col-start-1 col-span-5 uppercase text-left">
+            Konsultan Investasi Berkelanjutan, Fisikawan
           </h3>
           <p className="row-start-4 col-span-3 col-start-4 whitespace-break-spaces">
-            Lahir di Bandung namun tumbuh besar hampir seluruh hidupnya di
+            Lahir di Bandung nam5un tumbuh besar hampir seluruh hidupnya di
             Belanda, hidup Kak Karina sebagai imigran generasi kedua di Belanda
             adalah contoh corak kisah diaspora Indonesia. Ia berpegang kepada
             identitasnya sebagai orang Indonesia dan juga beradaptasi dengan
@@ -145,7 +145,7 @@ function FirstChaper() {
             width={403}
             height={532}
           ></Image>
-          <h3 className="uppercase text-[2.625rem] leading-none font-junicode col-start-2 col-span-1 row-start-2">
+          <h3 className="uppercase text-[2.625rem] leading-none font-junicode col-start-2 col-span-1 row-start-2 h-fit w-fit">
             penulis, <br /> pegiat <br /> gender
           </h3>
           <p className="row-start-4 col-span-3 col-start-7 whitespace-break-spaces">
@@ -204,11 +204,12 @@ function FirstChaper() {
             </span>
             <br />
           </h2>{" "}
-          <h3 className="uppercase row-start-4 col-start-7 col-span-2 font-junicode text-red text-2xl -translate-x-6">
-            SPESIALIS INTERPRETASI <br /> HERITAGE DAN PARIWISATA <br />
+          <h3 className="uppercase row-start-4 col-start-7 col-span-3 font-junicode text-red text-2xl ">
+            SPESIALIS INTERPRETASI <br />
+            HERITAGE DAN PARIWISATA <br />
             BERBASIS KOMUNITAS
           </h3>
-          <p className="row-start-5 col-start-7 col-span-6 text-red whitespace-break-spaces -translate-x-6 text-justify">
+          <p className="row-start-5 col-start-7 col-span-6 text-red whitespace-break-spaces text-justify">
             Masa kecil Bu Wiwien dijalani di Sukabumi, lalu pindah ke Condet,
             Jakarta Timur untuk menjalani sekolah dasarnya. Ketika ditanyakan
             mengenai hidupnya di Jakarta, ia bercerita dengan tertawa getir
@@ -411,7 +412,7 @@ function FirstChaper() {
               height={594 * 2}
             ></Image>
           </div>
-          <p className="col-start-1 col-span-2 row-start-4 whitespace-break-spaces">
+          <p className="col-start-1 col-span-3 row-start-4 whitespace-break-spaces">
             <span className="font-junicode">
               <em>
                 “Dulu Ayah selalu berpesan, kamu harus membaca koran. Kamu harus

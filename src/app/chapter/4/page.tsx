@@ -840,6 +840,14 @@ export default function FourthChapter() {
               kepada saya mengenai <strong>pendidikan</strong> anak mereka.”
             </p>
           </div>
+          <Link
+            href={"/chapter/5"}
+            className="row-start-[8] col-span-1 col-start-11"
+          >
+            <button className="px-11 pt-2 pb-1 text-3xl bg-none  text-black border-black border-2 font-junicode hover:text-white-ivory hover:bg-black">
+              <em>NEXT</em>
+            </button>
+          </Link>
         </section>
       </main>
     </div>

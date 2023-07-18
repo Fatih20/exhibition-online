@@ -247,22 +247,18 @@ const SecondChapter: React.FC = () => {
                 currentCard != 3 && 'hidden'
               }`}
             >
-              <p className="mt-28 text-[10rem] font-ed-mentasta">Memula</p>
+              <p className="mt-28 text-[10rem] font-ed-mentasta">Memaknai</p>
               <p className="text-center w-1/2">
-                Merupakan eksplorasi masa kecil dan sosialisasi peran gender
-                yang diberikan kepada narasumber
+                Merupakan eksplorasi pemaknaan narasumber atas tantangan dan
+                proses berkembang yang pernah ia lewati.
               </p>
 
               <div className="flex flex-col font-junicode text-2xl gap-2 mt-8 p-8">
-                <p>Apa nilai, norma, atau budaya yang diyakini?</p>
                 <p>
-                  Selama masa kecil, bagaimana Anda dibesarkan oleh lingkungan
-                  sosial?
+                  Bagaimana Anda menangani atau menyelesaikan konflik [dalam
+                  konteks isu gender maupun tantangan hidupnya] tersebut?
                 </p>
-                <p>
-                  Selama masa kecil, bagaimana Anda diajarkan untuk memaknai
-                  peran gender Anda sebagai wanita?
-                </p>
+                <p>Bagaimana Anda memaknai peran gender Anda sekarang?</p>
               </div>
 
               <div className="self-end mr-16 flex gap-2">

@@ -69,7 +69,7 @@ const SecondChapter: React.FC = () => {
               <span className="font-bold">pertanyaan premis</span> pameran
               asa.cerita.wanita, yaitu:
             </div>
-            <div className="row-start-4 col-start-5 col-end-8 font-junicode text-4xl">
+            <div className="row-start-3 col-start-5 col-end-8 font-junicode text-4xl">
               <p>“Bagaimana wanita Indonesia</p>
               <p className="ml-24">memaknai pilihan hidup mereka?”</p>
             </div>

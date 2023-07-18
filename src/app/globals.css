@@ -35,6 +35,10 @@ body {
   @apply grid-cols-12 grid-rows-8 grid min-w-[100vw] gap-x-4 h-full gap-y-4 box-border;
 }
 
+.grid-system-container * {
+  @apply whitespace-break-spaces;
+}
+
 /* Zen Maru Gothic */
 
 @font-face {

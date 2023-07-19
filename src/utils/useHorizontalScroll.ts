@@ -31,11 +31,12 @@ export function useHorizontalScroll({
       el.addEventListener("wheel", onWheel);
 
       // Update the scroll position from the saved scroll position in localStorage
-      el.scrollTo({
-        left: el.scrollLeft + scrollPosition,
-        behavior: "smooth",
-      });
-      callOnScroll(scrollPosition);
+      // TODO: Fix scroll to end after next chapter
+      // el.scrollTo({
+      //   left: el.scrollLeft + scrollPosition,
+      //   behavior: "smooth",
+      // });
+      // callOnScroll(scrollPosition);
 
       return () => el.removeEventListener("wheel", onWheel);
     }

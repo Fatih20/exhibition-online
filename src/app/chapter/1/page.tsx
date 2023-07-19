@@ -84,14 +84,14 @@ function FirstChaper() {
             <br />
             <span className="flex w-full text-3xl font-junicode self-stretch">
               <span className="flex-grow"> </span>
-              1993
+              1991
             </span>
           </h2>
           <h3 className="font-junicode text-4xl row-start-[8] col-start-1 col-span-5 uppercase text-left">
             Konsultan Investasi Berkelanjutan, Fisikawan
           </h3>
           <p className="row-start-4 col-span-3 col-start-4 whitespace-break-spaces">
-            Lahir di Bandung nam5un tumbuh besar hampir seluruh hidupnya di
+            Lahir di Bandung namun tumbuh besar hampir seluruh hidupnya di
             Belanda, hidup Kak Karina sebagai imigran generasi kedua di Belanda
             adalah contoh corak kisah diaspora Indonesia. Ia berpegang kepada
             identitasnya sebagai orang Indonesia dan juga beradaptasi dengan
@@ -200,7 +200,7 @@ function FirstChaper() {
             <br />
             <span className="text-[7.25rem] font-ed-mentasta translate-y-10 -translate-x-4 flex flex-col-reverse items-start justify-start self-stretch gap-3">
               <span>Wiyonoputri</span>{" "}
-              <span className="text-3xl font-junicode self-end">1956</span>
+              <span className="text-3xl font-junicode self-end">1965</span>
             </span>
             <br />
           </h2>{" "}

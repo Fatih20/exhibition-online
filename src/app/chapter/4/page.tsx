@@ -439,8 +439,26 @@ export default function FourthChapter() {
               </strong>
             </p>
           </div>
+          {/* <div className="row-start-1 col-end-[13] col-span-1">
+            <Image
+              alt="Line Decoration"
+              width={154}
+              height={399}
+              src={"/images/chapter/4/decorations/line-4.png"}
+              className="object-top-right object-scale-down"
+            />
+          </div> */}
         </section>
         <section className="bg-white-ivory grid-system-container gap-x-2 gap-y-2 text-red">
+          {/* <div className="row-start-1 row-span-2 col-start-1 col-span-6">
+            <Image
+              alt="Line Decoration"
+              width={834 * 1.2}
+              height={329 * 1.2}
+              src={"/images/chapter/4/decorations/line-3.png"}
+              className="object-top-left object-scale-down"
+            />
+          </div> */}
           <div className="row-start-5 row-span-3 col-start-3 col-span-7 flex items-center justify-start gap-6">
             <BacaButton
               className="self-start"
@@ -582,10 +600,10 @@ export default function FourthChapter() {
             </p>
           </div>
         </section>
-        <section className="bg-white-ivory gap-x-4 gap-y-2 grid-system-container text-red">
+        <section className="pb-0 bg-white-ivory gap-x-4 gap-y-2 grid-system-container text-red">
           <div className="col-start-2 col-span-3 row-start-2 row-span-3">
             <Image
-              className="object-scale-down object-left-top h-full"
+              className="relative z-10 object-scale-down object-left-top h-full"
               src={"/images/chapter/4/16.png"}
               alt="Foto"
               width={227 * 2}
@@ -594,7 +612,7 @@ export default function FourthChapter() {
           </div>
           <div className="col-start-8 col-span-5 row-start-2 row-span-3">
             <Image
-              className="object-scale-down object-left-top h-full"
+              className="relative z-10 object-scale-down object-left-top h-full"
               src={"/images/chapter/4/18.png"}
               alt="Foto"
               width={227 * 4}
@@ -603,7 +621,7 @@ export default function FourthChapter() {
           </div>
           <div className="col-start-5 col-span-3 row-start-5 row-span-3">
             <Image
-              className="object-scale-down object-right-bottom h-full"
+              className="relative z-10 object-scale-down object-right-bottom h-full"
               src={"/images/chapter/4/17.png"}
               alt="Foto"
               width={355 * 4}
@@ -654,6 +672,15 @@ export default function FourthChapter() {
             dan memperkaya diri sendiri, wah bukannya gak pengen kaya, tapi aku
             pengen kaya bareng sebanyak-banyaknya orang lain.
           </p>
+          <div className="row-start-[8] col-end-[13] col-span-6 -translate-y-full">
+            <Image
+              alt="Line Decoration"
+              width={1098 * 2}
+              height={277 * 2}
+              src={"/images/chapter/4/decorations/line-5.png"}
+              className="object-right-bottom object-scale-down"
+            />
+          </div>
         </section>
         <section className="bg-white-ivory grid-system-container gap-x-2 gap-y-2 text-red">
           <div className="row-start-2 col-start-2 row-span-3 col-span-2">
@@ -841,6 +868,16 @@ export default function FourthChapter() {
               kepada saya mengenai <strong>pendidikan</strong> anak mereka.”
             </p>
           </div>
+          <div className="row-start-1 col-end-[13] col-span-4 translate-y-1/2">
+            <Image
+              alt="Line Decoration"
+              width={926 * 2}
+              height={241 * 2}
+              src={"/images/chapter/4/decorations/line-9.png"}
+              className="object-right-bottom object-scale-down"
+            />
+          </div>
+
           <Link
             href={"/chapter/5"}
             className="row-start-[8] col-span-1 col-start-11"

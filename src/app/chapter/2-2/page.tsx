@@ -58,15 +58,22 @@ const SecondPageSecond: React.FC = () => {
 
         {/* Section 1 */}
         <section className="text-sm min-w-[50vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col items-end text-red p-8">
-          <p className="mt-16 font-junicode text-5xl">TUMBUH</p>
+          <div className="mt-16 flex">
+            <p className="text-xl mr-16 font-junicode">(1)</p>
+            <p className="font-junicode text-5xl">TUMBUH</p>
+          </div>
           <p className="font-junicode text-5xl">DALAM PERAN</p>
           <p className="font-ed-mentasta text-7xl">Tradisional</p>
 
-          <p className="my-8 font-zmg">
+          <p className="my-8 font-zmg w-2/3 self-center">
             Peran gender tradisional pada wanita dalam konteks ini adalah
-            terjadinya proses sosialisasi mengenai pembagian kerja. Terdapat
-            pesan adanya perbedaan ekspektasi dan peran antara laki-laki dan
-            wanita pada masa kecil narasumber.
+            terjadinya proses sosialisasi mengenai{' '}
+            <span className="font-bold">pembagian kerja.</span> Terdapat pesan
+            adanya{' '}
+            <span className="font-bold">
+              perbedaan ekspektasi dan peran antara laki-laki dan wanita
+            </span>{' '}
+            pada masa kecil narasumber.
           </p>
 
           <iframe
@@ -85,42 +92,59 @@ const SecondPageSecond: React.FC = () => {
           <div className="w-1/4 h-3/4 p-8 flex flex-col justify-end">
             <p className="text-justify">
               Seringkali, ekspektasi ini mengangkat kepentingan wanita untuk
-              fokus pada peran domestik sebagai urgensi utama. Selama proses
-              wawancara, kita berbicara bagaimana narasumber memaknai peran
-              tersebut.
+              fokus pada <span className="font-bold">peran domestik</span>{' '}
+              sebagai urgensi utama. Selama proses wawancara, kita berbicara
+              bagaimana narasumber memaknai peran tersebut.
             </p>
           </div>
           <div className="w-1/4 h-full p-8">
             <p className="mt-16 text-justify">
               Dalam konteks KAK KARINA, pembicaraan berputar di pengajaran nilai
-              tanggung jawab untuk keluarga, dalam bentuk mengasuh dan
-              memelihara (nurture). Dia juga berkomentar, untuknya sendiri ia
-              juga tidak terlalu memaknai nilai ini sebagai tanggung jawab
-              ‘wanita’, tetapi lebih tanggung jawab sebagai seorang ‘individu’.
+              <span className="font-bold">
+                tanggung jawab untuk keluarga, dalam bentuk mengasuh dan
+                memelihara (nurture).
+              </span>{' '}
+              Dia juga berkomentar, untuknya sendiri ia juga tidak terlalu
+              memaknai nilai ini sebagai tanggung jawab
+              <span className="font-bold">‘wanita’,</span> tetapi lebih tanggung
+              jawab sebagai seorang{' '}
+              <span className="font-bold">‘individu’.</span>
               “Sebagai seorang anak dari orangtuaku, apa kewajibanku untuk
               mereka? Sebagai ibu seorang anak, apa kewajibanku? Kita harus
               menjaga komunitas, tak hanya unit keluarga.” <br />
               <br />
-              Dalam konteks ‘tradisional’ sendiri, definisi ekspektasi juga
-              berbeda. Meskipun terdapat titik berat dalam bagian domestik, KAK
-              KARINA tidak diberikan limitasi spesifik dalam partisipasinya di
-              domain lainnya.
+              <span className="font-bold">
+                Dalam konteks ‘tradisional’ sendiri, definisi ekspektasi juga
+                berbeda.
+              </span>{' '}
+              Meskipun terdapat titik berat dalam bagian domestik, KAK KARINA
+              tidak diberikan limitasi spesifik dalam partisipasinya di domain
+              lainnya.
             </p>
           </div>
           <div className="w-1/2 h-full p-8 relative">
             <p className="mt-16 w-3/4 text-justify">
               Hal ini berbeda dengan MBA NURUL dan KAK WANDA, dimana ekspektasi
-              memiliki definisi yang lebih ketat. Contohnya, ada ekspektasi
-              sekitar ‘untuk apa pendidikan tinggi yang jauh dari rumah’ hingga
-              komentar mengenai perilaku apa yang ‘seperti seorang perempuan’.{' '}
+              memiliki definisi yang lebih{' '}
+              <span className="font-bold">ketat.</span> Contohnya, ada
+              ekspektasi sekitar{' '}
+              <span className="underline">
+                ‘untuk apa pendidikan tinggi yang jauh dari rumah’
+              </span>{' '}
+              hingga komentar mengenai perilaku apa yang{' '}
+              <span className="underline">‘seperti seorang perempuan’.</span>{' '}
               <br />
               <br />
               Selama proses hidupnya, MBA NURUL dan KAK WANDA berakhir untuk
-              menciptakan nilai sendiri yang lebih relevan dengan konteks
-              mereka. Mengutip KAK WANDA, “Ada perubahan pemahaman dan norma
-              yang dulu dipercaya, membentuk nilai baru hasil dari apa yang
-              didapat, dialami, dibaca, dan dipelajari. Dulu mungkin ada yang
-              relevan buat mereka [orang tua], tapi enggak relevan buat aku.”
+              <span className="font-bold">menciptakan nilai sendiri</span> yang
+              lebih relevan dengan konteks mereka. Mengutip KAK WANDA, “Ada{' '}
+              <span className="font-bold">
+                perubahan pemahaman dan norma yang dulu dipercaya, membentuk
+                nilai baru
+              </span>{' '}
+              hasil dari apa yang didapat, dialami, dibaca, dan dipelajari. Dulu
+              mungkin ada yang relevan buat mereka [orang tua],{' '}
+              <span className="font-bold">tapi enggak relevan buat aku.”</span>
             </p>
 
             <Image
@@ -142,16 +166,20 @@ const SecondPageSecond: React.FC = () => {
 
         {/* Section 2 */}
         <section className="text-sm min-w-[33vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg">
-          <p className="mt-16 font-junicode text-5xl">
-            TUMBUH DALAM KONTEKS PERAN{' '}
-            <span className="font-ed-mentasta text-7xl">Gender</span> MINIM
-          </p>
+          <div className="mt-16 flex">
+            <p className="text-xl mr-2 font-junicode">(2)</p>
+            <p className="font-junicode text-5xl">
+              TUMBUH DALAM KONTEKS PERAN{' '}
+              <span className="font-ed-mentasta text-7xl">Gender</span> MINIM
+            </p>
+          </div>
           <p className="mt-8 text-justify p-8">
             Dalam konteks ini, para narasumber tumbuh di lingkungan tanpa
-            diferensiasi eksplisit mengenai peran ‘laki-laki’ maupun ‘wanita’.
-            Hal ini juga muncul dengan beberapa variasi. KAK IZZATI tak memiliki
-            saudara laki-laki untuk membandingkan pengalamannya, tumbuh bersama
-            kakak-kakak perempuan supportif.
+            <span className="font-bold">diferensiasi eksplisit</span> mengenai
+            peran ‘laki-laki’ maupun ‘wanita’. Hal ini juga muncul dengan
+            beberapa variasi. KAK IZZATI tak memiliki saudara laki-laki untuk
+            membandingkan pengalamannya, tumbuh bersama kakak-kakak perempuan
+            supportif.
           </p>
           <p className="text-justify p-8 py-2">
             Beberapa narasumber, MBAK EVI dan BU WIWIEN berkomentar melihat
@@ -179,20 +207,24 @@ const SecondPageSecond: React.FC = () => {
         {/* Section 3 */}
         <section className="text-sm min-w-[58vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg p-8 relative overflow-hidden">
           <div className="w-1/3 text-right pl-8">
-            <p className="mt-16 font-junicode text-5xl w-full">SANG</p>
+            <div className="mt-16 flex">
+              <p className="text-xl mr-16 font-junicode">(3)</p>
+              <p className="font-junicode text-5xl">SANG</p>
+            </div>
             <p className="font-junicode text-5xl w-full">“TOMBOY”</p>
           </div>
           <p className="w-1/2 text-justify mt-8">
-            Ekspresi gender adalah pilihan individu untuk mengekspresikan gender
-            mereka kepada dunia eksternal. Hal ini dapat dicapai melalui
-            pakaian, rambut, perilaku, dan aspek lainnya. Dalam definisi
-            ekspresi gender masyarakat yang kaku, ekspresi yang tak umum
-            diasosiasikan sebagai ‘perempuan’ mendapatkan label ‘tomboy’. Dari
-            KAK ABIGAIL yang merasa ‘cuek banget’, KAK PRITTA yang menikmati
-            hobi trekking dan hiking, KAK WANDA yang tumbuh bersama sepupu
-            laki-laki dan menjadi koordinator bola di SMA, hingga pakaian
-            laki-laki dan rambut pendek BU WIWIEN, mereka memiliki subversi
-            tersendiri atas ekspektasi wanita di masyarakat.
+            <span className="font-bold">Ekspresi gender</span> adalah pilihan
+            individu untuk mengekspresikan gender mereka kepada dunia eksternal.
+            Hal ini dapat dicapai melalui pakaian, rambut, perilaku, dan aspek
+            lainnya. Dalam definisi ekspresi gender masyarakat yang kaku,
+            ekspresi yang tak umum diasosiasikan sebagai ‘perempuan’ mendapatkan
+            label <span className="font-bold">‘tomboy’</span>. Dari KAK ABIGAIL
+            yang merasa ‘cuek banget’, KAK PRITTA yang menikmati hobi trekking
+            dan hiking, KAK WANDA yang tumbuh bersama sepupu laki-laki dan
+            menjadi koordinator bola di SMA, hingga pakaian laki-laki dan rambut
+            pendek BU WIWIEN, mereka memiliki subversi tersendiri atas
+            ekspektasi wanita di masyarakat.
           </p>
 
           <Image
@@ -208,7 +240,10 @@ const SecondPageSecond: React.FC = () => {
         <section className="text-sm min-w-[75vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red">
           <div className="pt-12 h-1/2 w-full flex gap-2">
             <div className="self-end">
-              <p className="font-junicode text-5xl">PENDIDIKAN</p>
+              <div className="mt-16 flex">
+                <p className="text-xl mr-2 -ml-8 z-10 font-junicode">(4)</p>
+                <p className="font-junicode text-5xl">PENDIDIKAN</p>
+              </div>
               <p className="font-junicode text-5xl">YANG</p>
               <p className="font-junicode text-5xl">MEMBEBASKAN</p>
             </div>
@@ -219,14 +254,15 @@ const SecondPageSecond: React.FC = () => {
               height={400}
             />
           </div>
-          <div className="p-8 h-1/2 w-full flex gap-2">
+          <div className="p-8 h-1/2 w-full flex gap-2 font-zmg">
             <p className="w-1/2">
-              Pendidikan sering dianggap sebagai jalan emansipatoris yang banyak
+              Pendidikan sering dianggap sebagai{' '}
+              <span className="font-bold">jalan emansipatoris</span> yang banyak
               ditempuh oleh wanita dalam misinya untuk menghadapi dunia. Ketiga
               pembicara di pameran ini juga sama-sama percaya bahwa pendidikan
-              adalah sarana otentikasi diri. Praktisnya, pendidikan dapat
-              membebaskan, baik dari kungkungan patriarki maupun kelas
-              sosio-ekonomi.
+              adalah <span className="font-bold">sarana otentikasi diri.</span>{' '}
+              Praktisnya, pendidikan dapat membebaskan, baik dari kungkungan
+              patriarki maupun kelas sosio-ekonomi.
             </p>
             <Image
               src={'/images/chapter/2/5.png'}
@@ -241,37 +277,48 @@ const SecondPageSecond: React.FC = () => {
         <section className="text-sm min-w-[33vw] p-8 h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg">
           <p className="text-justify mt-8">
             MBAK EVI menyatakan bahwa saat masa sekolah dulu, memang ia hidup di
-            zaman dimana persoalan masuk ‘sekolah favorit’ dapat menjadi tolak
-            ukur nasib kehidupan di masa depan. Asal titisan jalan pendidikan
-            dilalui secara cermat, kesejahteraan masa depan masih dapat
-            diusahakan dengan baik. MBAK EVI melihat untuk sekarang keadaan
-            sudah lebih kompleks dari tiga dekade lalu. <br />
+            zaman dimana persoalan masuk ‘sekolah favorit’ dapat menjadi{' '}
+            <span className="font-bold">
+              tolak ukur nasib kehidupan di masa depan.
+            </span>{' '}
+            Asal titisan jalan pendidikan dilalui secara cermat, kesejahteraan
+            masa depan masih dapat diusahakan dengan baik. MBAK EVI melihat
+            untuk sekarang keadaan sudah lebih kompleks dari tiga dekade lalu.{' '}
+            <br />
             <br />
             MBAK PRITTA menyadari fakta bahwa walaupun keluarganya pernah dalam
-            keadaan kekurangan, orang tuanya selalu mendorongnya untuk terus
-            belajar dan mengenyam pendidikan. Hal yang sama juga dituntut atas
-            KAK WANDA, KAK IRAWATI, MBA NURUL, dan BU WIWIEN. Mereka berefleksi
-            atas hasil positif yang pendidikan berikan dalam hidup mereka.{' '}
-            <br />
+            keadaan kekurangan,{' '}
+            <span className="font-bold">
+              orang tuanya selalu mendorongnya untuk terus belajar dan mengenyam
+              pendidikan.
+            </span>{' '}
+            Hal yang sama juga dituntut atas KAK WANDA, KAK IRAWATI, MBA NURUL,
+            dan BU WIWIEN. Mereka berefleksi atas hasil positif yang pendidikan
+            berikan dalam hidup mereka. <br />
             <br />
             Untuk KAK ABIGAIL dan KAK IZZATI, keinginan untuk mencari dan
-            menikmati ilmu pengetahuan didorong murni didorong oleh rasa ingin
-            tahu. Orangtuanya telah memupuk nilai pendidikan sebagai sarana
-            pemenuhan diri sedari kecil.
+            menikmati ilmu pengetahuan didorong murni didorong oleh{' '}
+            <span className="font-bold">rasa ingin tahu.</span> Orangtuanya
+            telah memupuk nilai pendidikan sebagai sarana pemenuhan diri sedari
+            kecil.
           </p>
         </section>
         <section className="text-sm min-w-[33vw] p-8 h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg relative overflow-hidden">
-          <p className="mt-8 text-end font-junicode text-5xl">
-            MELEPAS RANTAI KEHIDUPAN:
-          </p>
+          <div className="mt-8 flex ml-4">
+            <p className="text-xl mr-2 -ml-8 z-10 font-junicode">(4)</p>
+            <p className="font-junicode text-5xl">MELEPAS RANTAI KEHIDUPAN:</p>
+          </div>
           <p className="font-junicode text-5xl">MENJADI PIONIR DIRI SENDIRI</p>
           <p className="mt-8 text-justify">
             Publik kadang lupa bahwa mengarungi dunia sendirian di tempat asing
             merupakan tantangan yang tidak mudah bagi semua orang, terlebih bagi
             seorang perempuan. Bagi perempuan dari daerah-daerah jauh dan
-            konservatif, mereka tidak hanya mempertaruhkan nasib masa depan,
-            tetapi juga mendobrak norma dan identitas diri yang telah disematkan
-            komunitasnya.
+            konservatif,{' '}
+            <span className="font-bold">
+              mereka tidak hanya mempertaruhkan nasib masa depan, tetapi juga
+              mendobrak norma dan identitas diri yang telah disematkan
+              komunitasnya.
+            </span>
           </p>
           <Image
             src={'/icons/ButterflyBig.svg'}

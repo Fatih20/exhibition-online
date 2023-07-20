@@ -9,7 +9,7 @@ import React, { useState } from "react";
 
 const SecondChapterThird: React.FC = () => {
   const [percent, setPercent] = useState(0);
-  const containerRef = useHorizontalScroll({
+  const { elRef: containerRef, resetSavedScroll } = useHorizontalScroll({
     pageName: "Chapter 2-4",
     callOnScroll: (scrollLeft) => {
       const windowWidth = containerRef.current?.scrollWidth ?? 1;
@@ -393,7 +393,11 @@ const SecondChapterThird: React.FC = () => {
             Bagaimana anda <span className="italic">memaknai dunia</span>?
           </p>
 
-          <Link href={"/chapter/3"} className="mt-auto flex justify-end w-full">
+          <Link
+            href={"/chapter/3"}
+            onClick={resetSavedScroll}
+            className="mt-auto flex justify-end w-full"
+          >
             <button className="bg-black text-white-ivory border-2 border-white-ivory hover:bg-white-ivory hover:text-black transition-colors  text-xl py-2 px-4 font-junicode z-10">
               LANJUT
             </button>

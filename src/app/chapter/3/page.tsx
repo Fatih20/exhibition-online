@@ -8,7 +8,7 @@ import React, { useState } from "react";
 
 const ThirdChapter: React.FC = () => {
   const [percent, setPercent] = useState(0);
-  const containerRef = useHorizontalScroll({
+  const { elRef: containerRef, resetSavedScroll } = useHorizontalScroll({
     pageName: "Chapter 3",
     callOnScroll: (scrollLeft) => {
       const windowWidth = containerRef.current?.scrollWidth ?? 1;
@@ -696,6 +696,7 @@ const ThirdChapter: React.FC = () => {
           <Link
             href={"/chapter/4"}
             className="absolute bottom-8 right-16 cursor-pointer"
+            onClick={resetSavedScroll}
           >
             <button className="bg-red text-white-ivory border-2 border-white-ivory hover:bg-white-ivory hover:text-red transition-colors  text-xl py-2 px-4 font-junicode z-10">
               LANJUT

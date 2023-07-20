@@ -28,7 +28,7 @@ function Underlined({ children }: { children: React.ReactNode }) {
 
 export default function FourthChapter() {
   const [percent, setPercent] = useState(0);
-  const containerRef = useHorizontalScroll({
+  const { elRef: containerRef, resetSavedScroll } = useHorizontalScroll({
     pageName: "Chapter 4",
     callOnScroll: (scrollLeft) => {
       const windowWidth = containerRef.current?.scrollWidth ?? 1;
@@ -844,6 +844,7 @@ export default function FourthChapter() {
           <Link
             href={"/chapter/5"}
             className="row-start-[8] col-span-1 col-start-11"
+            onClick={resetSavedScroll}
           >
             <button className="px-11 pt-2 pb-1 text-3xl bg-none  text-black border-black border-2 font-junicode hover:text-white-ivory hover:bg-black">
               <em>NEXT</em>

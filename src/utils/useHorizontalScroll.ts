@@ -41,5 +41,5 @@ export function useHorizontalScroll({
       return () => el.removeEventListener("wheel", onWheel);
     }
   }, []);
-  return elRef;
+  return { elRef, resetSavedScroll: () => setScrollPosition(0) };
 }

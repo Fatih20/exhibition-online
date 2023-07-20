@@ -8,7 +8,7 @@ import React, { useState } from "react";
 
 function FirstChaper() {
   const [percent, setPercent] = useState(0);
-  const containerRef = useHorizontalScroll({
+  const { elRef: containerRef, resetSavedScroll } = useHorizontalScroll({
     pageName: "Chapter 1",
     callOnScroll: (scrollLeft) => {
       const windowWidth = containerRef.current?.scrollWidth ?? 1;
@@ -692,7 +692,7 @@ function FirstChaper() {
                   telusuri pilihan yang <br /> diambil para narasumber
                 </em>
               </p>
-              <Link href={"/chapter/2-1"}>
+              <Link href={"/chapter/2-1"} onClick={resetSavedScroll}>
                 <button className="px-11 pt-2 pb-1 text-3xl bg-none  text-white-ivory border-white-ivory border-2 font-junicode hover:text-black hover:bg-white-ivory">
                   <em>NEXT</em>
                 </button>

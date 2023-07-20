@@ -1,14 +1,15 @@
-'use client';
+"use client";
 
-import RedBar from '@/app/components/RedBar';
-import { useHorizontalScroll } from '@/utils/useHorizontalScroll';
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { useState } from 'react';
+import RedBar from "@/app/components/RedBar";
+import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
 
 const ThirdChapter: React.FC = () => {
   const [percent, setPercent] = useState(0);
   const containerRef = useHorizontalScroll({
+    pageName: "Chapter 3",
     callOnScroll: (scrollLeft) => {
       const windowWidth = containerRef.current?.scrollWidth ?? 1;
       const docWidth = Math.max(
@@ -71,7 +72,7 @@ const ThirdChapter: React.FC = () => {
           </div>
 
           <Image
-            src={'/images/chapter/3/flower-art-1.svg'}
+            src={"/images/chapter/3/flower-art-1.svg"}
             alt="Flower art 1"
             className="absolute -bottom-8 z-10"
             width={230}
@@ -118,7 +119,7 @@ const ThirdChapter: React.FC = () => {
         <section className="min-w-[66vw] h-full bg-red whitespace-break-spaces flex text-white-ivory p-8 font-zmg text-sm text-justify relative">
           <div className="w-1/2">
             <Image
-              src={'/images/chapter/3/bird-1.svg'}
+              src={"/images/chapter/3/bird-1.svg"}
               alt="Flower art 1"
               className="ml-16 mt-6"
               width={365}
@@ -149,28 +150,28 @@ const ThirdChapter: React.FC = () => {
         <section className="min-w-[25vw] h-full bg-red whitespace-break-spaces flex text-white-ivory p-8 font-zmg text-sm text-justify relative">
           <p className="mt-8">
             KAK WANDA, sebagai seorang penggiat gender membuka topik ini dalam
-            bukunya,{' '}
+            bukunya,{" "}
             <span className="font-bold">
               Menjadi Perempuan Lajang Bukan Masalah.
-            </span>{' '}
+            </span>{" "}
             Buku kumpulan tulisan Kak Wanda dari berbagai isu dilihat dari lensa
-            psikologi dan gender ini menjadi{' '}
+            psikologi dan gender ini menjadi{" "}
             <span className="font-bold">
               upaya memberi ruang dan representasi terhadap isu ini.
-            </span>{' '}
+            </span>{" "}
             Isu lajang bukan masalah yang biasa saja untuk banyak orang karena
             tuntutan ‘buruan nikah, punya pasangan’.
             <br />
             <br />
             “Waktu aku aktif di Twitter, ada yang bilang ‘kok bisa sih ada orang
             terus-terusan single umur ... --coba lihat teman yang sudah menikah,
-            sudah mapan’, Jadi kita itu selalu{' '}
+            sudah mapan’, Jadi kita itu selalu{" "}
             <span className="font-bold">dibandingkan.</span> Lajang menjadi
-            anggapan <span className="font-bold">‘tidak beruntung’</span> atau{' '}
+            anggapan <span className="font-bold">‘tidak beruntung’</span> atau{" "}
             <span className="font-bold">‘stuck’.</span> Saat aku memberikan
             counter-narasi ceritaku, mereka malah bilang aku harus ‘evaluasi
             diri’ atau berasumsi aku ‘tidak akan pernah mau menikah’.” KAK WANDA
-            menyadari bahwa asumsi ini terjadi juga akibat{' '}
+            menyadari bahwa asumsi ini terjadi juga akibat{" "}
             <span className="font-bold">
               terbatasnya pengetahuan orang kepada pengalaman orang lain.
             </span>
@@ -185,14 +186,14 @@ const ThirdChapter: React.FC = () => {
           </p>
 
           <Image
-            src={'/images/chapter/3/1.png'}
+            src={"/images/chapter/3/1.png"}
             alt="1"
             className="mt-8"
             width={270}
             height={155}
           />
           <Image
-            src={'/images/chapter/3/2.png'}
+            src={"/images/chapter/3/2.png"}
             alt="2"
             className="absolute bottom-24 -right-6 z-10"
             width={100}
@@ -209,16 +210,16 @@ const ThirdChapter: React.FC = () => {
         <section className="min-w-[25vw] h-full bg-red whitespace-break-spaces flex flex-col gap-4 text-white-ivory p-8 font-zmg text-sm text-justify relative">
           <p className="mt-16">
             Bagi KAK AYU, ia menjawab ‘memang belum waktunya’, mereferensikan
-            keadaannya belum bertemu dengan yang tepat.{' '}
+            keadaannya belum bertemu dengan yang tepat.{" "}
             <span className="font-bold">
               Menghadapi diri sendiri juga bagian dari proses tersebut.
             </span>
           </p>
           <Image
-            src={'/images/chapter/3/gif/1.gif'}
+            src={"/images/chapter/3/gif/1.gif"}
             alt="1-gif"
             className=""
-            blurDataURL={'/images/blur.jpg'}
+            blurDataURL={"/images/blur.jpg"}
             placeholder="blur"
             width={130}
             height={130}
@@ -226,24 +227,24 @@ const ThirdChapter: React.FC = () => {
         </section>
         <section className="min-w-[25vw] h-full bg-red whitespace-break-spaces flex flex-col gap-4 text-white-ivory p-8 font-zmg text-sm text-justify relative">
           <p className="mt-16">
-            KAK IRA merasakan pernikahan bukan sesuatu dengan urgensi.{' '}
+            KAK IRA merasakan pernikahan bukan sesuatu dengan urgensi.{" "}
             <span className="font-bold">
               Kasih sayang dapat didapatkan dari mana saja, seperti dari
               keluarga.
-            </span>{' '}
+            </span>{" "}
             Ia juga berkomentar pengalaman menghadapi persepsi orang kepada
             dirinya sebagai seseorang yang ‘ambisius’ maupun ‘serius’ akan juga
-            bersikap yang sama dalam hubungan romantis.{' '}
+            bersikap yang sama dalam hubungan romantis.{" "}
             <span className="font-bold">
               Padahal, cara memandang tanggung jawab karier dan hubungan pasti
               berbeda.
             </span>
           </p>
           <Image
-            src={'/images/chapter/3/gif/2.gif'}
+            src={"/images/chapter/3/gif/2.gif"}
             alt="2-gif"
             className=""
-            blurDataURL={'/images/blur.jpg'}
+            blurDataURL={"/images/blur.jpg"}
             placeholder="blur"
             width={130}
             height={130}
@@ -252,17 +253,17 @@ const ThirdChapter: React.FC = () => {
         <section className="min-w-[25vw] h-full bg-red whitespace-break-spaces flex flex-col gap-4 text-white-ivory p-8 font-zmg text-sm text-justify relative">
           <p className="mt-16">
             Sambil tertawa, KAK PRITTA berkata “Usaha ya usaha, tapi kita jangan
-            sampai asal memilih. Baju aja milih, apa lagi pasangan.{' '}
+            sampai asal memilih. Baju aja milih, apa lagi pasangan.{" "}
             <span className="font-bold">
               Untuk sekarang, aku menikmati hidup saja.
             </span>
             ”
           </p>
           <Image
-            src={'/images/chapter/3/gif/3.gif'}
+            src={"/images/chapter/3/gif/3.gif"}
             alt="3-gif"
             className=""
-            blurDataURL={'/images/blur.jpg'}
+            blurDataURL={"/images/blur.jpg"}
             placeholder="blur"
             width={130}
             height={130}
@@ -274,10 +275,10 @@ const ThirdChapter: React.FC = () => {
           <p className="mt-40 font-ed-mentasta text-8xl ml-16">Menjadi</p>
           <p className="font-junicode text-7xl ml-32">BERPASANGAN</p>
           <Image
-            src={'/images/chapter/3/kupu-1.png'}
+            src={"/images/chapter/3/kupu-1.png"}
             alt="Kupu 1"
             className="absolute -bottom-8 left-1/2 -translate-x-1/2"
-            blurDataURL={'/images/blur-white.jpg'}
+            blurDataURL={"/images/blur-white.jpg"}
             placeholder="blur"
             width={640}
             height={500}
@@ -318,7 +319,7 @@ const ThirdChapter: React.FC = () => {
           <p className="mt-16">
             MBA NURUL yang tidak tertarik dengan konsep ‘pacaran’ kembali ke
             Sumbawa tanpa ekspektasi, hanya untuk segera dilamar oleh teman
-            kuliahnya, saat S2 di Sweden. Selagi{' '}
+            kuliahnya, saat S2 di Sweden. Selagi{" "}
             <span className="font-bold">
               memutuskan salah satu keputusan terbesar dalam hidupnya, ia
               membuat list pros/cons, berdiskusi kepada orang terpercaya, dan
@@ -332,10 +333,10 @@ const ThirdChapter: React.FC = () => {
             yang sekarang ingin melanjutkan studi ke luar negeri bersama.
           </p>
           <Image
-            src={'/images/chapter/3/gif/4-11.gif'}
+            src={"/images/chapter/3/gif/4-11.gif"}
             alt="4-11-gif"
             className="mt-4"
-            blurDataURL={'/images/blur.jpg'}
+            blurDataURL={"/images/blur.jpg"}
             placeholder="blur"
             width={130}
             height={130}
@@ -343,21 +344,21 @@ const ThirdChapter: React.FC = () => {
         </section>
         <section className="min-w-[25vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red p-8 font-zmg text-sm text-justify relative">
           <p className="mt-16">
-            KAK KARINA setuju. Penting saat{' '}
+            KAK KARINA setuju. Penting saat{" "}
             <span className="font-bold">
               memulai hubungan sudah melihat kecocokan prioritas dan nilai.
-            </span>{' '}
+            </span>{" "}
             Hal ini penting terutama dalam konteks identitasnya sebagai diaspora
             Indonesia, suaminya yang British, dan ekspektasi kultural di Belanda
-            tempat mereka tumbuh bersama. Setelah itu,{' '}
-            <span className="font-bold">empati dan komunikasi terbuka</span>{' '}
+            tempat mereka tumbuh bersama. Setelah itu,{" "}
+            <span className="font-bold">empati dan komunikasi terbuka</span>{" "}
             menjadi kunci penyelesaian konflik.
           </p>
           <Image
-            src={'/images/chapter/3/gif/5.gif'}
+            src={"/images/chapter/3/gif/5.gif"}
             alt="5-gif"
             className="mt-4"
-            blurDataURL={'/images/blur.jpg'}
+            blurDataURL={"/images/blur.jpg"}
             placeholder="blur"
             width={130}
             height={130}
@@ -367,31 +368,31 @@ const ThirdChapter: React.FC = () => {
           <p className="mt-16">
             Untuk BU WIWIEN, kecocokan tersebut tumbuh dari awal mula basis
             pertemanan. Setelah berteman 8 tahun lebih, BU WIWIEN menemukan
-            sosok suami yang juga <span className="font-bold">suportif</span>{' '}
+            sosok suami yang juga <span className="font-bold">suportif</span>{" "}
             terhadap karier dan pilihan hidupnya.
           </p>
           <Image
-            src={'/images/chapter/3/gif/6.gif'}
+            src={"/images/chapter/3/gif/6.gif"}
             alt="6-gif"
             className="mt-4"
-            blurDataURL={'/images/blur.jpg'}
+            blurDataURL={"/images/blur.jpg"}
             placeholder="blur"
             width={130}
             height={130}
           />
           <p className="mt-8">
             KAK ABIGAIL berkomentar bahwa ia mengerti kepentingan dikotomi peran
-            laki-laki dan perempuan di masa lalu.{' '}
+            laki-laki dan perempuan di masa lalu.{" "}
             <span className="font-bold">
               Namun, perbedaan peran ini sudah tidak terlalu lagi relevan dalam
               kehidupan modern.
             </span>
           </p>
           <Image
-            src={'/images/chapter/3/gif/7.gif'}
+            src={"/images/chapter/3/gif/7.gif"}
             alt="7-gif"
             className="mt-4"
-            blurDataURL={'/images/blur.jpg'}
+            blurDataURL={"/images/blur.jpg"}
             placeholder="blur"
             width={130}
             height={130}
@@ -402,21 +403,21 @@ const ThirdChapter: React.FC = () => {
             KAK IZZATI sendiri masih belum lama menikah. Dalam prosesnya, ia
             masih terus mempelajari fitrah peran istri dan ‘melek’ atas diskursi
             peran ibu dan anak. Dalam menyikapi pasangan, KAK IZZATI juga
-            memastikan{' '}
+            memastikan{" "}
             <span className="font-bold">
               komunikasi yang sepenuhnya transparan.
-            </span>{' '}
+            </span>{" "}
             Proses ini tidak cuma untuk saling menerima ‘mentah-mentah’, tapi
-            untuk saling ‘challenge’ satu sama lain. “Menyenangkan untuk bersama{' '}
-            <span className="font-bold">orang yang bisa diajak ngobrol.</span>{' '}
-            Kamu juga harus kenal diri sendiri untuk tahu value mana yang{' '}
+            untuk saling ‘challenge’ satu sama lain. “Menyenangkan untuk bersama{" "}
+            <span className="font-bold">orang yang bisa diajak ngobrol.</span>{" "}
+            Kamu juga harus kenal diri sendiri untuk tahu value mana yang{" "}
             <span className="font-bold">nonkompromi bagimu.</span>”
           </p>
           <Image
-            src={'/images/chapter/3/gif/8.gif'}
+            src={"/images/chapter/3/gif/8.gif"}
             alt="8-gif"
             className="mt-4"
-            blurDataURL={'/images/blur.jpg'}
+            blurDataURL={"/images/blur.jpg"}
             placeholder="blur"
             width={130}
             height={130}
@@ -447,14 +448,14 @@ const ThirdChapter: React.FC = () => {
         </section>
         <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center justify-center text-white-ivory p-8 font-zmg text-sm text-justify relative">
           <Image
-            src={'/images/chapter/3/kupu-small.svg'}
+            src={"/images/chapter/3/kupu-small.svg"}
             alt="Kupu small"
             className="absolute top-1/4 -left-16 z-10"
             width={107}
             height={80}
           />
           <Image
-            src={'/images/chapter/3/kupu-big.svg'}
+            src={"/images/chapter/3/kupu-big.svg"}
             alt="Kupu big"
             className="absolute top-[15%] -right-16 z-20"
             width={160}
@@ -478,21 +479,21 @@ const ThirdChapter: React.FC = () => {
         </section>
         <section className="min-w-[50vw] h-full bg-black whitespace-break-spaces overflow-hidden flex flex-col items-center text-white-ivory p-8 pb-0 font-zmg text-sm text-justify relative">
           <Image
-            src={'/images/chapter/3/kupu-small.svg'}
+            src={"/images/chapter/3/kupu-small.svg"}
             alt="Kupu small"
             className="absolute top-[20%] left-1/2 z-10"
             width={107}
             height={80}
           />
           <Image
-            src={'/images/chapter/3/flower-art-1.svg'}
+            src={"/images/chapter/3/flower-art-1.svg"}
             alt="Flower art 1"
             className="absolute -bottom-8 left-[10%] z-10"
             width={230}
             height={400}
           />
           <Image
-            src={'/images/chapter/3/kupu-trail.svg'}
+            src={"/images/chapter/3/kupu-trail.svg"}
             alt="Kupu trail"
             className="absolute bottom-0 left-1/2 z-10"
             width={273}
@@ -503,18 +504,18 @@ const ThirdChapter: React.FC = () => {
         <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg text-sm text-justify relative">
           <p className="mt-16">
             Salah satu aspek penting yang diungkit dari BU EVI adalah peran
-            keberadaan{' '}
+            keberadaan{" "}
             <span className="font-bold">pekerja rumah tangga (PRT)</span> dalam
-            mengurus anak dan bagaimana hal ini menentukan{' '}
+            mengurus anak dan bagaimana hal ini menentukan{" "}
             <span className="font-bold">
               proses peminggiran wanita di dunia kerja.
             </span>
             <br />
             <br />
-            Seseorang yang punya privelese untuk mempekerjakan PRT mungkin{' '}
+            Seseorang yang punya privelese untuk mempekerjakan PRT mungkin{" "}
             <span className="font-bold">
               tidak akan terlalu terpengaruh konflik prioritas.
-            </span>{' '}
+            </span>{" "}
             BU EVI juga mengakui bahwa mempekerjakan PRT juga berkontribusi
             terhadap konflik prioritas wanita lain. Hal ini dapat berkontribusi
             terhadap konflik prioritas dalam diri PRT-nya dimana dirinya harus
@@ -533,36 +534,36 @@ const ThirdChapter: React.FC = () => {
         </section>
         <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg text-sm text-justify relative">
           <p className="mt-16">
-            Konflik muncul pada saat orang tak punya PRT. Karena{' '}
+            Konflik muncul pada saat orang tak punya PRT. Karena{" "}
             <span className="font-bold">
               beban mengurus anak jatuh lebih besar ke wanita,
-            </span>{' '}
+            </span>{" "}
             terjadi beberapa kasus saat anak sakit ia harus izin, ada
             permasalahan di sekolah, jadi diminta
             <span className="font-bold">
               prioritas antara anak dan pekerjaan.
-            </span>{' '}
-            Sehingga muncul{' '}
-            <span className="font-bold">stereotype dalam recruitment</span>{' '}
+            </span>{" "}
+            Sehingga muncul{" "}
+            <span className="font-bold">stereotype dalam recruitment</span>{" "}
             bahwa mengambil wanita dengan anak akan lebih “merepotkan”
             dibandingkan laki-laki atau wanita lajang.
             <br />
             <br />
-            BU EVI mengakhiri dengan{' '}
+            BU EVI mengakhiri dengan{" "}
             <span className="font-bold">
               kepentingan negosiasi dengan pasangan
-            </span>{' '}
+            </span>{" "}
             dan
             <span className="font-bold">
               peraturan regulasi pemerintah
-            </span>{' '}
+            </span>{" "}
             untuk membantu menjaga hak-hak wanita.
           </p>
           <Image
-            src={'/images/chapter/3/gif/9.gif'}
+            src={"/images/chapter/3/gif/9.gif"}
             alt="9-gif"
             className="mt-4"
-            blurDataURL={'/images/blur.jpg'}
+            blurDataURL={"/images/blur.jpg"}
             placeholder="blur"
             width={130}
             height={130}
@@ -572,13 +573,13 @@ const ThirdChapter: React.FC = () => {
           <p className="mt-16">
             Sebagai ibu dari seorang bayi berusia 3 bulan, konflik yang dialami
             KAK KARINA sejalan dengan diskusi BU EVI. Tanpa PRT dan akses
-            keluarga besar seperti Indonesia di Belanda, KAK KARINA{' '}
-            <span className="font-bold">harus memilih prioritasnya.</span>{' '}
+            keluarga besar seperti Indonesia di Belanda, KAK KARINA{" "}
+            <span className="font-bold">harus memilih prioritasnya.</span>{" "}
             Sesuai dengan komunikasi ekspektasi, suaminya memiliki privelese
             untuk bekerja dan ia memiliki peran untuk menjaga anak di rumah.
             <br />
             <br />
-            “Realitanya, kamu adalah ibu dari anak itu.{' '}
+            “Realitanya, kamu adalah ibu dari anak itu.{" "}
             <span className="font-bold">
               Tidak semua hal bisa didelegasi, sebaik apapun suami atau
               pembagian pekerjaan rumah.
@@ -588,10 +589,10 @@ const ThirdChapter: React.FC = () => {
             kita harus bekerja lebih keras sebagai wanita.”
           </p>
           <Image
-            src={'/images/chapter/3/gif/5.gif'}
+            src={"/images/chapter/3/gif/5.gif"}
             alt="5-gif"
             className="mt-4"
-            blurDataURL={'/images/blur.jpg'}
+            blurDataURL={"/images/blur.jpg"}
             placeholder="blur"
             width={130}
             height={130}
@@ -599,7 +600,7 @@ const ThirdChapter: React.FC = () => {
         </section>
         <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg text-sm text-justify relative">
           <p className="mt-16">
-            Dalam mengasuh anak, BU NURUL juga berkomentar mengenai{' '}
+            Dalam mengasuh anak, BU NURUL juga berkomentar mengenai{" "}
             <span className="font-bold">pentingnya lingkungan kerja</span> yang
             suportif. Di lingkungan kampus Universitas Teknik Sumbawa, tempat BU
             NURUL bekerja sebagai wakil rektor, banyak civitas yang juga datang
@@ -607,10 +608,10 @@ const ThirdChapter: React.FC = () => {
             yang keduanya aktif bekerja.
           </p>
           <Image
-            src={'/images/chapter/3/gif/4-11.gif'}
+            src={"/images/chapter/3/gif/4-11.gif"}
             alt="4-11-gif"
             className="mt-4"
-            blurDataURL={'/images/blur.jpg'}
+            blurDataURL={"/images/blur.jpg"}
             placeholder="blur"
             width={130}
             height={130}
@@ -620,10 +621,10 @@ const ThirdChapter: React.FC = () => {
         {/* Section 2 */}
         <section className="min-w-[60vw] h-full bg-red whitespace-break-spaces overflow-hidden flex flex-col items-center text-white-ivory p-8 pb-0 font-zmg text-sm text-justify relative">
           <Image
-            src={'/images/chapter/3/bird-2.png'}
+            src={"/images/chapter/3/bird-2.png"}
             alt="Bird 2"
             className="absolute -top-8"
-            blurDataURL={'/images/blur-red.jpg'}
+            blurDataURL={"/images/blur-red.jpg"}
             placeholder="blur"
             width={620}
             height={420}
@@ -654,16 +655,16 @@ const ThirdChapter: React.FC = () => {
         <section className="min-w-[25vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 pb-0 font-zmg text-sm text-justify relative">
           <p className="mt-16">
             Topik ini menjadi fokus riset thesis KAK WANDA, dimana ia memulai
-            konsep otoritas tubuh yang dimiliki wanita. Yakni, ia bisa{' '}
+            konsep otoritas tubuh yang dimiliki wanita. Yakni, ia bisa{" "}
             <span className="font-bold">
               memilih dan memiliki kontrol atas tubuhnya sendiri.
-            </span>{' '}
+            </span>{" "}
             Namun dalam prakteknya, hal ini belum terjadi karena adanya stigma.
             Hal ini juga berat karena memiliki anak sering kali menyangkut beban
             ganda bagi wanita.
             <br />
             <br />“
-            <span className="font-bold">Childfree adalah hak asasi.</span>{' '}
+            <span className="font-bold">Childfree adalah hak asasi.</span>{" "}
             Wanita punya dan boleh memiliki hak kesehatan seksual dan
             reproduksi. Jadi kita bisa saling memahami, saling berempati, tak
             hanya mengecap bahwa ‘perempuan tidak punya anak itu apa atau
@@ -672,10 +673,10 @@ const ThirdChapter: React.FC = () => {
           </p>
 
           <Image
-            src={'/images/chapter/3/gif/10-12.gif'}
+            src={"/images/chapter/3/gif/10-12.gif"}
             alt="10-12-gif"
             className="mt-4"
-            blurDataURL={'/images/blur.jpg'}
+            blurDataURL={"/images/blur.jpg"}
             placeholder="blur"
             width={130}
             height={130}
@@ -683,17 +684,17 @@ const ThirdChapter: React.FC = () => {
         </section>
         <section className="min-w-[25vw] h-full bg-red whitespace-break-spaces flex flex-col justify-center text-white-ivory p-8 pb-0 font-zmg text-sm text-justify relative">
           <Image
-            src={'/images/chapter/3/3.png'}
+            src={"/images/chapter/3/3.png"}
             alt="png"
             className=""
-            blurDataURL={'/images/blur-red.jpg'}
+            blurDataURL={"/images/blur-red.jpg"}
             placeholder="blur"
             width={320}
             height={300}
           />
 
           <Link
-            href={'/chapter/4'}
+            href={"/chapter/4"}
             className="absolute bottom-8 right-16 cursor-pointer"
           >
             <button className="bg-red text-white-ivory border-2 border-white-ivory hover:bg-white-ivory hover:text-red transition-colors  text-xl py-2 px-4 font-junicode z-10">

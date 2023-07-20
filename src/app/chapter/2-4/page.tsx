@@ -1,15 +1,16 @@
-'use client';
+"use client";
 
-import './24.css';
-import RedBar from '@/app/components/RedBar';
-import { useHorizontalScroll } from '@/utils/useHorizontalScroll';
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { useState } from 'react';
+import "./24.css";
+import RedBar from "@/app/components/RedBar";
+import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
 
 const SecondChapterThird: React.FC = () => {
   const [percent, setPercent] = useState(0);
   const containerRef = useHorizontalScroll({
+    pageName: "Chapter 2-4",
     callOnScroll: (scrollLeft) => {
       const windowWidth = containerRef.current?.scrollWidth ?? 1;
       const docWidth = Math.max(
@@ -55,7 +56,7 @@ const SecondChapterThird: React.FC = () => {
           </div>
           <div className="w-1/3 self-start">
             <p className="mt-32 font-junicode text-5xl">
-              MEMPUNYAI{' '}
+              MEMPUNYAI{" "}
               <span className="font-ed-mentasta text-7xl">Prinsip</span> MEMBELA
               DIRI, DAN MENGKLAIM AGENSI
             </p>
@@ -101,7 +102,7 @@ const SecondChapterThird: React.FC = () => {
             dan melepas prinsip tersebut.
           </p>
           <Image
-            src={'/images/chapter/2/art-white-flower-big.svg'}
+            src={"/images/chapter/2/art-white-flower-big.svg"}
             alt="White flower 1"
             className="absolute bottom-0 right-0"
             width={355}
@@ -119,7 +120,7 @@ const SecondChapterThird: React.FC = () => {
           </p>
 
           <Image
-            src={'/images/chapter/2/art-white-flower-small.svg'}
+            src={"/images/chapter/2/art-white-flower-small.svg"}
             alt="White flower 2"
             className="absolute bottom-32 left-8"
             width={195}
@@ -130,7 +131,7 @@ const SecondChapterThird: React.FC = () => {
         {/* Section 2 */}
         <section className="text-sm min-w-[50vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify">
           <Image
-            src={'/images/chapter/2/12.png'}
+            src={"/images/chapter/2/12.png"}
             alt="12"
             className="mt-4"
             width={570}
@@ -157,7 +158,7 @@ const SecondChapterThird: React.FC = () => {
           </p>
 
           <Image
-            src={'/images/chapter/2/13.png'}
+            src={"/images/chapter/2/13.png"}
             alt="13"
             className="mt-16"
             width={166}
@@ -167,7 +168,7 @@ const SecondChapterThird: React.FC = () => {
 
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify">
           <Image
-            src={'/images/chapter/2/14.png'}
+            src={"/images/chapter/2/14.png"}
             alt="14"
             className="mt-16"
             width={233}
@@ -191,7 +192,7 @@ const SecondChapterThird: React.FC = () => {
           </p>
 
           <Image
-            src={'/images/chapter/2/15.png'}
+            src={"/images/chapter/2/15.png"}
             alt="15"
             className="mt-4 mb-8"
             width={235}
@@ -207,14 +208,14 @@ const SecondChapterThird: React.FC = () => {
         </section>
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
-            src={'/images/chapter/2/memaknai/logo2.png'}
+            src={"/images/chapter/2/memaknai/logo2.png"}
             alt="Logo 2"
             className="absolute top-1/2 -translate-y-full translate-x-1/4 z-20"
             width={125}
             height={125}
           />
           <Image
-            src={'/images/chapter/2/memaknai/garis1.png'}
+            src={"/images/chapter/2/memaknai/garis1.png"}
             alt="garis 1"
             className="absolute top-1/4 left-1/2 translate-x-1/4 -translate-y-8 z-10"
             width={200}
@@ -233,7 +234,7 @@ const SecondChapterThird: React.FC = () => {
         </section>
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center justify-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
-            src={'/images/chapter/2/memaknai/logo1.png'}
+            src={"/images/chapter/2/memaknai/logo1.png"}
             alt="Logo 1"
             className="absolute top-1/4 -translate-y-1/2 left-0 -translate-x-1/4 z-20"
             width={125}
@@ -241,7 +242,7 @@ const SecondChapterThird: React.FC = () => {
           />
 
           <Image
-            src={'/images/chapter/2/memaknai/logo3.png'}
+            src={"/images/chapter/2/memaknai/logo3.png"}
             alt="Logo 3"
             className="absolute top-2/3 -translate-y-1/2 left-0 translate-x-1/4 z-20"
             width={125}
@@ -266,7 +267,7 @@ const SecondChapterThird: React.FC = () => {
           </p>
 
           <Image
-            src={'/images/chapter/2/memaknai/garis2.png'}
+            src={"/images/chapter/2/memaknai/garis2.png"}
             alt="Logo 3"
             className="absolute top-3/4 right-0 z-10"
             width={870}
@@ -275,7 +276,7 @@ const SecondChapterThird: React.FC = () => {
         </section>
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
-            src={'/images/chapter/2/16.png'}
+            src={"/images/chapter/2/16.png"}
             alt="16"
             className="mt-auto mb-8"
             width={300}
@@ -284,7 +285,7 @@ const SecondChapterThird: React.FC = () => {
         </section>
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
-            src={'/images/chapter/2/memaknai/garis3.png'}
+            src={"/images/chapter/2/memaknai/garis3.png"}
             alt="garis 3"
             className="absolute bottom-[40%] z-10"
             width={566}
@@ -292,14 +293,14 @@ const SecondChapterThird: React.FC = () => {
           />
 
           <Image
-            src={'/images/chapter/2/memaknai/logo4.png'}
+            src={"/images/chapter/2/memaknai/logo4.png"}
             alt="Logo 4"
             className="absolute top-1/4 left-8 translate-y-8 translatex-8 z-20"
             width={125}
             height={125}
           />
           <Image
-            src={'/images/chapter/2/memaknai/logo5.png'}
+            src={"/images/chapter/2/memaknai/logo5.png"}
             alt="Logo 5"
             className="absolute top-1/3 right-4 translate-y-8 z-20"
             width={125}
@@ -317,7 +318,7 @@ const SecondChapterThird: React.FC = () => {
         </section>
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
-            src={'/images/chapter/2/17.png'}
+            src={"/images/chapter/2/17.png"}
             alt="17"
             className="mt-8"
             width={360}
@@ -333,7 +334,7 @@ const SecondChapterThird: React.FC = () => {
         </section>
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
-            src={'/images/chapter/2/memaknai/garis4.png'}
+            src={"/images/chapter/2/memaknai/garis4.png"}
             alt="garis 4"
             className="absolute bottom-1/2 -left-8 translate-y-1/3 z-10"
             width={230}
@@ -341,7 +342,7 @@ const SecondChapterThird: React.FC = () => {
           />
 
           <Image
-            src={'/images/chapter/2/memaknai/logo6.png'}
+            src={"/images/chapter/2/memaknai/logo6.png"}
             alt="Logo 6"
             className="absolute top-1/2 right-4 z-20"
             width={100}
@@ -349,7 +350,7 @@ const SecondChapterThird: React.FC = () => {
           />
 
           <Image
-            src={'/images/chapter/2/18.png'}
+            src={"/images/chapter/2/18.png"}
             alt="18"
             className="mt-auto mb-8"
             width={360}
@@ -379,7 +380,7 @@ const SecondChapterThird: React.FC = () => {
             MENGHANTARKAN MEREKA UNTUK
           </p>
           <p className="text-center font-junicode text-4xl">
-            <span className="italic text-red">MEMPUNYAI KUASA MENGUBAH</span>{' '}
+            <span className="italic text-red">MEMPUNYAI KUASA MENGUBAH</span>{" "}
           </p>
           <p className="text-center font-junicode text-4xl">
             <span className="italic text-red">DUNIA</span> TERSEBUT PULA.
@@ -392,14 +393,14 @@ const SecondChapterThird: React.FC = () => {
             Bagaimana anda <span className="italic">memaknai dunia</span>?
           </p>
 
-          <Link href={'/chapter/3'} className="mt-auto flex justify-end w-full">
+          <Link href={"/chapter/3"} className="mt-auto flex justify-end w-full">
             <button className="bg-black text-white-ivory border-2 border-white-ivory hover:bg-white-ivory hover:text-black transition-colors  text-xl py-2 px-4 font-junicode z-10">
               LANJUT
             </button>
           </Link>
 
           <Image
-            src={'/images/chapter/2/flower-end-gif.gif'}
+            src={"/images/chapter/2/flower-end-gif.gif"}
             alt="flower-end-gif"
             className="absolute -bottom-4 left-16"
             width={450}

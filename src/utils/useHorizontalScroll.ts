@@ -3,11 +3,13 @@ import useLocalStorage from "./useLocalStorage";
 
 export function useHorizontalScroll({
   callOnScroll = (scrollPosition: number) => {},
+  pageName,
 }: {
   callOnScroll?: (scrollPosition: number) => void;
+  pageName: string;
 }) {
   const [scrollPosition, setScrollPosition] = useLocalStorage<number>(
-    "scrollPosition",
+    `scrollPosition ${pageName}`,
     0
   );
   const elRef = useRef<HTMLElement>(null);
@@ -30,13 +32,11 @@ export function useHorizontalScroll({
       };
       el.addEventListener("wheel", onWheel);
 
-      // Update the scroll position from the saved scroll position in localStorage
-      // TODO: Fix scroll to end after next chapter
-      // el.scrollTo({
-      //   left: el.scrollLeft + scrollPosition,
-      //   behavior: "smooth",
-      // });
-      // callOnScroll(scrollPosition);
+      el.scrollTo({
+        left: el.scrollLeft + scrollPosition,
+        behavior: "smooth",
+      });
+      callOnScroll(scrollPosition);
 
       return () => el.removeEventListener("wheel", onWheel);
     }

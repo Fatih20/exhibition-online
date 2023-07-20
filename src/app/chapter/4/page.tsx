@@ -29,6 +29,7 @@ function Underlined({ children }: { children: React.ReactNode }) {
 export default function FourthChapter() {
   const [percent, setPercent] = useState(0);
   const containerRef = useHorizontalScroll({
+    pageName: "Chapter 4",
     callOnScroll: (scrollLeft) => {
       const windowWidth = containerRef.current?.scrollWidth ?? 1;
       const docWidth = Math.max(

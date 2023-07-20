@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import '../chapter/5/5.css';
-import React, { FormEvent, useState } from 'react';
-import RedBar from '../components/RedBar';
-import { useHorizontalScroll } from '@/utils/useHorizontalScroll';
-import Image from 'next/image';
-import { ToastContainer, toast } from 'react-toastify';
+import "../chapter/5/5.css";
+import React, { FormEvent, useState } from "react";
+import RedBar from "../components/RedBar";
+import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
+import Image from "next/image";
+import { ToastContainer, toast } from "react-toastify";
 
 interface CreditPersonProps {
   img: string;
@@ -38,7 +38,7 @@ const CreditPerson: React.FC<CreditPersonProps> = ({
           width={16}
           height={16}
           className="mr-1"
-          src={'/icons/LinkedIn.svg'}
+          src={"/icons/LinkedIn.svg"}
           alt="LinkedIn"
         />
         <p className="text-[0.6rem]">{linkedin}</p>
@@ -48,7 +48,7 @@ const CreditPerson: React.FC<CreditPersonProps> = ({
           width={16}
           height={16}
           className="mr-1"
-          src={'/icons/Instagram.svg'}
+          src={"/icons/Instagram.svg"}
           alt="Instagram"
         />
         <p className="text-[0.6rem]">{ig}</p>
@@ -59,10 +59,11 @@ const CreditPerson: React.FC<CreditPersonProps> = ({
 
 const Epilogue: React.FC = () => {
   const [percent, setPercent] = useState(0);
-  const [name, setName] = useState('');
-  const [feedback, setFeedback] = useState('');
+  const [name, setName] = useState("");
+  const [feedback, setFeedback] = useState("");
 
   const containerRef = useHorizontalScroll({
+    pageName: "Epilogue",
     callOnScroll: (scrollLeft) => {
       const windowWidth = containerRef.current?.scrollWidth ?? 1;
       const docWidth = Math.max(
@@ -89,7 +90,7 @@ const Epilogue: React.FC = () => {
       const maxScrollPosition = el.scrollWidth - el.clientWidth;
       el.scrollTo({
         left: maxScrollPosition,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   }
@@ -97,9 +98,9 @@ const Epilogue: React.FC = () => {
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
 
-    if (name === '' || feedback === '') {
-      toast.error('Please fill all the field before submitting.', {
-        position: 'top-center',
+    if (name === "" || feedback === "") {
+      toast.error("Please fill all the field before submitting.", {
+        position: "top-center",
       });
       return;
     }
@@ -107,9 +108,9 @@ const Epilogue: React.FC = () => {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_FORM_ENDPOINT as string}/feedback`,
       {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           name: name,
@@ -120,14 +121,14 @@ const Epilogue: React.FC = () => {
 
     if (res.status == 200) {
       toast.success(
-        'Feedback submitted! Thank you for coming to Asa, Cerita, Wanita.',
+        "Feedback submitted! Thank you for coming to Asa, Cerita, Wanita.",
         {
-          position: 'top-center',
+          position: "top-center",
         }
       );
     } else {
-      toast.error('Failed to submit feedback. Please try again later.', {
-        position: 'top-center',
+      toast.error("Failed to submit feedback. Please try again later.", {
+        position: "top-center",
       });
     }
   }
@@ -142,20 +143,20 @@ const Epilogue: React.FC = () => {
         >
           <section className="min-w-[30vw] h-screen bg-black text-white-ivory whitespace-break-spaces flex flex-col gap-4 font-junicode py-8 pt-20 pl-8 pr-0">
             <p className="mt-auto">
-              Hormat besar kami berikan kepada para{' '}
+              Hormat besar kami berikan kepada para{" "}
               <span className="font-bold">Narasumber</span> yang telah
               mempercayakan kami dengan narasi dan waktu mereka. Kami harap
               narasi yang Narasumber berikan dapat membuka jalan untuk narasi
               lainnya.
               <br />
               <br />
-              Keberhasilan dari pameran ini tidak akan lepas dari{' '}
+              Keberhasilan dari pameran ini tidak akan lepas dari{" "}
               <span className="font-bold">Tim Pameran</span> yang telah
               berkontribusi dengan memberikan waktu, energi, dan kepedulian
               mereka.
               <br />
               <br />
-              Apresiasi juga diberikan kepada{' '}
+              Apresiasi juga diberikan kepada{" "}
               <span className="font-bold">Media Partner</span>, dalam upaya
               pameran bisa dinikmati khalayak yang lebih luas.
             </p>
@@ -301,7 +302,7 @@ const Epilogue: React.FC = () => {
               width={185}
               height={80}
               className="mt-4 self-center"
-              src={'/images/epilogue/lfm.png'}
+              src={"/images/epilogue/lfm.png"}
               alt="LFM"
             />
           </section>

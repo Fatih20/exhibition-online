@@ -9,6 +9,7 @@ import React, { useState } from "react";
 function FirstChaper() {
   const [percent, setPercent] = useState(0);
   const containerRef = useHorizontalScroll({
+    pageName: "Chapter 1",
     callOnScroll: (scrollLeft) => {
       const windowWidth = containerRef.current?.scrollWidth ?? 1;
       const docWidth = Math.max(

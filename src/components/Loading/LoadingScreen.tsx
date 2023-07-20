@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Loading from "@/app/components/Loading/Loading";
+import Loading from "@/components/Loading/Loading";
 
 function LoadingScreen({
   progressPercentage = 0,

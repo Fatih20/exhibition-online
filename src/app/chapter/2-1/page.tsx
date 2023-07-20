@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import './21.css';
-import RedBar from '@/app/components/RedBar';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import React, { useRef, useState } from 'react';
+import "./21.css";
+import RedBar from "@/components/RedBar";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import React, { useRef, useState } from "react";
 
 const SecondChapter: React.FC = () => {
   const router = useRouter();
@@ -51,7 +51,7 @@ const SecondChapter: React.FC = () => {
             Merah
           </div>
           <Image
-            src={'/images/chapter/2/1.png'}
+            src={"/images/chapter/2/1.png"}
             alt="1"
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10"
             width={474}
@@ -65,7 +65,7 @@ const SecondChapter: React.FC = () => {
         <section className="bg-black h-full min-w-[100vw] relative font-zmg">
           <div className="grid-system-container">
             <div className="row-start-2 col-start-2 col-end-6 whitespace-break-spaces text-lg z-20">
-              adalah upaya kami menjawab{' '}
+              adalah upaya kami menjawab{" "}
               <span className="font-bold">pertanyaan premis</span> pameran
               asa.cerita.wanita, yaitu:
             </div>
@@ -75,12 +75,12 @@ const SecondChapter: React.FC = () => {
             </div>
             <div className="row-start-5 whitespace-break-spaces col-start-7 col-end-12 mt-4">
               <p>
-                Tim pameran mengambil{' '}
+                Tim pameran mengambil{" "}
                 <span className="font-bold">
                   kesamaan tematik yang berulang muncul
-                </span>{' '}
+                </span>{" "}
                 <span className="text-red">(AKA ‘benang merah’)</span> dalam
-                wawancara 10 wanita yang kami lakukan. Hal ini diolah menjadi{' '}
+                wawancara 10 wanita yang kami lakukan. Hal ini diolah menjadi{" "}
                 <span className="font-bold">
                   wawasan dan pola yang mengikat
                 </span>
@@ -88,15 +88,15 @@ const SecondChapter: React.FC = () => {
                 narasumber sangat berbeda.
               </p>
               <p className="mt-4">
-                Benang merah lahir secara{' '}
+                Benang merah lahir secara{" "}
                 <span className="font-bold">organik dari narasumber</span>,
                 muncul sebagai respons dari pertanyaan tanpa ekspektasi dari tim
-                pameran mengenai jawaban tertentu.{' '}
+                pameran mengenai jawaban tertentu.{" "}
                 <span className="font-bold">
                   Harapan kami adalah mempertahankan “suara” mereka.
-                </span>{' '}
+                </span>{" "}
                 Tiap pilihan dan keputusan, tak peduli seberapa besar
-                perbedaanya itu, merupakan upaya kami untuk{' '}
+                perbedaanya itu, merupakan upaya kami untuk{" "}
                 <span className="font-bold">belajar dari satu sama lain.</span>
               </p>
             </div>
@@ -109,25 +109,25 @@ const SecondChapter: React.FC = () => {
           <div className="h-full w-[500px] flex justify-center items-center relative p-8">
             <div
               className={`absolute z-[5] h-full w-full bg-black opacity-50 ease-in-out ${
-                currentCard == 0 && 'hidden'
+                currentCard == 0 && "hidden"
               }`}
             ></div>
             {/* Card 1 */}
             <div
               className={`absolute h-60 w-48 border-white rounded-2xl flex justify-center items-center text-white z-10 card card-1 ${
-                currentCard !== 1 && 'card-1-on'
+                currentCard !== 1 && "card-1-on"
               }`}
             ></div>
             {/* Card 2 */}
             <div
               className={`absolute h-60 w-48 border-white rounded-2xl flex justify-center items-center text-white z-10 card card-2 ${
-                currentCard !== 2 && 'card-2-on'
+                currentCard !== 2 && "card-2-on"
               }`}
             ></div>
             {/* Card 3 */}
             <div
               className={`absolute h-60 w-48 border-white rounded-2xl flex justify-center items-center text-white z-10 card card-3 ${
-                currentCard !== 3 && 'card-3-on'
+                currentCard !== 3 && "card-3-on"
               }`}
             ></div>
           </div>
@@ -138,10 +138,10 @@ const SecondChapter: React.FC = () => {
               <p>
                 Untuk belajar dari sesama, tidak berarti menerima secara
                 ‘mentah’ pengalaman mereka. Terutama dalam ranah identitas,
-                dimana{' '}
+                dimana{" "}
                 <span className="font-bold">
                   prasangka dan stereotipe melabeli kita dalam ‘kotak-kotak’
-                </span>{' '}
+                </span>{" "}
                 yang mustahil menampung keseluruhan diri kita.
               </p>
               <p className="mt-16">
@@ -166,13 +166,13 @@ const SecondChapter: React.FC = () => {
           {/* Absolute popup */}
           <div
             className={`absolute right-0 bg-black h-full w-3/4 whitespace-break-spaces z-10 popup ${
-              currentCard == 0 && 'popup-hidden-right'
+              currentCard == 0 && "popup-hidden-right"
             }`}
           >
             {/* 1 */}
             <div
               className={`flex flex-col items-center text-white transition ${
-                currentCard != 1 && 'hidden'
+                currentCard != 1 && "hidden"
               }`}
             >
               <p className="mt-28 text-[10rem] font-ed-mentasta">Memula</p>
@@ -204,7 +204,7 @@ const SecondChapter: React.FC = () => {
             {/* 2 */}
             <div
               className={`flex flex-col items-center text-white transition ${
-                currentCard != 2 && 'hidden'
+                currentCard != 2 && "hidden"
               }`}
             >
               <p className="mt-28 text-[10rem] font-ed-mentasta">Menjadi</p>
@@ -244,7 +244,7 @@ const SecondChapter: React.FC = () => {
             {/* 3 */}
             <div
               className={`flex flex-col items-center text-white transition ${
-                currentCard != 3 && 'hidden'
+                currentCard != 3 && "hidden"
               }`}
             >
               <p className="mt-28 text-[10rem] font-ed-mentasta">Memaknai</p>
@@ -268,7 +268,7 @@ const SecondChapter: React.FC = () => {
                 >
                   PREV
                 </button>
-                <Link href={'/chapter/2-2'}>
+                <Link href={"/chapter/2-2"}>
                   <button className="bg-white-ivory text-red border-2 border-red  text-xl py-2 px-4">
                     LANJUT
                   </button>

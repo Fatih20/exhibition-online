@@ -2,7 +2,7 @@
 
 import "../chapter/5/5.css";
 import React, { FormEvent, useState } from "react";
-import RedBar from "../components/RedBar";
+import RedBar from "../../components/RedBar";
 import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
 import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";

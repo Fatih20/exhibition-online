@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import './5.css';
-import RedBar from '@/app/components/RedBar';
-import Link from 'next/link';
-import React, { FormEvent, useEffect, useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import "./5.css";
+import RedBar from "@/components/RedBar";
+import Link from "next/link";
+import React, { FormEvent, useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 interface Wish {
   name: string;
@@ -12,8 +12,8 @@ interface Wish {
 }
 
 const FifthChapter: React.FC = () => {
-  const [name, setName] = useState('');
-  const [wish, setWish] = useState('');
+  const [name, setName] = useState("");
+  const [wish, setWish] = useState("");
   const [wishes, setWishes] = useState<Wish[]>([]);
 
   useEffect(() => {
@@ -21,9 +21,9 @@ const FifthChapter: React.FC = () => {
       const res = await fetch(
         `${process.env.NEXT_PUBLIC_FORM_ENDPOINT as string}/dream`,
         {
-          method: 'GET',
+          method: "GET",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
         }
       );
@@ -42,9 +42,9 @@ const FifthChapter: React.FC = () => {
     e.preventDefault();
     console.log(wishes);
 
-    if (name === '' || wish === '') {
-      toast.error('Please fill all the field before submitting.', {
-        position: 'top-center',
+    if (name === "" || wish === "") {
+      toast.error("Please fill all the field before submitting.", {
+        position: "top-center",
       });
       return;
     }
@@ -53,9 +53,9 @@ const FifthChapter: React.FC = () => {
       const res = await fetch(
         `${process.env.NEXT_PUBLIC_FORM_ENDPOINT as string}/dream`,
         {
-          method: 'POST',
+          method: "POST",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
           body: JSON.stringify({
             name: name,
@@ -68,13 +68,13 @@ const FifthChapter: React.FC = () => {
 
       setWishes([...wishes, data]);
       toast.success(
-        'Thank you for submitting your dream, may it come true in the best way possible 🌻',
-        { position: 'top-center' }
+        "Thank you for submitting your dream, may it come true in the best way possible 🌻",
+        { position: "top-center" }
       );
     } catch (error) {
       console.error(error);
-      toast.error('Failed to submit. Please try again later.', {
-        position: 'top-center',
+      toast.error("Failed to submit. Please try again later.", {
+        position: "top-center",
       });
     }
   }
@@ -91,7 +91,7 @@ const FifthChapter: React.FC = () => {
                 <>
                   <span
                     className={`text-2xl ${
-                      randomizer ? 'text-red' : 'text-black'
+                      randomizer ? "text-red" : "text-black"
                     } hover:text-[1.7rem] hover:bold transition-all`}
                   >
                     ‘{wish.message}’
@@ -137,7 +137,7 @@ const FifthChapter: React.FC = () => {
                 >
                   Submit Dream
                 </button>
-                <Link href={'/epilogue'} className="ml-auto">
+                <Link href={"/epilogue"} className="ml-auto">
                   <button className="bg-red text-white-ivory border-2 border-white-ivory hover:bg-white-ivory hover:text-red transition-colors py-2 px-4 font-junicode z-10 w-fit">
                     Finish & Next &gt;
                   </button>

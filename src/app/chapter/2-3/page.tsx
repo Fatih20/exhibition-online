@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import './23.css';
-import RedBar from '@/app/components/RedBar';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import React, { useRef, useState } from 'react';
+import "./23.css";
+import RedBar from "@/components/RedBar";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import React, { useRef, useState } from "react";
 
 const SecondPageThird: React.FC = () => {
   const [percent, setPercent] = useState(0);
@@ -89,14 +89,14 @@ const SecondPageThird: React.FC = () => {
 
           <div className="mt-8 w-full">
             <Image
-              src={'/images/chapter/2/6.png'}
+              src={"/images/chapter/2/6.png"}
               alt="6"
               className="inline-block"
               width={180}
               height={180}
             />
             <Image
-              src={'/images/chapter/2/7.png'}
+              src={"/images/chapter/2/7.png"}
               alt="7"
               className="ml-16 inline-block"
               width={400}
@@ -116,7 +116,7 @@ const SecondPageThird: React.FC = () => {
             </div>
 
             <Image
-              src={'/images/chapter/2/8.png'}
+              src={"/images/chapter/2/8.png"}
               alt="8"
               className="ml-auto inline-block"
               width={320}
@@ -163,7 +163,7 @@ const SecondPageThird: React.FC = () => {
           </div>
 
           <Image
-            src={'/images/chapter/2/9.png'}
+            src={"/images/chapter/2/9.png"}
             alt="9"
             className="self-center"
             width={530}
@@ -174,7 +174,7 @@ const SecondPageThird: React.FC = () => {
         {/* Section 3 */}
         <section className="text-sm min-w-[33vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg">
           <p className="mt-auto mb-8 font-junicode text-5xl">
-            CAKRAWALA BARU DAN{' '}
+            CAKRAWALA BARU DAN{" "}
             <span className="font-ed-mentasta text-7xl">Pikiran</span> TERBUKA
           </p>
           <p className="mt-8 mb-8 text-justify">
@@ -189,7 +189,7 @@ const SecondPageThird: React.FC = () => {
         </section>
         <section className="text-sm min-w-[33vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg">
           <Image
-            src={'/images/chapter/2/10.png'}
+            src={"/images/chapter/2/10.png"}
             alt="10"
             className="self-end mt-8"
             width={460}
@@ -238,7 +238,7 @@ const SecondPageThird: React.FC = () => {
             mencari komunitas yang secara tulus dapat memahami mereka.
           </p>
           <Image
-            src={'/images/chapter/2/11.png'}
+            src={"/images/chapter/2/11.png"}
             alt="11"
             className="mt-auto self-center"
             width={520}
@@ -273,19 +273,19 @@ const SecondPageThird: React.FC = () => {
           </p>
 
           <Link
-            href={'/chapter/2-4'}
+            href={"/chapter/2-4"}
             className="mt-auto mb-8 flex justify-end w-full"
           >
             <button
               className="bg-red text-white-ivory border-2 border-white-ivory hover:bg-white-ivory hover:text-red transition-colors text-xl py-2 px-4 font-junicode z-10"
-              onClick={() => router.push('/chapter/2-4')}
+              onClick={() => router.push("/chapter/2-4")}
             >
               LANJUT
             </button>
           </Link>
 
           <Image
-            src={'/images/chapter/2/art-butterfly.svg'}
+            src={"/images/chapter/2/art-butterfly.svg"}
             alt=""
             className="absolute left-48"
             width={620}

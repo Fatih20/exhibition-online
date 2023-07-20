@@ -1,7 +1,7 @@
 "use client";
 
 import "./24.css";
-import RedBar from "@/app/components/RedBar";
+import RedBar from "@/components/RedBar";
 import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
 import Image from "next/image";
 import Link from "next/link";

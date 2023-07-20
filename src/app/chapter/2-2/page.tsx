@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import './22.css';
-import RedBar from '@/app/components/RedBar';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import React, { useRef, useState } from 'react';
+import "./22.css";
+import RedBar from "@/components/RedBar";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import React, { useRef, useState } from "react";
 
 const SecondPageSecond: React.FC = () => {
   const [percent, setPercent] = useState(0);
@@ -112,7 +112,7 @@ const SecondPageSecond: React.FC = () => {
               Hal ini berbeda dengan MBA NURUL dan KAK WANDA, dimana ekspektasi
               memiliki definisi yang lebih ketat. Contohnya, ada ekspektasi
               sekitar ‘untuk apa pendidikan tinggi yang jauh dari rumah’ hingga
-              komentar mengenai perilaku apa yang ‘seperti seorang perempuan’.{' '}
+              komentar mengenai perilaku apa yang ‘seperti seorang perempuan’.{" "}
               <br />
               <br />
               Selama proses hidupnya, MBA NURUL dan KAK WANDA berakhir untuk
@@ -124,14 +124,14 @@ const SecondPageSecond: React.FC = () => {
             </p>
 
             <Image
-              src={'/images/chapter/2/2.png'}
+              src={"/images/chapter/2/2.png"}
               alt="2"
               className="absolute right-0 bottom-0"
               width={255}
               height={474}
             />
             <Image
-              src={'/images/chapter/2/vstock-flower.png'}
+              src={"/images/chapter/2/vstock-flower.png"}
               alt="flower"
               className="absolute right-[254px] bottom-0"
               width={148}
@@ -143,7 +143,7 @@ const SecondPageSecond: React.FC = () => {
         {/* Section 2 */}
         <section className="text-sm min-w-[33vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg">
           <p className="mt-16 font-junicode text-5xl">
-            TUMBUH DALAM KONTEKS PERAN{' '}
+            TUMBUH DALAM KONTEKS PERAN{" "}
             <span className="font-ed-mentasta text-7xl">Gender</span> MINIM
           </p>
           <p className="mt-8 text-justify p-8">
@@ -164,7 +164,7 @@ const SecondPageSecond: React.FC = () => {
 
         <section className="text-sm min-w-[33vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col items-end text-red">
           <Image
-            src={'/images/chapter/2/3.png'}
+            src={"/images/chapter/2/3.png"}
             alt="3"
             width={364}
             height={324}
@@ -196,7 +196,7 @@ const SecondPageSecond: React.FC = () => {
           </p>
 
           <Image
-            src={'/images/chapter/2/flower-gif.gif'}
+            src={"/images/chapter/2/flower-gif.gif"}
             alt="flower-gif"
             className="absolute right-0 bottom-0 translate-y-36 -translate-x-12 mix-blend-multiply"
             width={500}
@@ -213,7 +213,7 @@ const SecondPageSecond: React.FC = () => {
               <p className="font-junicode text-5xl">MEMBEBASKAN</p>
             </div>
             <Image
-              src={'/images/chapter/2/4.png'}
+              src={"/images/chapter/2/4.png"}
               alt=""
               width={600}
               height={400}
@@ -229,7 +229,7 @@ const SecondPageSecond: React.FC = () => {
               sosio-ekonomi.
             </p>
             <Image
-              src={'/images/chapter/2/5.png'}
+              src={"/images/chapter/2/5.png"}
               alt=""
               width={480}
               height={300}
@@ -251,7 +251,7 @@ const SecondPageSecond: React.FC = () => {
             keadaan kekurangan, orang tuanya selalu mendorongnya untuk terus
             belajar dan mengenyam pendidikan. Hal yang sama juga dituntut atas
             KAK WANDA, KAK IRAWATI, MBA NURUL, dan BU WIWIEN. Mereka berefleksi
-            atas hasil positif yang pendidikan berikan dalam hidup mereka.{' '}
+            atas hasil positif yang pendidikan berikan dalam hidup mereka.{" "}
             <br />
             <br />
             Untuk KAK ABIGAIL dan KAK IZZATI, keinginan untuk mencari dan
@@ -274,7 +274,7 @@ const SecondPageSecond: React.FC = () => {
             komunitasnya.
           </p>
           <Image
-            src={'/icons/ButterflyBig.svg'}
+            src={"/icons/ButterflyBig.svg"}
             alt=""
             className="absolute bottom-0 -right-8"
             width={640}
@@ -290,7 +290,7 @@ const SecondPageSecond: React.FC = () => {
             <br />
             MBA NURUL yang berasal dari Sumbawa harus keluar dari pulaunya untuk
             belajar di Universitas Brawijaya, Malang, Jawa Timur. Tantangan
-            kembali muncul ketika ia harus mengambil gelar master di Swedia.{' '}
+            kembali muncul ketika ia harus mengambil gelar master di Swedia.{" "}
             <br />
             <br />
             KAK AYU yang tinggal di Padang juga mengejar pendidikan di Pulau
@@ -299,7 +299,7 @@ const SecondPageSecond: React.FC = () => {
             &apos;Toh, bisa jadi guru aja.&apos;
           </p>
           <Image
-            src={'/icons/ButterflySmall.svg'}
+            src={"/icons/ButterflySmall.svg"}
             alt=""
             className="absolute bottom-24 left-16"
             width={160}
@@ -320,10 +320,10 @@ const SecondPageSecond: React.FC = () => {
             politik gerakan feminis #MeTooMovement dan #BlackLivesMatter.
           </p>
 
-          <Link href={'/chapter/2-3'} className="mt-auto flex justify-end">
+          <Link href={"/chapter/2-3"} className="mt-auto flex justify-end">
             <button
               className="bg-white-ivory text-red border-2 border-red hover:bg-red hover:text-white-ivory transition-colors  text-xl py-2 px-4 font-junicode"
-              onClick={() => router.push('/chapter/2-3')}
+              onClick={() => router.push("/chapter/2-3")}
             >
               LANJUT
             </button>

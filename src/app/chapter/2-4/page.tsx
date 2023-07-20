@@ -38,7 +38,7 @@ const SecondChapterThird: React.FC = () => {
         className="flex overflow-x-auto overflow-y-hidden items-start flex-nowrap whitespace-nowrap h-full justify-start scrollbar-hide"
       >
         {/* Side header */}
-        <section className="min-w-[70vw] h-full whitespace-break-spaces flex justify-center items-center bg-flower">
+        <section className="text-sm min-w-[70vw] h-full whitespace-break-spaces flex justify-center items-center bg-flower">
           <div className="w-1/3">
             <p className="-rotate-90 font-ed-mentasta text-[9rem] translate-y-36 -translate-x-8">
               Memaknai
@@ -63,7 +63,7 @@ const SecondChapterThird: React.FC = () => {
         </section>
 
         {/* Section 1 */}
-        <section className="min-w-[30vw] h-full bg-black whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg">
+        <section className="text-sm min-w-[30vw] h-full bg-black whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg">
           <p className="mt-auto mb-8 text-justify">
             Dunia bergerak dalam sistem yang opresif terhadap perempuan.
             Membangun ketangguhan seringkali datang dan bersumber dari diri
@@ -72,7 +72,7 @@ const SecondChapterThird: React.FC = () => {
             dengan lantang prinsip-prinsip tersebut ke ruang sekitarnya.
           </p>
         </section>
-        <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg text-justify">
+        <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg text-justify">
           <p className="mt-16">
             KAK IZZATI berpendapat secara kritis terkait isu ini, “Perempuan
             ngomong aja ga di denger, gimana lagi kalau diem?”. Maka dari itu,
@@ -82,7 +82,7 @@ const SecondChapterThird: React.FC = () => {
             misalnya dengan menulis.
           </p>
         </section>
-        <section className="min-w-[50vw] h-full bg-black whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg text-justify relative">
+        <section className="text-sm min-w-[50vw] h-full bg-black whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg text-justify relative">
           <iframe
             width="560"
             height="315"
@@ -108,7 +108,7 @@ const SecondChapterThird: React.FC = () => {
             height={400}
           />
         </section>
-        <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg text-justify relative">
+        <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg text-justify relative">
           <p className="mt-16">
             KAK IRAWATI mengakui bahwa memang ia tidak bisa menutup mata dan
             telinga dari pendapat orang lain. Tapi, manusia punya sistem
@@ -128,7 +128,7 @@ const SecondChapterThird: React.FC = () => {
         </section>
 
         {/* Section 2 */}
-        <section className="min-w-[50vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify">
+        <section className="text-sm min-w-[50vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify">
           <Image
             src={'/images/chapter/2/12.png'}
             alt="12"
@@ -141,7 +141,7 @@ const SecondChapterThird: React.FC = () => {
           <p className="font-ed-mentasta text-7xl -ml-24">Bermakna</p>
         </section>
 
-        <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify">
+        <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify">
           <p className="mt-16">
             Kemampuan bercerita mengenai pengalaman, ilmu, dan isu merupakan
             kunci untuk membangun koneksi dengan sesama.
@@ -165,7 +165,7 @@ const SecondChapterThird: React.FC = () => {
           />
         </section>
 
-        <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify">
+        <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify">
           <Image
             src={'/images/chapter/2/14.png'}
             alt="14"
@@ -182,7 +182,7 @@ const SecondChapterThird: React.FC = () => {
           </p>
         </section>
 
-        <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify">
+        <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify">
           <p className="mt-auto mb-4">
             KAK ABIGAIL dan MBAK EVI membangun platform media mereka sendiri
             untuk mengangkat isu dan cerita. Seperti kata MBAK EVI, “Jadi
@@ -200,12 +200,12 @@ const SecondChapterThird: React.FC = () => {
         </section>
 
         {/* Section 3 */}
-        <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
+        <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <p className="mt-16 ml-24 font-junicode text-4xl">
             BUKAN ENTITAS INDIVIDU, NAMUN BAGIAN DARI JALINAN MASYARAKAT
           </p>
         </section>
-        <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
+        <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
             src={'/images/chapter/2/memaknai/logo2.png'}
             alt="Logo 2"
@@ -231,7 +231,7 @@ const SecondChapterThird: React.FC = () => {
             lewat Puzzlediri dan CeritaKubi.
           </p>
         </section>
-        <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center justify-center text-white-ivory p-8 font-zmg text-justify relative">
+        <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center justify-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
             src={'/images/chapter/2/memaknai/logo1.png'}
             alt="Logo 1"
@@ -254,7 +254,7 @@ const SecondChapterThird: React.FC = () => {
             politik Indonesia ke kelompok diaspora Indonesia.
           </p>
         </section>
-        <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
+        <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <p className="mt-16">
             KAK IRA berkontribusi pada Sejutacita.id dan sekarang sedang membuat
             sebuah kanal beasiswa. Harapannya, membangun titian jalan yang lebih
@@ -273,7 +273,7 @@ const SecondChapterThird: React.FC = () => {
             height={200}
           />
         </section>
-        <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
+        <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
             src={'/images/chapter/2/16.png'}
             alt="16"
@@ -282,7 +282,7 @@ const SecondChapterThird: React.FC = () => {
             height={220}
           />
         </section>
-        <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
+        <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
             src={'/images/chapter/2/memaknai/garis3.png'}
             alt="garis 3"
@@ -315,7 +315,7 @@ const SecondChapterThird: React.FC = () => {
             dalam dunia pembangunan narasi dan kekayaan cerita di Indonesia.
           </p>
         </section>
-        <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
+        <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
             src={'/images/chapter/2/17.png'}
             alt="17"
@@ -331,7 +331,7 @@ const SecondChapterThird: React.FC = () => {
             agar tidak ugal-ugalan”
           </p>
         </section>
-        <section className="min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
+        <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
             src={'/images/chapter/2/memaknai/garis4.png'}
             alt="garis 4"
@@ -358,7 +358,7 @@ const SecondChapterThird: React.FC = () => {
         </section>
 
         {/* End section */}
-        <section className="min-w-[25vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col items-center text-black p-8 font-zmg text-justify relative">
+        <section className="text-sm min-w-[25vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col items-center text-black p-8 font-zmg text-justify relative">
           <p className="mt-auto mb-8">
             Wanita di pameran ini sadar bahwa pencapaian dan dirinya tidak
             dibentuk oleh kerja keras dirinya seorang. Dari kesadaran ini,
@@ -371,7 +371,7 @@ const SecondChapterThird: React.FC = () => {
           </p>
         </section>
 
-        <section className="min-w-[50vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative overflow-hidden mix-blend-hard-light">
+        <section className="text-sm min-w-[50vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative overflow-hidden mix-blend-hard-light">
           <p className="mt-16 text-center font-junicode text-4xl">
             KEPEKAAN TERHADAP DUNIA
           </p>

@@ -42,7 +42,7 @@ const SecondPageSecond: React.FC = () => {
         }}
       >
         {/* Side Header */}
-        <section className="min-w-[50vw] h-full bg-red whitespace-break-spaces flex justify-center items-center bg-flower">
+        <section className="text-sm min-w-[50vw] h-full bg-red whitespace-break-spaces flex justify-center items-center bg-flower">
           <div className="w-1/2">
             <p className="-rotate-90 font-ed-mentasta text-[10rem] translate-y-16 -translate-x-8">
               Memulai
@@ -57,7 +57,7 @@ const SecondPageSecond: React.FC = () => {
         </section>
 
         {/* Section 1 */}
-        <section className="min-w-[50vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col items-end text-red p-8">
+        <section className="text-sm min-w-[50vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col items-end text-red p-8">
           <p className="mt-16 font-junicode text-5xl">TUMBUH</p>
           <p className="font-junicode text-5xl">DALAM PERAN</p>
           <p className="font-ed-mentasta text-7xl">Tradisional</p>
@@ -81,7 +81,7 @@ const SecondPageSecond: React.FC = () => {
           />
         </section>
 
-        <section className="min-w-[100vw] h-full bg-white-ivory whitespace-break-spaces flex text-red font-zmg">
+        <section className="text-sm min-w-[100vw] h-full bg-white-ivory whitespace-break-spaces flex text-red font-zmg">
           <div className="w-1/4 h-3/4 p-8 flex flex-col justify-end">
             <p className="text-justify">
               Seringkali, ekspektasi ini mengangkat kepentingan wanita untuk
@@ -141,7 +141,7 @@ const SecondPageSecond: React.FC = () => {
         </section>
 
         {/* Section 2 */}
-        <section className="min-w-[33vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg">
+        <section className="text-sm min-w-[33vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg">
           <p className="mt-16 font-junicode text-5xl">
             TUMBUH DALAM KONTEKS PERAN{' '}
             <span className="font-ed-mentasta text-7xl">Gender</span> MINIM
@@ -162,7 +162,7 @@ const SecondPageSecond: React.FC = () => {
           </p>
         </section>
 
-        <section className="min-w-[33vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col items-end text-red">
+        <section className="text-sm min-w-[33vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col items-end text-red">
           <Image
             src={'/images/chapter/2/3.png'}
             alt="3"
@@ -177,7 +177,7 @@ const SecondPageSecond: React.FC = () => {
         </section>
 
         {/* Section 3 */}
-        <section className="min-w-[58vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg p-8 relative overflow-hidden">
+        <section className="text-sm min-w-[58vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg p-8 relative overflow-hidden">
           <div className="w-1/3 text-right pl-8">
             <p className="mt-16 font-junicode text-5xl w-full">SANG</p>
             <p className="font-junicode text-5xl w-full">“TOMBOY”</p>
@@ -205,7 +205,7 @@ const SecondPageSecond: React.FC = () => {
         </section>
 
         {/* Section 4 */}
-        <section className="min-w-[75vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red">
+        <section className="text-sm min-w-[75vw] h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red">
           <div className="pt-12 h-1/2 w-full flex gap-2">
             <div className="self-end">
               <p className="font-junicode text-5xl">PENDIDIKAN</p>
@@ -238,7 +238,7 @@ const SecondPageSecond: React.FC = () => {
         </section>
 
         {/* Section 5 */}
-        <section className="min-w-[33vw] p-8 h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg">
+        <section className="text-sm min-w-[33vw] p-8 h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg">
           <p className="text-justify mt-8">
             MBAK EVI menyatakan bahwa saat masa sekolah dulu, memang ia hidup di
             zaman dimana persoalan masuk ‘sekolah favorit’ dapat menjadi tolak
@@ -260,7 +260,7 @@ const SecondPageSecond: React.FC = () => {
             pemenuhan diri sedari kecil.
           </p>
         </section>
-        <section className="min-w-[33vw] p-8 h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg relative overflow-hidden">
+        <section className="text-sm min-w-[33vw] p-8 h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg relative overflow-hidden">
           <p className="mt-8 text-end font-junicode text-5xl">
             MELEPAS RANTAI KEHIDUPAN:
           </p>
@@ -281,7 +281,7 @@ const SecondPageSecond: React.FC = () => {
             height={500}
           />
         </section>
-        <section className="min-w-[33vw] p-8 h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg relative">
+        <section className="text-sm min-w-[33vw] p-8 h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg relative">
           <p className="text-justify mt-8">
             KAK WANDA harus meninggalkan Jember untuk belajar di Universitas
             Airlangga, Surabaya. Komunitasnya yang ragu sempat menawarinya
@@ -306,7 +306,7 @@ const SecondPageSecond: React.FC = () => {
             height={120}
           />
         </section>
-        <section className="min-w-[33vw] p-8 h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg relative">
+        <section className="text-sm min-w-[33vw] p-8 h-full bg-white-ivory whitespace-break-spaces flex flex-col text-red font-zmg relative">
           <p className="text-justify mt-8">
             MBAK EVI menjadi salah satu dari sedikit mahasiswa Tionghoa di
             kampus negeri, UGM, saat dekade 90an. Besar di sekolah swasta

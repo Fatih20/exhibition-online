@@ -42,7 +42,7 @@ const SecondPageThird: React.FC = () => {
         }}
       >
         {/* Side Header */}
-        <section className="min-w-[50vw] h-full whitespace-break-spaces flex justify-center items-center bg-flower">
+        <section className="text-sm min-w-[50vw] h-full whitespace-break-spaces flex justify-center items-center bg-flower">
           <div className="w-1/2">
             <p className="-rotate-90 font-ed-mentasta text-[10rem] translate-y-16 -translate-x-8">
               Menjadi
@@ -58,7 +58,7 @@ const SecondPageThird: React.FC = () => {
         </section>
 
         {/* Section 1 */}
-        <section className="min-w-[50vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg">
+        <section className="text-sm min-w-[50vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg">
           <p className="mt-32 font-junicode text-5xl">BIAR</p>
           <p className="font-junicode text-5xl">DIA</p>
           <p className="font-ed-mentasta text-7xl">Berkelana</p>
@@ -75,7 +75,7 @@ const SecondPageThird: React.FC = () => {
           </p>
         </section>
 
-        <section className="min-w-[50vw] h-full bg-red whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg">
+        <section className="text-sm min-w-[50vw] h-full bg-red whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg">
           <iframe
             width="500"
             height="260"
@@ -106,7 +106,7 @@ const SecondPageThird: React.FC = () => {
         </section>
 
         {/* Section 2 */}
-        <section className="min-w-[50vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg">
+        <section className="text-sm min-w-[50vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg">
           <div className="mt-16 flex">
             <div>
               <p className="font-junicode text-5xl">HADAPI</p>
@@ -134,7 +134,7 @@ const SecondPageThird: React.FC = () => {
             allowFullScreen
           ></iframe>
         </section>
-        <section className="min-w-[66vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg overflow-hidden">
+        <section className="text-sm min-w-[66vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg overflow-hidden">
           <div className="mt-16 flex gap-8">
             <p className="text-justify w-1/2">
               Dalam dunia yang menuntut konformasi dan sedikit toleransi atas
@@ -172,7 +172,7 @@ const SecondPageThird: React.FC = () => {
         </section>
 
         {/* Section 3 */}
-        <section className="min-w-[33vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg">
+        <section className="text-sm min-w-[33vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg">
           <p className="mt-auto mb-8 font-junicode text-5xl">
             CAKRAWALA BARU DAN{' '}
             <span className="font-ed-mentasta text-7xl">Pikiran</span> TERBUKA
@@ -187,7 +187,7 @@ const SecondPageThird: React.FC = () => {
             harus mereka bayar untuk melakukan perubahan.
           </p>
         </section>
-        <section className="min-w-[33vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg">
+        <section className="text-sm min-w-[33vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg">
           <Image
             src={'/images/chapter/2/10.png'}
             alt="10"
@@ -204,7 +204,7 @@ const SecondPageThird: React.FC = () => {
             kolektif yang tajam.
           </p>
         </section>
-        <section className="min-w-[33vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg">
+        <section className="text-sm min-w-[33vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 font-zmg">
           <p className="mt-auto mb-8 text-justify">
             Lulus dari kampus di Los Angeles, Amerika Serikat, KAK ABIGAIL
             kemudian bertanya-tanya tentang tokoh perempuan inspiratif di
@@ -222,7 +222,7 @@ const SecondPageThird: React.FC = () => {
         </section>
 
         {/* Section 3 */}
-        <section className="min-w-[50vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 pb-0 font-zmg overflow-hidden">
+        <section className="text-sm min-w-[50vw] h-full bg-red whitespace-break-spaces flex flex-col text-white-ivory p-8 pb-0 font-zmg overflow-hidden">
           <p className="mt-16 font-junicode text-5xl">
             <span className="italic">PRIDE AND PREJUDICE:</span> AGENSI
             PEREMPUAN PEKERJA
@@ -245,7 +245,7 @@ const SecondPageThird: React.FC = () => {
             height={290}
           />
         </section>
-        <section className="min-w-[50vw] h-full bg-red whitespace-break-spaces relative flex flex-col text-white-ivory p-8 pb-0 font-zmg overflow-hidden">
+        <section className="text-sm min-w-[50vw] h-full bg-red whitespace-break-spaces relative flex flex-col text-white-ivory p-8 pb-0 font-zmg overflow-hidden">
           <p className="mt-16 text-justify">
             KAK KARINA menyatakan bahwa ada banyak keraguan dan stereotip yang
             melekat tentang kapabilitas perempuan di bidangnya, yaitu ilmu

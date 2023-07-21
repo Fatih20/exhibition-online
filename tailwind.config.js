@@ -11,6 +11,16 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "bunga-karina": "url('/images/focus-on/bunga/Karina.png')",
+        "bunga-abigail": "url('/images/focus-on/bunga/Abigail.png')",
+        "bunga-ayu": "url('/images/focus-on/bunga/Ayu.png')",
+        "bunga-evi": "url('/images/focus-on/bunga/Evi.png')",
+        "bunga-irawati": "url('/images/focus-on/bunga/Irawati.png')",
+        "bunga-nurul": "url('/images/focus-on/bunga/Nurul.png')",
+        "bunga-pritta": "url('/images/focus-on/bunga/Pritta.png')",
+        "bunga-sri": "url('/images/focus-on/bunga/Sri.png')",
+        "bunga-wanda": "url('/images/focus-on/bunga/Wanda.png')",
+        "bunga-wiwien": "url('/images/focus-on/bunga/Wiwien.png')",
       },
       colors: {
         black: "#000000",

@@ -127,12 +127,7 @@ export default function FourthChapter() {
               <p className="text-end font-junicode text-5xl">KARINA</p>
               <p className="font-ed-mentasta text-6xl">Soemarwoto</p>
 
-              <Link
-                href={
-                  "https://drive.google.com/file/d/1A5tMNd3SK1s06KWn4wFyLK8WnzUNSRNg/view?usp=drive_link"
-                }
-                className="flex mt-4"
-              >
+              <Link href={"/focus-on/karina"} className="flex mt-4">
                 <button className="ml-auto bg-white-ivory text-red border-2 border-red hover:bg-red hover:text-white-ivory transition-colors py-1 px-2 font-junicode z-10">
                   <p>BACA</p>
                   <p>SELENGKAPNYA</p>
@@ -191,12 +186,7 @@ export default function FourthChapter() {
                   depannya.
                 </p>
 
-                <Link
-                  href={
-                    "https://drive.google.com/file/d/1OBgsZfMqn7rBWtGhXticrPO2a8VVNgNz/view?usp=drive_link"
-                  }
-                  className="flex mt-auto"
-                >
+                <Link href={"/focus-on/wiwien"} className="flex mt-auto">
                   <button className="ml-auto bg-white-ivory text-red border-2 border-red hover:bg-red hover:text-white-ivory transition-colors py-1 px-2 font-junicode z-10">
                     <p>BACA</p>
                     <p>SELENGKAPNYA</p>
@@ -353,12 +343,7 @@ export default function FourthChapter() {
               ke orang lain.”
             </p>
 
-            <Link
-              href={
-                "https://drive.google.com/file/d/1GP_7vdCIGhYg81Okh6Lnj0lH0cyUbSSx/view?usp=drive_link"
-              }
-              className="flex mt-auto"
-            >
+            <Link href={"/focus-on/sri"} className="flex mt-auto">
               <button className="bg-white-ivory mb-2 text-red border-2 border-red hover:bg-red hover:text-white-ivory transition-colors py-1 px-2 font-junicode z-10">
                 <p>BACA</p>
                 <p>SELENGKAPNYA</p>
@@ -398,7 +383,7 @@ export default function FourthChapter() {
           />
           <BacaButton
             className="flex row-start-6 col-end-5 col-span-1 text-xs"
-            href="https://drive.google.com/file/d/1EKcVuXgLt8lj_gnk_R6lFikScnFOcHPu/view?usp=drive_link"
+            href="/focus-on/wanda"
           />
           <h2 className="-translate-x-5 row-start-5 col-start-4 col-span-2 text-6xl font-junicode h-fit w-fit flex flex-col items-start justify-start">
             <span className="uppercase">Wanda</span>{" "}
@@ -460,10 +445,7 @@ export default function FourthChapter() {
             />
           </div> */}
           <div className="row-start-5 row-span-3 col-start-3 col-span-7 flex items-center justify-start gap-6">
-            <BacaButton
-              className="self-start"
-              href="https://drive.google.com/file/d/16P4LKpbok43rbjizyvm9BwAxA1zuGo9R/view?usp=drive_link"
-            />
+            <BacaButton className="self-start" href="/focus-on/abigail" />
             <Image
               width={227 * 2}
               height={228 * 2}
@@ -542,7 +524,7 @@ export default function FourthChapter() {
           </p>
           <div className="grid grid-cols-6 grid-rows-4 row-start-2 col-start-6 col-span-6 row-span-4 gap-x-4 gap-y-2">
             <BacaButton
-              href="https://drive.google.com/file/d/14E4XG1FDKENbHamz7XWZV9iRA51K2eKY/view?usp=drive_link"
+              href="/focus-on/ayu"
               className="row-start-3 col-start-1 col-span-1"
             />
             <div className="flex row-start-1 col-start-1 row-span-2 col-span-2 text-left">
@@ -648,7 +630,7 @@ export default function FourthChapter() {
           </div>
           <BacaButton
             className="w-fit col-start-3 row-start-5"
-            href="https://drive.google.com/file/d/1dj4cfLzYDo3HO9rIVMYJHE6OQWrjwxmm/view?usp=drive_link"
+            href="/focus-on/evi"
           />
           <h2 className=" row-start-5 col-start-2 col-span-2 text-6xl font-junicode h-fit w-fit flex flex-col translate-y-10 items-start justify-start">
             <span className="uppercase">EVI</span>{" "}
@@ -734,7 +716,7 @@ export default function FourthChapter() {
           </h2>
           <BacaButton
             className="row-start-7 col-end-12 w-fit"
-            href="https://drive.google.com/file/d/1w6szv9qn2zKWGPe_a20xXCzeCMn45mLn/view?usp=drive_link"
+            href="/focus-on/pritta"
           />
         </section>
         <section className="bg-white-ivory grid-system-container gap-x-2 gap-y-2 text-red">
@@ -771,7 +753,7 @@ export default function FourthChapter() {
           />
           <BacaButton
             className="row-start-3 col-start-7 w-fit mt-2"
-            href="https://drive.google.com/file/d/1zel6UqJQr1InOqynjewmFhFiTOzVe4J1/view?usp=drive_link"
+            href="/focus-on/irawati"
           />
           <p className="row-start-4 col-start-7 col-span-4">
             Kebanggaan{" "}
@@ -825,7 +807,7 @@ export default function FourthChapter() {
           </div>
           <BacaButton
             className="row-start-7 col-start-2 w-fit mt-2"
-            href="https://drive.google.com/file/d/1GCSAo52St5mAKSkPAVq3NAic0y1Vi_5J/view?usp=drive_link"
+            href="/focus-on/nurul"
           />
           <p className="row-start-2 col-start-2 col-span-6 text-justify">
             Dari pengalaman dan hidupnya sendiri,{" "}

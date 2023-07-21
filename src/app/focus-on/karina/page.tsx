@@ -1,5 +1,6 @@
 "use client";
 
+import BackToStart from "@/components/BackToStart";
 import RedBar from "@/components/RedBar";
 import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
 import Image from "next/image";
@@ -54,33 +55,33 @@ function Page() {
                 Soemarwoto
               </span>
             </h2>
-            <ul className="w-full self-stretch flex items-start justify-end gap-10 -translate-y-5 bg-red text-3xl font-junicode box-border px-5">
-              <li>Bruhhh</li>
-              <li>Bruhhh</li>
-              <li>Bruhhh</li>
-              <li>Bruhhh</li>
+            <ul className="w-full self-stretch flex items-start justify-end gap-10 -translate-y-5 text-3xl font-junicode box-border px-5">
+              <li>www.rootd.nl</li>
             </ul>
           </div>
-          <div className="col-start-1 row-start-7 row-end-[-1] col-span-full bg-slate-600 box-border pb-5 pl-5 flex items-end justify-start">
-            <button className="text-xl bg-none  text-white-ivory border-white-ivory border-2 font-junicode w-fit h-fit whitespace-break-spaces p-5 text-center align-middle hover:text-black hover:bg-white-ivory uppercase">
-              Kembali
-            </button>
+          <div className="col-start-1 row-start-7 row-end-[-1] col-span-full box-border pb-5 pl-5 flex items-end justify-start bg-bunga-karina bg-center bg-no-repeat bg-cover">
+            <Link href={"/chapter/4"}>
+              <button className="text-xl bg-none  text-white-ivory border-white-ivory border-2 font-junicode w-fit h-fit whitespace-break-spaces p-5 text-center align-middle hover:text-black hover:bg-white-ivory uppercase">
+                Kembali
+              </button>
+            </Link>
           </div>
-          <div className="col-span-5 col-start-8 row-span-full bg-zinc-600">
-            <Image className="object-scale-down object-right-bottom" />
+          <div className="col-span-6 row-start-1 col-start-7 row-span-full flex flex-col items-center justify-end">
+            <Image
+              className="object-scale-down object-right-bottom block self-stretch"
+              src={"/images/focus-on/speaker/Karina.png"}
+              width={2677}
+              height={2881}
+              alt="Karina Soemarwoto"
+            />
           </div>
         </section>
-        <div className="h-full w-[33vw] min-w-[20vw] box-border px-5 pb-5 bg-black flex flex-col justify-end">
-          <button
-            onClick={() => {
-              resetSavedScroll();
-              containerRef.current?.scrollTo({ left: 0 });
-            }}
-            className="text-3xl bg-none  text-white-ivory border-white-ivory border-2 font-junicode w-fit h-fit whitespace-break-spaces px-2 py-2 text-center align-middle hover:text-black hover:bg-white-ivory uppercase"
-          >
-            Kembali ke Awal
-          </button>
-        </div>
+        <BackToStart
+          onBack={() => {
+            resetSavedScroll();
+            containerRef.current?.scrollTo({ left: 0, behavior: "smooth" });
+          }}
+        />
       </main>
     </div>
   );

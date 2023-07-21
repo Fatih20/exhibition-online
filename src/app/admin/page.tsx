@@ -7,7 +7,7 @@ const secret = 'kopinikmat';
 
 const Admin: React.FC = () => {
   const [password, setPassword] = useState('');
-  const [isAdmin, setIsAdmin] = useState(true);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [nav, setNav] = useState('visitor');
 
   const [visitors, setVisitors] = useState([]);

@@ -10,7 +10,7 @@ import React, { useState } from "react";
 function Page() {
   const [percent, setPercent] = useState(0);
   const { elRef: containerRef, resetSavedScroll } = useHorizontalScroll({
-    pageName: "Focus On : Karina",
+    pageName: "Focus On : Nurul",
     callOnScroll: (scrollLeft) => {
       const windowWidth = containerRef.current?.scrollWidth ?? 1;
       const docWidth = Math.max(

@@ -2,7 +2,7 @@
 
 import "../chapter/5/5.css";
 import React, { FormEvent, useState } from "react";
-import RedBar from "../components/RedBar";
+import RedBar from "../../components/RedBar";
 import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
 import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
@@ -62,7 +62,7 @@ const Epilogue: React.FC = () => {
   const [name, setName] = useState("");
   const [feedback, setFeedback] = useState("");
 
-  const containerRef = useHorizontalScroll({
+  const { elRef: containerRef, resetSavedScroll } = useHorizontalScroll({
     pageName: "Epilogue",
     callOnScroll: (scrollLeft) => {
       const windowWidth = containerRef.current?.scrollWidth ?? 1;

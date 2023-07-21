@@ -1,7 +1,7 @@
 'use client';
 
 import './22.css';
-import RedBar from '@/app/components/RedBar';
+import RedBar from '@/components/RedBar';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';

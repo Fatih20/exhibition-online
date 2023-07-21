@@ -1,7 +1,7 @@
 "use client";
 
 import "./4.css";
-import RedBar from "@/app/components/RedBar";
+import RedBar from "@/components/RedBar";
 import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
 import Image from "next/image";
 import Link from "next/link";
@@ -127,12 +127,7 @@ export default function FourthChapter() {
               <p className="text-end font-junicode text-5xl">KARINA</p>
               <p className="font-ed-mentasta text-6xl">Soemarwoto</p>
 
-              <Link
-                href={
-                  "https://drive.google.com/file/d/1A5tMNd3SK1s06KWn4wFyLK8WnzUNSRNg/view?usp=drive_link"
-                }
-                className="flex mt-4"
-              >
+              <Link href={"/focus-on/karina"} className="flex mt-4">
                 <button className="ml-auto bg-white-ivory text-red border-2 border-red hover:bg-red hover:text-white-ivory transition-colors py-1 px-2 font-junicode z-10">
                   <p>BACA</p>
                   <p>SELENGKAPNYA</p>
@@ -191,12 +186,7 @@ export default function FourthChapter() {
                   depannya.
                 </p>
 
-                <Link
-                  href={
-                    "https://drive.google.com/file/d/1OBgsZfMqn7rBWtGhXticrPO2a8VVNgNz/view?usp=drive_link"
-                  }
-                  className="flex mt-auto"
-                >
+                <Link href={"/focus-on/wiwien"} className="flex mt-auto">
                   <button className="ml-auto bg-white-ivory text-red border-2 border-red hover:bg-red hover:text-white-ivory transition-colors py-1 px-2 font-junicode z-10">
                     <p>BACA</p>
                     <p>SELENGKAPNYA</p>
@@ -353,12 +343,7 @@ export default function FourthChapter() {
               ke orang lain.”
             </p>
 
-            <Link
-              href={
-                "https://drive.google.com/file/d/1GP_7vdCIGhYg81Okh6Lnj0lH0cyUbSSx/view?usp=drive_link"
-              }
-              className="flex mt-auto"
-            >
+            <Link href={"/focus-on/sri"} className="flex mt-auto">
               <button className="bg-white-ivory mb-2 text-red border-2 border-red hover:bg-red hover:text-white-ivory transition-colors py-1 px-2 font-junicode z-10">
                 <p>BACA</p>
                 <p>SELENGKAPNYA</p>
@@ -398,7 +383,7 @@ export default function FourthChapter() {
           />
           <BacaButton
             className="flex row-start-6 col-end-5 col-span-1 text-xs"
-            href="https://drive.google.com/file/d/1EKcVuXgLt8lj_gnk_R6lFikScnFOcHPu/view?usp=drive_link"
+            href="/focus-on/wanda"
           />
           <h2 className="-translate-x-5 row-start-5 col-start-4 col-span-2 text-6xl font-junicode h-fit w-fit flex flex-col items-start justify-start">
             <span className="uppercase">Wanda</span>{" "}
@@ -439,13 +424,28 @@ export default function FourthChapter() {
               </strong>
             </p>
           </div>
+          {/* <div className="row-start-1 col-end-[13] col-span-1">
+            <Image
+              alt="Line Decoration"
+              width={154}
+              height={399}
+              src={"/images/chapter/4/decorations/line-4.png"}
+              className="object-top-right object-scale-down"
+            />
+          </div> */}
         </section>
         <section className="bg-white-ivory grid-system-container gap-x-2 gap-y-2 text-red">
-          <div className="row-start-5 row-span-3 col-start-3 col-span-7 flex items-center justify-start gap-6">
-            <BacaButton
-              className="self-start"
-              href="https://drive.google.com/file/d/16P4LKpbok43rbjizyvm9BwAxA1zuGo9R/view?usp=drive_link"
+          {/* <div className="row-start-1 row-span-2 col-start-1 col-span-6">
+            <Image
+              alt="Line Decoration"
+              width={834 * 1.2}
+              height={329 * 1.2}
+              src={"/images/chapter/4/decorations/line-3.png"}
+              className="object-top-left object-scale-down"
             />
+          </div> */}
+          <div className="row-start-5 row-span-3 col-start-3 col-span-7 flex items-center justify-start gap-6">
+            <BacaButton className="self-start" href="/focus-on/abigail" />
             <Image
               width={227 * 2}
               height={228 * 2}
@@ -524,7 +524,7 @@ export default function FourthChapter() {
           </p>
           <div className="grid grid-cols-6 grid-rows-4 row-start-2 col-start-6 col-span-6 row-span-4 gap-x-4 gap-y-2">
             <BacaButton
-              href="https://drive.google.com/file/d/14E4XG1FDKENbHamz7XWZV9iRA51K2eKY/view?usp=drive_link"
+              href="/focus-on/ayu"
               className="row-start-3 col-start-1 col-span-1"
             />
             <div className="flex row-start-1 col-start-1 row-span-2 col-span-2 text-left">
@@ -582,10 +582,10 @@ export default function FourthChapter() {
             </p>
           </div>
         </section>
-        <section className="bg-white-ivory gap-x-4 gap-y-2 grid-system-container text-red">
+        <section className="pb-0 bg-white-ivory gap-x-4 gap-y-2 grid-system-container text-red">
           <div className="col-start-2 col-span-3 row-start-2 row-span-3">
             <Image
-              className="object-scale-down object-left-top h-full"
+              className="relative z-10 object-scale-down object-left-top h-full"
               src={"/images/chapter/4/16.png"}
               alt="Foto"
               width={227 * 2}
@@ -594,7 +594,7 @@ export default function FourthChapter() {
           </div>
           <div className="col-start-8 col-span-5 row-start-2 row-span-3">
             <Image
-              className="object-scale-down object-left-top h-full"
+              className="relative z-10 object-scale-down object-left-top h-full"
               src={"/images/chapter/4/18.png"}
               alt="Foto"
               width={227 * 4}
@@ -603,7 +603,7 @@ export default function FourthChapter() {
           </div>
           <div className="col-start-5 col-span-3 row-start-5 row-span-3">
             <Image
-              className="object-scale-down object-right-bottom h-full"
+              className="relative z-10 object-scale-down object-right-bottom h-full"
               src={"/images/chapter/4/17.png"}
               alt="Foto"
               width={355 * 4}
@@ -630,7 +630,7 @@ export default function FourthChapter() {
           </div>
           <BacaButton
             className="w-fit col-start-3 row-start-5"
-            href="https://drive.google.com/file/d/1dj4cfLzYDo3HO9rIVMYJHE6OQWrjwxmm/view?usp=drive_link"
+            href="/focus-on/evi"
           />
           <h2 className=" row-start-5 col-start-2 col-span-2 text-6xl font-junicode h-fit w-fit flex flex-col translate-y-10 items-start justify-start">
             <span className="uppercase">EVI</span>{" "}
@@ -654,6 +654,15 @@ export default function FourthChapter() {
             dan memperkaya diri sendiri, wah bukannya gak pengen kaya, tapi aku
             pengen kaya bareng sebanyak-banyaknya orang lain.
           </p>
+          <div className="row-start-[8] col-end-[13] col-span-6 -translate-y-full">
+            <Image
+              alt="Line Decoration"
+              width={1098 * 2}
+              height={277 * 2}
+              src={"/images/chapter/4/decorations/line-5.png"}
+              className="object-right-bottom object-scale-down"
+            />
+          </div>
         </section>
         <section className="bg-white-ivory grid-system-container gap-x-2 gap-y-2 text-red">
           <div className="row-start-2 col-start-2 row-span-3 col-span-2">
@@ -707,7 +716,7 @@ export default function FourthChapter() {
           </h2>
           <BacaButton
             className="row-start-7 col-end-12 w-fit"
-            href="https://drive.google.com/file/d/1w6szv9qn2zKWGPe_a20xXCzeCMn45mLn/view?usp=drive_link"
+            href="/focus-on/pritta"
           />
         </section>
         <section className="bg-white-ivory grid-system-container gap-x-2 gap-y-2 text-red">
@@ -744,7 +753,7 @@ export default function FourthChapter() {
           />
           <BacaButton
             className="row-start-3 col-start-7 w-fit mt-2"
-            href="https://drive.google.com/file/d/1zel6UqJQr1InOqynjewmFhFiTOzVe4J1/view?usp=drive_link"
+            href="/focus-on/irawati"
           />
           <p className="row-start-4 col-start-7 col-span-4">
             Kebanggaan{" "}
@@ -798,7 +807,7 @@ export default function FourthChapter() {
           </div>
           <BacaButton
             className="row-start-7 col-start-2 w-fit mt-2"
-            href="https://drive.google.com/file/d/1GCSAo52St5mAKSkPAVq3NAic0y1Vi_5J/view?usp=drive_link"
+            href="/focus-on/nurul"
           />
           <p className="row-start-2 col-start-2 col-span-6 text-justify">
             Dari pengalaman dan hidupnya sendiri,{" "}
@@ -841,6 +850,16 @@ export default function FourthChapter() {
               kepada saya mengenai <strong>pendidikan</strong> anak mereka.”
             </p>
           </div>
+          <div className="row-start-1 col-end-[13] col-span-4 translate-y-1/2">
+            <Image
+              alt="Line Decoration"
+              width={926 * 2}
+              height={241 * 2}
+              src={"/images/chapter/4/decorations/line-9.png"}
+              className="object-right-bottom object-scale-down"
+            />
+          </div>
+
           <Link
             href={"/chapter/5"}
             className="row-start-[8] col-span-1 col-start-11"

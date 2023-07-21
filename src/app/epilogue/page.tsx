@@ -62,7 +62,7 @@ const Epilogue: React.FC = () => {
   const [name, setName] = useState("");
   const [feedback, setFeedback] = useState("");
 
-  const containerRef = useHorizontalScroll({
+  const { elRef: containerRef, resetSavedScroll } = useHorizontalScroll({
     pageName: "Epilogue",
     callOnScroll: (scrollLeft) => {
       const windowWidth = containerRef.current?.scrollWidth ?? 1;

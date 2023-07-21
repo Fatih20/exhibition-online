@@ -44,10 +44,10 @@ const SecondChapter: React.FC = () => {
       >
         {/* Section 1 */}
         <section className="bg-black h-full min-w-[100vw] relative">
-          <div className="absolute top-28 left-24 whitespace-break-spaces font-ed-mentasta text-[12.5rem] z-20">
+          <div className="absolute top-28 left-24 whitespace-break-spaces font-ed-mentasta text-[12.5rem] z-20 text-white-ivory">
             Benang
           </div>
-          <div className="absolute bottom-28 right-24 whitespace-break-spaces font-ed-mentasta text-[12.5rem] z-20">
+          <div className="absolute bottom-28 right-24 whitespace-break-spaces font-ed-mentasta text-[12.5rem] z-20 text-white-ivory">
             Merah
           </div>
           <Image

@@ -39,7 +39,7 @@ const SecondChapterThird: React.FC = () => {
         className="flex overflow-x-auto overflow-y-hidden items-start flex-nowrap whitespace-nowrap h-full justify-start scrollbar-hide"
       >
         {/* Side header */}
-        <section className="text-sm min-w-[70vw] h-full whitespace-break-spaces flex justify-center items-center bg-flower">
+        <section className="text-sm min-w-[70vw] h-full whitespace-break-spaces flex justify-center items-center bg-flower text-white-ivory">
           <div className="w-1/3">
             <p className="-rotate-90 font-ed-mentasta text-[9rem] translate-y-36 -translate-x-8">
               Memaknai

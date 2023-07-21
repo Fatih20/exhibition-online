@@ -42,7 +42,7 @@ const SecondPageThird: React.FC = () => {
         }}
       >
         {/* Side Header */}
-        <section className="text-sm min-w-[50vw] h-full whitespace-break-spaces flex justify-center items-center bg-flower">
+        <section className="text-sm min-w-[50vw] h-full whitespace-break-spaces flex justify-center items-center bg-flower text-white-ivory">
           <div className="w-1/2">
             <p className="-rotate-90 font-ed-mentasta text-[10rem] translate-y-16 -translate-x-8">
               Menjadi

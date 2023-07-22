@@ -210,7 +210,7 @@ function FirstChaper() {
             HERITAGE DAN PARIWISATA <br />
             BERBASIS KOMUNITAS
           </h3>
-          <p className="row-start-5 col-start-7 col-span-6 text-red whitespace-break-spaces text-justify">
+          <p className="row-start-5 col-start-10 col-span-3 text-red whitespace-break-spaces text-justify">
             Masa kecil Bu Wiwien dijalani di Sukabumi, lalu pindah ke Condet,
             Jakarta Timur untuk menjalani sekolah dasarnya. Ketika ditanyakan
             mengenai hidupnya di Jakarta, ia bercerita dengan tertawa getir

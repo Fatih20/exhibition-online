@@ -77,6 +77,195 @@ function Page() {
             />
           </div>
         </section>
+        <section className="bg-black space-x-4 grid-system-container p-5">
+          <div className="row-start-2 col-start-1 col-span-3 flex flex-col items-start justify-start gap-5 text-justify">
+            <p className="text-sm">
+              Kak Pritta lahir dan besar di Bandung, asli orang Sunda. Ia hidup
+              dan tinggal sejak kecil hingga masa perkuliahan di rumahnya,
+              daerah Kopo, Bandung. Besar di keluarga yang cukup, tapi tak
+              berlebih membuat Kak Pritta dan keluarga paham tentang nilai
+              pendidikan.
+              <br />
+              <br />
+              Terkait pemaknaan identitas perempuan, Kak Pritta merasa saat
+              bertumbuh di rumah tidak pernah ada perbedaan perlakuan antara
+              dirinya dan saudara-saudaranya yang laki-laki. Saat kecil pula, ia
+              menikmati hobi-hobi yang membuatnya dekat dengan banyak teman
+              laki-laki, seperti trekking dan hiking. Hal ini kembali ia temui
+              saat bekerja dan harus turun di site. Ia mengakui memang komposisi
+              perempuan di sana lebih sedikit daripada laki-laki. Pun para
+              laki-laki di sana lebih protektif terhadap pekerja perempuan.
+              Namun, dalam lingkungan sosial, mereka membaur.
+            </p>
+            <Image
+              src={"/images/focus-on/28.png"}
+              alt="Pritta Running"
+              width={200}
+              height={140}
+            />{" "}
+          </div>
+          <div className="row-start-2 col-start-5 col-span-3 flex flex-col items-start justify-start gap-5 text-justify">
+            <p className="text-sm">
+              <span className="font-junicode text-base">
+                “Ada sih digodain tipis, cuma aku sih cuek aja ya. Malah di site
+                dulu lebih gampang bergaul dan membaur. Kalau di kota kan mereka
+                lebih banyak berkegiatan sama keluarga. Dulu kalau di site,
+                weekend kadang ke Danau Toba bareng. Aku juga merasa saat di
+                site aku lebih ga grogi ketemu laki-laki. Dibawa santai. Banyak
+                temenan sama om-om dan bapak-bapak.”
+              </span>
+              <br />
+              <br />
+              Membicarakan tentang karir, Kak Pritta menyatakan bahwa ia tidak
+              punya visi khusus yang besar, banyak dari keputusan karirnya
+              didasari oleh pernyataan “Why not?”. Tapi, keberaniannya untuk
+              mengambil langkah-langkah berani ini membukakan banyak alur hidup
+              yang dinamis.
+              <br />
+              <br />
+              <span className="font-junicode text-base">
+                “Setelah kuliah aku belum dapat kerja, terus ada yang menawarkan
+                beasiswa S2 ke Thailand. Belum ada yang mau mengambil beasiswa
+                tersebut. Tapi, aku pikir why not? Lagipula, fokus studinya
+                masih linear. Sehabis S2, sempat gak mau pulang. Tapi, akhirnya
+                diminta pulang saat ada tawaran jadi environmental resource
+                management.”
+              </span>
+            </p>
+          </div>
+          <div className="row-start-2 col-start-9 col-span-3 flex flex-col items-center justify-start gap-5 text-justify">
+            <p className="text-sm">
+              Sempat beberapa tahun bekerja di site dan operasi, Kak Pritta
+              mengaku kalau dia tidak suka dengan rutinitas. Ia lebih suka
+              pekerjaan yang dinamis dan membuka cakrawala baru. Ia sekarang
+              banyak menangani proyek-proyek energi terbarukan, baik angin dan
+              solar. Ia juga masih mengerjakan proyek-proyek infrastruktur.
+              <br />
+              <strong>Kontribusi</strong>
+              <br />
+              Untuk saat ini Kak Pritta masih menikmati episode hidupnya di
+              Thailand. Pun jika ditawari pekerjaan lain di luar Indonesia, di
+              tempat-tempat yang lebih unik, ia akan terima tawaran tersebut.
+              <br />
+              <br />
+              <span className="font-junicode text-base">
+                “Kontribusi kan bukan berarti harus bekerja dan tinggal di
+                Indonesia. Kita juga bisa mulai mengenalkan Indonesia di luar
+                negeri.”
+              </span>
+              <br />
+              <br />
+              <strong>Perempuan dan Hubungan</strong>
+              <br />
+              Pertanyaan tentang mendapatkan pasangan dan membangun keluarga
+              telah dilontarkan oleh orang-orang terdekat Kak Pritta. Ia paham
+              alasan dibalik pertanyaan-pertanyaan tersebut. Tapi, ia selalu
+              menjawabnya dengan sentimen yang tidak serius. Membangun rumah
+              tangga merupakan sebuah keinginan, namun memang belum saatnya.
+            </p>
+          </div>
+        </section>
+        <section className="bg-black space-x-4 grid-system-container p-5">
+          <div className="row-start-2 col-start-1 col-span-3 flex flex-col items-start justify-start gap-5 text-justify">
+            <p className="font-junicode">
+              “Usaha ya usaha tapi kita nggak jangan sampai asal milih, baju aja
+              milih apa lagi pasangan. Untuk sekarang, aku nikmatin hidup aja.”
+            </p>
+            <p className="text-sm">
+              Ia menekankan bahwa membangun rumah tangga dengan seorang
+              laki-laki merupakan pilihan untuknya, bukan keharusan. Kebahagiaan
+              berasal dari diri sendiri. Memang kebahagiaan tersebut akan lebih
+              jika ada seseorang yang dapat menjadi tempat berbagi.
+            </p>
+            <p className="font-junicode">
+              “Ekspektasi ya ga muluk-muluk, pengen sharing hidup. Aku ingin
+              hidup dengan setara, tapi masih punya ekspektasi untuk pasangan
+              agar dapat menjadi imam.”
+            </p>
+            <p className="text-sm">
+              Mengenai hubungan perempuan dan anak, Kak Pritta memang suka dan
+              ingin punyak anak. Walaupun sudah berada di paruh akhir dekade
+              30an, Kak Pritta masih optimis dengan prospek membesarkan anak.
+            </p>
+            <p className="font-junicode">
+              “Ibuku dulu punya aku saat umur 40. Bukan tidak mungkin dengan
+              teknologi sekarang wanita bisa punya anak di usia-usia yang tidak
+              kita bayangkan sebelumnya.”
+            </p>
+          </div>
+          <div className="row-start-2 col-start-5 col-span-3 flex flex-col items-start justify-start gap-5 text-justify">
+            <p className="text-sm">
+              <strong>Kepekaan Lingkungan dan Maraton Pembangunan</strong>
+              Kak Pritta menganggap dirinya bukanlah seseorang yang hobi khotbah
+              soal keadilan lingkungan. Ia berpendapat bahwa kepekaan terhadap
+              isu lingkungan harusnya merupakan suatu yang praktis. Secara
+              logika dasar, tidak ada manusia yang mau lingkungannya rusak.
+            </p>
+            <p className="font-junicode">
+              “(Soal perubahan iklim), kita mau ga mau harus adaptasi. Kalau
+              cuaca tidak bisa diprediksi, ya sekarang persoalannya bagaimana
+              cara biar tidak lebih parah. Aku percaya bahwa manusia pandai
+              beradaptasi.”
+            </p>
+            <p className="text-sm">
+              Ide praktikalitas ini kemudian ia jelaskan pula dalam
+              bingkai-bingkai lain, seperti dalam isu pembangunan ekonomi dan
+              lingkungan berkelanjutan yang sering kali bergesekan
+              kepentingannya. Idealnya, kedua dapat berjalan beriringan seperti
+              dalam kerangka ekonomi hijau.
+            </p>
+            <Image
+              src={"/images/focus-on/29.png"}
+              alt="Pritta in front of wind farms"
+              width={330}
+              height={135}
+            />{" "}
+          </div>
+          <div className="row-start-2 col-start-9 col-span-3 flex flex-col items-center justify-start gap-5 text-justify">
+            <p className="font-junicode">
+              “Aku sendiri sering mikir soal green economy, apakah benar ini
+              niatnya tulus untuk lingkungan? Tapi, sepertinya tidak penting
+              untuk mempertanyakan motivasi orang lain. Kalau memang hasil yang
+              diinginkan adalah menjadi lebih baik, why not?”
+            </p>
+            <p className="text-sm">
+              <strong>
+                Lingkungan dan Keberlanjutan: Dilemma-Dilemma Pritta
+              </strong>
+              <br />
+              Melihat kembali rencana-rencana energi terbarukan di Indonesia,
+              Kak Pritta mengakui ada banyak paradoks yang mengiringi kerangka
+              tersebut. Ia menemukan bahwa hambatan terbesar ketersediaan energi
+              di Indonesia, terutama di wilayah pinggir, bukanlah sumber daya
+              alam. Namun, kurangnya infrastruktur berkelanjutan yang memadai.
+            </p>
+            <p className="font-junicode">
+              “Sumber daya alam memang ada, tapi kita masih terbentur dengan
+              masalah bagaimana mengalirkan energi ini ke masyarakat secara
+              langsung, tidak perlu ke PLN pusat, begitu.”
+            </p>
+          </div>
+        </section>
+        <section className="bg-black space-x-4 grid-system-container p-5">
+          <div className="row-start-2 col-start-1 col-span-3 flex flex-col items-start justify-start gap-5 text-justify">
+            <p className="text-sm">
+              Kak Pritta juga mempertanyakan paradoks yang ia temui dalam
+              pengembangan kendaraan listrik di Indonesia. Memang dalam
+              praktiknya dapat dikategorikan sebagai penggunaan energi yang
+              berkelanjutan, namun apakah dalam prosesnya demikian pula
+              merupakan persoalan yang lain.
+            </p>
+            <p className="font-junicode">
+              “Jadi paradoks ya Electrical Vehicle (EV) itu. Kalau sumber
+              listriknya masih dari batu bara dan baterainya ditambang dari
+              Halmahera yang lingkungannya dirusak, terus bagaimana?”{" "}
+            </p>
+            <p className="text-sm">
+              Kak Pritta berpendapat hambatan ini bisa diselesaikan dengan
+              impact assessment and trade-off yang akurat.
+            </p>
+          </div>
+        </section>
         <BackToStart
           onBack={() => {
             resetSavedScroll();

@@ -435,15 +435,6 @@ export default function FourthChapter() {
           </div> */}
         </section>
         <section className="bg-white-ivory grid-system-container gap-x-2 gap-y-2 text-red">
-          {/* <div className="row-start-1 row-span-2 col-start-1 col-span-6">
-            <Image
-              alt="Line Decoration"
-              width={834 * 1.2}
-              height={329 * 1.2}
-              src={"/images/chapter/4/decorations/line-3.png"}
-              className="object-top-left object-scale-down"
-            />
-          </div> */}
           <div className="row-start-5 row-span-3 col-start-3 col-span-7 flex items-center justify-start gap-6">
             <BacaButton className="self-start" href="/focus-on/abigail" />
             <Image
@@ -461,7 +452,13 @@ export default function FourthChapter() {
               alt="Foto"
             />
           </div>
-
+          <Image
+            width={3948 / 8}
+            height={1728 / 8}
+            className="row-start-1 col-span-5 col-start-1 -translate-x-1/3"
+            src={"/images/chapter/4/decorations/line-3.png"}
+            alt="Decorations"
+          />
           <h2 className="-translate-x-5 row-start-4 col-start-3 col-span-2 text-6xl font-junicode h-fit w-fit flex flex-col items-start justify-start">
             <span className="uppercase">Abigail</span>{" "}
             <span className="font-ed-mentasta -translate-x-20 -translate-y-5">
@@ -693,6 +690,13 @@ export default function FourthChapter() {
             height={227 * 2}
             className="row-start-5 col-start-2 row-span-1 col-span-4"
           />
+          <Image
+            width={3200 / 8}
+            height={1616 / 8}
+            className="row-start-1 col-span-5 col-start-10 translate-x-1/3"
+            src={"/images/chapter/4/decorations/line-6.png"}
+            alt="Decorations"
+          />
           <p className="row-start-2 col-start-6 col-span-4">
             <span className="font-junicode text-2xl">Kak Pritta</span> puas
             dengan hidup dan kariernya saat ini. Ia rajin olahraga dan tinggal
@@ -741,7 +745,7 @@ export default function FourthChapter() {
               alt="Foto"
               width={293 * 4}
               height={227 * 4}
-              className="object-scale-down h-full"
+              className="object-scale-down h-full relative"
             />
           </div>
           <Image
@@ -749,7 +753,14 @@ export default function FourthChapter() {
             alt="Foto"
             width={417 * 2}
             height={227 * 2}
-            className="row-start-5 col-start-2 row-span-1 col-span-4"
+            className="row-start-5 col-start-2 row-span-1 col-span-4 relative"
+          />
+          <Image
+            src={"/images/chapter/4/decorations/line-7.png"}
+            alt="Decorations"
+            width={7792 / 5}
+            height={1520 / 5}
+            className="row-start-7 col-end-[-1] col-span-8 -translate-y-5"
           />
           <BacaButton
             className="row-start-3 col-start-7 w-fit mt-2"

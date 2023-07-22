@@ -122,7 +122,7 @@ function Page() {
             </p>
             <Image
               src={"/images/focus-on/6.png"}
-              alt="Habis Makan Jangan Lupa Minum"
+              alt="Ultah PM Diskusi"
               width={171}
               height={120}
               className="self-start"
@@ -147,7 +147,7 @@ function Page() {
             </p>
             <Image
               src={"/images/focus-on/7.png"}
-              alt="Lalita Project"
+              alt="Ultah PM Pameran"
               width={214}
               height={75}
               className="self-start"
@@ -245,7 +245,7 @@ function Page() {
             </p>
             <Image
               src={"/images/focus-on/8.png"}
-              alt="WIUI with Andovi"
+              alt="Project Multatuli Team"
               width={329}
               height={128}
               className="self-start"
@@ -271,7 +271,7 @@ function Page() {
             </p>
             <Image
               src={"/images/focus-on/9.png"}
-              alt=""
+              alt="Ultah PM Diskusi"
               width={330}
               height={94}
               className="self-start"

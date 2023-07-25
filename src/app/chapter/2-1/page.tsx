@@ -14,7 +14,7 @@ const SecondChapter: React.FC = () => {
   const containerRef = useRef(null);
 
   return (
-    <div className="flex flex-nowrap whitespace-nowrap h-screen items-start justify-start w-screen scrollbar-hide">
+    <div className="flex flex-nowrap whitespace-nowrap h-screen items-start justify-start w-screen scrollbar-hide text-white">
       <RedBar progressPercent={percent} />
       <main
         ref={containerRef}

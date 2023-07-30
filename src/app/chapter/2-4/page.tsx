@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import "./24.css";
-import RedBar from "@/components/RedBar";
-import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
-import Image from "next/image";
-import Link from "next/link";
-import React, { useState } from "react";
+import './24.css';
+import RedBar from '@/components/RedBar';
+import { useHorizontalScroll } from '@/utils/useHorizontalScroll';
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useState } from 'react';
 
 const SecondChapterThird: React.FC = () => {
   const [percent, setPercent] = useState(0);
   const { elRef: containerRef, resetSavedScroll } = useHorizontalScroll({
-    pageName: "Chapter 2-4",
+    pageName: 'Chapter 2-4',
     callOnScroll: (scrollLeft) => {
       const windowWidth = containerRef.current?.scrollWidth ?? 1;
       const docWidth = Math.max(
@@ -58,8 +58,8 @@ const SecondChapterThird: React.FC = () => {
             <div className="mt-32 flex">
               <p className="text-xl mt-16 mr-2 font-junicode">(1)</p>
               <p className="font-junicode text-5xl">
-                MEMPUNYAI{" "}
-                <span className="font-ed-mentasta text-7xl">Prinsip</span>{" "}
+                MEMPUNYAI{' '}
+                <span className="font-ed-mentasta text-7xl">Prinsip</span>{' '}
                 MEMBELA DIRI, DAN MENGKLAIM AGENSI
               </p>
             </div>
@@ -72,7 +72,7 @@ const SecondChapterThird: React.FC = () => {
             Dunia bergerak dalam sistem yang opresif terhadap perempuan.
             Membangun ketangguhan seringkali datang dan bersumber dari diri
             sendiri. Pembicara dalam pameran kami percaya bahwa perempuan bukan
-            hanya pantas untuk punya prinsip, tetapi juga harus{" "}
+            hanya pantas untuk punya prinsip, tetapi juga harus{' '}
             <span className="font-bold">
               menyuarakan dengan lantang prinsip-prinsip tersebut ke ruang
               sekitarnya.
@@ -83,13 +83,13 @@ const SecondChapterThird: React.FC = () => {
           <p className="mt-16">
             KAK IZZATI berpendapat secara kritis terkait isu ini, “Perempuan
             ngomong aja ga di denger, gimana lagi kalau diem?”. Maka dari itu,
-            ia percaya bahwa{" "}
+            ia percaya bahwa{' '}
             <span className="font-bold">
               perempuan sepatutnya dapat menggaungkan suaranya sendiri.
-            </span>{" "}
+            </span>{' '}
             Jalan yang dapat dilalui agar dunia dapat mendengar suara kita
-            dengan baik adalah dengan{" "}
-            <span className="font-bold">belajar membingkai narasi kita,</span>{" "}
+            dengan baik adalah dengan{' '}
+            <span className="font-bold">belajar membingkai narasi kita,</span>{' '}
             misalnya dengan menulis.
           </p>
         </section>
@@ -108,13 +108,13 @@ const SecondChapterThird: React.FC = () => {
           <p className="mt-14 w-1/2">
             MBAK EVI yang bertahun-tahun harus mempertahankan visinya di ruang
             berita mengaku lega karena walaupun pernah ragu dengan prinsipnya
-            yang percaya akan pentingnya politik kelas,{" "}
+            yang percaya akan pentingnya politik kelas,{' '}
             <span className="font-bold">
               ia tidak pernah goyah dan melepas prinsip tersebut.
             </span>
           </p>
           <Image
-            src={"/images/chapter/2/art-white-flower-big.svg"}
+            src={'/images/chapter/2/art-white-flower-big.svg'}
             alt="White flower 1"
             className="absolute bottom-0 right-0"
             width={355}
@@ -125,17 +125,17 @@ const SecondChapterThird: React.FC = () => {
           <p className="mt-16">
             KAK IRAWATI mengakui bahwa memang ia tidak bisa menutup mata dan
             telinga dari pendapat orang lain. Tapi, manusia punya sistem
-            penyaringan informasinya sendiri.{" "}
+            penyaringan informasinya sendiri.{' '}
             <span className="font-bold">
               Ia percaya bahwa semua orang punya hak untuk melakukan apa yang
               mereka anggap benar.
-            </span>{" "}
+            </span>{' '}
             Sehingga, perkataan orang lain yang tidak berguna tentangnya itu
             “tells more about them than about us.”
           </p>
 
           <Image
-            src={"/images/chapter/2/art-white-flower-small.svg"}
+            src={'/images/chapter/2/art-white-flower-small.svg'}
             alt="White flower 2"
             className="absolute bottom-32 left-8"
             width={195}
@@ -146,7 +146,7 @@ const SecondChapterThird: React.FC = () => {
         {/* Section 2 */}
         <section className="text-sm min-w-[50vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify">
           <Image
-            src={"/images/chapter/2/12.png"}
+            src={'/images/chapter/2/12.png'}
             alt="12"
             className="mt-4"
             width={570}
@@ -167,22 +167,22 @@ const SecondChapterThird: React.FC = () => {
             dengan sesama.
             <br />
             <br />
-            Dalam pekerjaanya, BU WIWIEN melatih dan{" "}
+            Dalam pekerjaanya, BU WIWIEN melatih dan{' '}
             <span className="font-bold">
               membangun cerita bersama komunitas
-            </span>{" "}
+            </span>{' '}
             untuk menumbuhkan kepedulian terhadap corak heritage Indonesia.
             <br />
             <br />
             Bagi KAK WANDA, storytelling tak terbatas hanya dari bukunya, namun
-            juga dalam{" "}
+            juga dalam{' '}
             <span className="font-bold">
               ranah privat seperti sosial media pribadi.
             </span>
           </p>
 
           <Image
-            src={"/images/chapter/2/13.png"}
+            src={'/images/chapter/2/13.png'}
             alt="13"
             className="mt-16"
             width={166}
@@ -192,7 +192,7 @@ const SecondChapterThird: React.FC = () => {
 
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify">
           <Image
-            src={"/images/chapter/2/14.png"}
+            src={'/images/chapter/2/14.png'}
             alt="14"
             className="mt-16"
             width={233}
@@ -201,10 +201,10 @@ const SecondChapterThird: React.FC = () => {
 
           <p className="mt-16">
             Sebagai penulis fiksi, KAK IZZATI juga berkomentar atas kemampuan
-            penulisan fiksi sebagai{" "}
+            penulisan fiksi sebagai{' '}
             <span className="font-bold">
               upaya menerjemahkan realita batin (inner realities),
-            </span>{" "}
+            </span>{' '}
             menumbuhkan kemampuan kita memposisikan diri di kaki orang lain.
           </p>
         </section>
@@ -212,14 +212,14 @@ const SecondChapterThird: React.FC = () => {
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify">
           <p className="mt-auto mb-4">
             KAK ABIGAIL dan MBAK EVI membangun platform media mereka sendiri
-            untuk <span className="font-bold">mengangkat isu dan cerita.</span>{" "}
+            untuk <span className="font-bold">mengangkat isu dan cerita.</span>{' '}
             Seperti kata MBAK EVI, “Jadi jurnalis bukan duduk di kursi depan
             melihat sejarah, tapi kamu harus ikut bikin sejarah dan
             mempengaruhinya.”
           </p>
 
           <Image
-            src={"/images/chapter/2/15.png"}
+            src={'/images/chapter/2/15.png'}
             alt="15"
             className="mt-4 mb-8"
             width={235}
@@ -238,14 +238,14 @@ const SecondChapterThird: React.FC = () => {
         </section>
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
-            src={"/images/chapter/2/memaknai/logo2.png"}
+            src={'/images/chapter/2/memaknai/logo2.png'}
             alt="Logo 2"
             className="absolute top-1/2 -translate-y-full translate-x-1/4 z-20"
             width={125}
             height={125}
           />
           <Image
-            src={"/images/chapter/2/memaknai/garis1.png"}
+            src={'/images/chapter/2/memaknai/garis1.png'}
             alt="garis 1"
             className="absolute top-1/4 left-1/2 translate-x-1/4 -translate-y-8 z-10"
             width={200}
@@ -253,20 +253,20 @@ const SecondChapterThird: React.FC = () => {
           />
 
           <p className="mt-auto">
-            KAK KARINA mendirikan <span className="font-bold">rootd.nl</span>{" "}
+            KAK KARINA mendirikan <span className="font-bold">rootd.nl</span>{' '}
             sebagai wadah professional Muslim di Eropa. Ia senang berjejaring
             dan membangun solidaritas dengan orang-orang berlatar belakang sama
             dengan dirinya.
             <br />
             <br />
             KAK WANDA menemukan komunitas suportif baru dan penerimaan diri
-            lewat <span className="font-bold">Puzzlediri</span> dan{" "}
+            lewat <span className="font-bold">Puzzlediri</span> dan{' '}
             <span className="font-bold">CeritaKubi.</span>
           </p>
         </section>
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center justify-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
-            src={"/images/chapter/2/memaknai/logo1.png"}
+            src={'/images/chapter/2/memaknai/logo1.png'}
             alt="Logo 1"
             className="absolute top-1/4 -translate-y-1/2 left-0 -translate-x-1/4 z-20"
             width={125}
@@ -274,7 +274,7 @@ const SecondChapterThird: React.FC = () => {
           />
 
           <Image
-            src={"/images/chapter/2/memaknai/logo3.png"}
+            src={'/images/chapter/2/memaknai/logo3.png'}
             alt="Logo 3"
             className="absolute top-2/3 -translate-y-1/2 left-0 translate-x-1/4 z-20"
             width={125}
@@ -282,7 +282,7 @@ const SecondChapterThird: React.FC = () => {
           />
 
           <p className="mt-auto z-30">
-            KAK ABIGAIL mendirikan{" "}
+            KAK ABIGAIL mendirikan{' '}
             <span className="font-bold">What is Up Indonesia</span> sebagai
             bentuk keresahannya akan kurangnya kanal informasi yang dapat
             menerjemahkan politik Indonesia ke kelompok diaspora Indonesia.
@@ -290,18 +290,19 @@ const SecondChapterThird: React.FC = () => {
         </section>
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <p className="mt-16">
-            KAK IRA berkontribusi pada{" "}
+            KAK IRA berkontribusi pada{' '}
             <span className="font-bold">Sejutacita.id</span> dan sekarang sedang
             membuat sebuah kanal beasiswa. Harapannya, membangun titian jalan
             yang lebih baik untuk orang-orang yang ingin mendapat pendidikan. Ia
             mempunyai misi agar orang lain dapat belajar tanpa harus
             berpeluh-peluh seperti dirinya dulu. Ia juga mendirikan
-            estafet.kebaikan, dimana donasi diberikan dalam bingkisan
-            personalisasi kado, agar memanusiakan sesama.
+            <span className="font-bold"> estafet.kebaikan,</span> dimana donasi
+            diberikan dalam bingkisan personalisasi kado, agar memanusiakan
+            sesama.
           </p>
 
           <Image
-            src={"/images/chapter/2/memaknai/garis2.png"}
+            src={'/images/chapter/2/memaknai/garis2.png'}
             alt="Logo 3"
             className="absolute top-3/4 right-0 z-10"
             width={870}
@@ -310,7 +311,7 @@ const SecondChapterThird: React.FC = () => {
         </section>
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
-            src={"/images/chapter/2/16.png"}
+            src={'/images/chapter/2/16.png'}
             alt="16"
             className="mt-auto mb-8"
             width={300}
@@ -319,7 +320,7 @@ const SecondChapterThird: React.FC = () => {
         </section>
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
-            src={"/images/chapter/2/memaknai/garis3.png"}
+            src={'/images/chapter/2/memaknai/garis3.png'}
             alt="garis 3"
             className="absolute bottom-[40%] z-10"
             width={566}
@@ -327,14 +328,14 @@ const SecondChapterThird: React.FC = () => {
           />
 
           <Image
-            src={"/images/chapter/2/memaknai/logo4.png"}
+            src={'/images/chapter/2/memaknai/logo4.png'}
             alt="Logo 4"
             className="absolute top-1/4 left-8 translate-y-8 translatex-8 z-20"
             width={125}
             height={125}
           />
           <Image
-            src={"/images/chapter/2/memaknai/logo5.png"}
+            src={'/images/chapter/2/memaknai/logo5.png'}
             alt="Logo 5"
             className="absolute top-1/3 right-4 translate-y-8 z-20"
             width={125}
@@ -342,12 +343,12 @@ const SecondChapterThird: React.FC = () => {
           />
 
           <p className="mt-auto mb-8">
-            MBAK NURUL mendirikan <span className="font-bold">Synbio,</span>{" "}
+            MBAK NURUL mendirikan <span className="font-bold">Synbio,</span>{' '}
             sebuah komunitas biologi sintetis yang sesuai dengan keahlian dan
             minatnya.
             <br />
             <br />
-            BU WIWIEN mendirikan{" "}
+            BU WIWIEN mendirikan{' '}
             <span className="font-bold">Interpretasi ID</span> sebagai bentuk
             kecintaannya dalam dunia pembangunan narasi dan kekayaan cerita di
             Indonesia.
@@ -355,7 +356,7 @@ const SecondChapterThird: React.FC = () => {
         </section>
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
-            src={"/images/chapter/2/17.png"}
+            src={'/images/chapter/2/17.png'}
             alt="17"
             className="mt-8"
             width={360}
@@ -364,15 +365,15 @@ const SecondChapterThird: React.FC = () => {
 
           <p className="mt-auto mb-8">
             MBAK EVI ingin melihat dan mengubah sejarah dengan lebih independen
-            serta kritis, sehingga ia mendirikan kantor berita{" "}
-            <span className="font-bold">Project Multatuli</span>
+            serta kritis, sehingga ia mendirikan kantor berita{' '}
+            <span className="font-bold">Project Multatuli </span>
             dengan motto “melayani yang dipinggirkan dan mengawasi kekuasaan
             agar tidak ugal-ugalan”
           </p>
         </section>
         <section className="text-sm min-w-[25vw] h-full bg-black whitespace-break-spaces flex flex-col items-center text-white-ivory p-8 font-zmg text-justify relative">
           <Image
-            src={"/images/chapter/2/memaknai/garis4.png"}
+            src={'/images/chapter/2/memaknai/garis4.png'}
             alt="garis 4"
             className="absolute bottom-1/2 -left-8 translate-y-1/3 z-10"
             width={230}
@@ -380,7 +381,7 @@ const SecondChapterThird: React.FC = () => {
           />
 
           <Image
-            src={"/images/chapter/2/memaknai/logo6.png"}
+            src={'/images/chapter/2/memaknai/logo6.png'}
             alt="Logo 6"
             className="absolute top-1/2 right-4 z-20"
             width={100}
@@ -388,7 +389,7 @@ const SecondChapterThird: React.FC = () => {
           />
 
           <Image
-            src={"/images/chapter/2/18.png"}
+            src={'/images/chapter/2/18.png'}
             alt="18"
             className="mt-auto mb-8"
             width={360}
@@ -405,10 +406,10 @@ const SecondChapterThird: React.FC = () => {
             dengan dunia.
             <br />
             <br />
-            Melalui tiga proses:{" "}
+            Melalui tiga proses:{' '}
             <span className="font-bold text-red">
               memula, menjadi, dan memaknai,
-            </span>{" "}
+            </span>{' '}
             kita melihat bagaimana 10 wanita ini menghadapi dunia.
           </p>
         </section>
@@ -423,7 +424,7 @@ const SecondChapterThird: React.FC = () => {
           <p className="text-center font-junicode text-4xl">
             <span className="italic text-red font-bold">
               MEMPUNYAI KUASA MENGUBAH
-            </span>{" "}
+            </span>{' '}
           </p>
           <p className="text-center font-junicode text-4xl">
             <span className="italic text-red font-bold">DUNIA</span> TERSEBUT
@@ -438,7 +439,7 @@ const SecondChapterThird: React.FC = () => {
           </p>
 
           <Link
-            href={"/chapter/3"}
+            href={'/chapter/3'}
             onClick={resetSavedScroll}
             className="mt-auto flex justify-end w-full"
           >
@@ -448,7 +449,7 @@ const SecondChapterThird: React.FC = () => {
           </Link>
 
           <Image
-            src={"/images/chapter/2/flower-end-gif.gif"}
+            src={'/images/chapter/2/flower-end-gif.gif'}
             alt="flower-end-gif"
             className="absolute -bottom-4 left-16"
             width={450}

@@ -59,7 +59,7 @@ export default function FourthChapter() {
       >
         {/* Jumbotron */}
         <section className="min-w-[100vw] h-full flex flex-col whitespace-break-spaces bg-red text-white-ivory">
-          <p className="mt-24 w-1/6 ml-64 text-justify">
+          <p className="mt-24 w-1/6 ml-64 text-justify font-zmg">
             Setelah kita bersama menelusuri perjalanan dari tiap wanita, kita
             mengakhiri wawancara dengan pertanyaan berikut,
           </p>

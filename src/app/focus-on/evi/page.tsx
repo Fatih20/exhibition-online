@@ -36,7 +36,7 @@ function Page() {
       <RedBar progressPercent={percent} />
       <main
         ref={containerRef}
-        className="flex overflow-x-auto overflow-y-hidden items-start flex-nowrap whitespace-nowrap h-full justify-start scrollbar-hide font-zmg"
+        className="flex overflow-x-auto overflow-y-hidden items-start flex-nowrap whitespace-nowrap h-full justify-start scrollbar-hide font-zmg text-white"
       >
         <section className="bg-black grid-system-container">
           <div className="pl-10 row-start-2 col-span-8 col-start-1 flex flex-col items-start justify-start">

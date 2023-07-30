@@ -150,7 +150,9 @@ function FirstChaper() {
             penulis, <br /> pegiat <br /> gender
           </h3>
           <p className="row-start-4 col-span-3 col-start-7 whitespace-break-spaces">
-          Lahir di pedesaan Jember, Jawa Timur dan besar dengan orangtua bercerai yang memulai kehidupan baru, Kak Wanda memulai cerita dengan merefleksikan peran privelese dalam hidupnya. 
+            Lahir di pedesaan Jember, Jawa Timur dan besar dengan orangtua
+            bercerai yang memulai kehidupan baru, Kak Wanda memulai cerita
+            dengan merefleksikan peran privelese dalam hidupnya.
             <br />
             <br />
             <span className="font-junicode">
@@ -532,7 +534,7 @@ function FirstChaper() {
                 ngutang sama tante-tante untuk sekolahku. Aku juga diuntungkan
                 oleh sistem subsidi silang di SMA Katolik swasta.”
               </em>
-            </span>
+            </span>{" "}
             Bu Evi memahami bahwa ia hidup pada zaman di mana persoalan masuk
             SMA favorit dapat menjadi titik balik hidup. Pendidikan digunakan
             sebagai alat mobilitas sosial.

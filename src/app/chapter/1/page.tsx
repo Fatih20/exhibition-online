@@ -37,7 +37,7 @@ function FirstChaper() {
         ref={containerRef}
         className="flex overflow-x-auto overflow-y-hidden items-start flex-nowrap whitespace-nowrap h-full justify-start scrollbar-hide"
       >
-        <section className="bg-black grid-system-container font-zmg">
+        <section className="bg-black grid-system-container font-zmg text-white">
           <div className="flex flex-col items-start justify-center h-full border-white border-[1px] row-start-2 row-span-6 col-start-2 col-span-10 box-border py-7 gap-10">
             <h2 className="underline underline-offset-4 decoration-white decoration-1 text-3xl ml-10">
               Exhibition Guideline

@@ -37,6 +37,61 @@ function FirstChaper() {
         ref={containerRef}
         className="flex overflow-x-auto overflow-y-hidden items-start flex-nowrap whitespace-nowrap h-full justify-start scrollbar-hide"
       >
+        <section className="bg-black grid-system-container font-zmg">
+          <div className="flex flex-col items-start justify-center h-full border-white border-[1px] row-start-2 row-span-6 col-start-2 col-span-10 box-border py-7 gap-10">
+            <h2 className="underline underline-offset-4 decoration-white decoration-1 text-3xl ml-10">
+              Exhibition Guideline
+            </h2>
+            <div className="flex items-start justify-start self-stretch w-full min-w-full h-full text-center text-sm">
+              <div className="w-full flex flex-col items-center justify-start  h-full gap-6">
+                <Image
+                  alt="Internet"
+                  src={"/images/exhibition-guideline/internet.png"}
+                  width={55}
+                  height={55}
+                />
+                <p>Pastikan koneksi internet baik.</p>
+              </div>
+              <div className="w-full flex flex-col items-center justify-start  h-full gap-6">
+                <Image
+                  alt="Internet"
+                  src={"/images/exhibition-guideline/arrow.png"}
+                  width={112}
+                  height={36}
+                />
+                <p>
+                  Gunakan scroll kursor untuk menggerakkan halaman ke arah
+                  kanan.
+                </p>
+              </div>
+              <div className="w-full flex flex-col items-center justify-start  h-full gap-6">
+                <Image
+                  alt="Internet"
+                  src={"/images/exhibition-guideline/laptop.png"}
+                  width={89}
+                  height={61}
+                />
+                <p>
+                  Apabila layar terpotong, dapat dilakukan Zoom In atau Zoom
+                  Out.
+                  <br />
+                  <br />
+                  <span className="underline underline-offset-2 decoration-white decoration-[1px]">
+                    Zoom untuk Windows
+                  </span>
+                  <br />
+                  Ctrl dan + atau -
+                  <br />
+                  <br />
+                  <span className="underline underline-offset-2 decoration-white decoration-[1px]">
+                    Zoom untuk Mac
+                  </span>
+                  <br />⌘ dan + atau -
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="bg-black grid-system-container">
           <h2 className="w-fit h-fit col-start-2 col-span-3 row-start-4 text-white">
             <span className="text-[10rem] font-ed-mentasta outline-text-white text-black">

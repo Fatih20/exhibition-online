@@ -13,7 +13,7 @@ const SecondPageThird: React.FC = () => {
   const router = useRouter();
 
   return (
-    <div className="flex flex-nowrap whitespace-nowrap h-screen items-start justify-start w-screen scrollbar-hide">
+    <div className="flex flex-nowrap whitespace-nowrap h-screen items-start justify-start w-screen scrollbar-hide text-white">
       <RedBar progressPercent={percent} />
       <main
         ref={containerRef}
@@ -163,6 +163,7 @@ const SecondPageThird: React.FC = () => {
               menjadi ketua tim iGEM (kompetisi biologi sintetis terbesar di
               dunia) dan mendapatkan apresiasi tulus dari tim dan supervisornya,
               <span className="font-bold">
+                {' '}
                 ia berhasil membuktikan dirinya dengan kerja keras.
               </span>
               <br />
@@ -170,7 +171,7 @@ const SecondPageThird: React.FC = () => {
               Dalam kariernya, MBA EVI pernah ragu saat mendapatkan label tidak
               objektif.{' '}
               <span className="font-bold">
-                Tapi ia bersyukur untuk ‘never waver’ atau tidak goyah.
+                Tapi ia bersyukur untuk ‘never waver’ atau tidak goyah.{' '}
               </span>
               Ia menyadari bahwa newsroom banyak dipenuhi oleh orang privelese
               ibukota yang disetiri subjektivitasnya sendiri dengan abai tentang
@@ -221,7 +222,7 @@ const SecondPageThird: React.FC = () => {
           />
           <p className="mt-auto mb-8 text-justify">
             MBAK EVI menyatakan bahwa hari-harinya sebagai{' '}
-            <span className="font-bold">mahasiswa Fisipol UGM</span>
+            <span className="font-bold">mahasiswa Fisipol UGM </span>
             merupakan salah satu masa transformatif dalam hidupnya. Lulus dari
             kampus tersebut, MBAK EVI tidak hanya membawa pulang gelar sarjana,
             tetapi juga membawa bekal pengetahuan tentang berdarahnya Genosida

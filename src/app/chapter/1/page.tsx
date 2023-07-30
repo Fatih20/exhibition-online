@@ -46,7 +46,7 @@ function FirstChaper() {
               LAHIR.
             </span>
           </h2>
-          <p className="font-zmg col-span-3 col-start-9 row-start-4 whitespace-break-spaces text-sm h-fit">
+          <p className="font-zmg col-span-3 col-start-9 row-start-4 whitespace-break-spaces text-sm h-fit text-white">
             Ragam ras, suku, budaya, dan agama. Dalam interaksi kelas, geografi,
             dan ekspresi gender, tak terhitung variasi corak identitas. <br />
             {""}
@@ -54,7 +54,7 @@ function FirstChaper() {
             Indonesia. <br />
             <strong>10 wanita. 10 cerita.</strong>
           </p>
-          <p className="font-zmg text-2xl col-start-9 col-span-3 row-start-6">
+          <p className="font-zmg text-2xl col-start-9 col-span-3 row-start-6 text-white">
             Semua cerita memiliki{" "}
             <span className="font-junicode">
               <em>permulaan</em>

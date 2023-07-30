@@ -13,7 +13,7 @@ const SecondPageSecond: React.FC = () => {
   const router = useRouter();
 
   return (
-    <div className="flex flex-nowrap whitespace-nowrap h-screen items-start justify-start w-screen scrollbar-hide">
+    <div className="flex flex-nowrap whitespace-nowrap h-screen items-start justify-start w-screen scrollbar-hide text-white">
       <RedBar progressPercent={percent} />
       <main
         ref={containerRef}
@@ -99,16 +99,16 @@ const SecondPageSecond: React.FC = () => {
           </div>
           <div className="w-1/4 h-full p-8">
             <p className="mt-16 text-justify">
-              Dalam konteks KAK KARINA, pembicaraan berputar di pengajaran nilai
+              Dalam konteks KAK KARINA, pembicaraan berputar di pengajaran nilai{' '}
               <span className="font-bold">
                 tanggung jawab untuk keluarga, dalam bentuk mengasuh dan
                 memelihara (nurture).
               </span>{' '}
               Dia juga berkomentar, untuknya sendiri ia juga tidak terlalu
               memaknai nilai ini sebagai tanggung jawab
-              <span className="font-bold">‘wanita’,</span> tetapi lebih tanggung
-              jawab sebagai seorang{' '}
-              <span className="font-bold">‘individu’.</span>
+              <span className="font-bold"> ‘wanita’,</span> tetapi lebih
+              tanggung jawab sebagai seorang{' '}
+              <span className="font-bold">‘individu’. </span>
               “Sebagai seorang anak dari orangtuaku, apa kewajibanku untuk
               mereka? Sebagai ibu seorang anak, apa kewajibanku? Kita harus
               menjaga komunitas, tak hanya unit keluarga.” <br />
@@ -136,7 +136,7 @@ const SecondPageSecond: React.FC = () => {
               <br />
               <br />
               Selama proses hidupnya, MBA NURUL dan KAK WANDA berakhir untuk
-              <span className="font-bold">menciptakan nilai sendiri</span> yang
+              <span className="font-bold"> menciptakan nilai sendiri</span> yang
               lebih relevan dengan konteks mereka. Mengutip KAK WANDA, “Ada{' '}
               <span className="font-bold">
                 perubahan pemahaman dan norma yang dulu dipercaya, membentuk
@@ -175,7 +175,7 @@ const SecondPageSecond: React.FC = () => {
           </div>
           <p className="mt-8 text-justify p-8">
             Dalam konteks ini, para narasumber tumbuh di lingkungan tanpa
-            <span className="font-bold">diferensiasi eksplisit</span> mengenai
+            <span className="font-bold"> diferensiasi eksplisit</span> mengenai
             peran ‘laki-laki’ maupun ‘wanita’. Hal ini juga muncul dengan
             beberapa variasi. KAK IZZATI tak memiliki saudara laki-laki untuk
             membandingkan pengalamannya, tumbuh bersama kakak-kakak perempuan

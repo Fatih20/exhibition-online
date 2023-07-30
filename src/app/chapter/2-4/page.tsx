@@ -32,7 +32,7 @@ const SecondChapterThird: React.FC = () => {
   });
 
   return (
-    <div className="flex flex-nowrap whitespace-nowrap h-screen items-start justify-start w-screen scrollbar-hide">
+    <div className="flex flex-nowrap whitespace-nowrap h-screen items-start justify-start w-screen scrollbar-hide text-white">
       <RedBar progressPercent={percent} />
       <main
         ref={containerRef}
@@ -296,8 +296,9 @@ const SecondChapterThird: React.FC = () => {
             yang lebih baik untuk orang-orang yang ingin mendapat pendidikan. Ia
             mempunyai misi agar orang lain dapat belajar tanpa harus
             berpeluh-peluh seperti dirinya dulu. Ia juga mendirikan
-            estafet.kebaikan, dimana donasi diberikan dalam bingkisan
-            personalisasi kado, agar memanusiakan sesama.
+            <span className="font-bold"> estafet.kebaikan,</span> dimana donasi
+            diberikan dalam bingkisan personalisasi kado, agar memanusiakan
+            sesama.
           </p>
 
           <Image
@@ -365,7 +366,7 @@ const SecondChapterThird: React.FC = () => {
           <p className="mt-auto mb-8">
             MBAK EVI ingin melihat dan mengubah sejarah dengan lebih independen
             serta kritis, sehingga ia mendirikan kantor berita{' '}
-            <span className="font-bold">Project Multatuli</span>
+            <span className="font-bold">Project Multatuli </span>
             dengan motto “melayani yang dipinggirkan dan mengawasi kekuasaan
             agar tidak ugal-ugalan”
           </p>

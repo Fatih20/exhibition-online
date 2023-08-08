@@ -1,14 +1,36 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import useSound from "use-sound";
 
 function RedBar({
-  linkToGoBack = '/',
+  linkToGoBack = "/",
   progressPercent = 0,
 }: {
   progressPercent?: number;
   linkToGoBack?: string;
 }) {
+  const [play, { stop, pause }] = useSound("/audio/Chapter_1.mp3", {
+    loop: true,
+  });
+  const [playing, setPlaying] = useState(false);
+  useEffect(() => {
+    if (playing) {
+      play();
+      return;
+    }
+    stop();
+    // pause();
+  }, [playing]);
+
+  useEffect(() => {
+    stop();
+    console.log("Nothing should play");
+    return () => {
+      stop();
+      console.log("Red Bar destroyed");
+    };
+  }, []);
   return (
     <header className="bg-red text-white-ivory p-3 w-full flex items-center justify-between fixed top-0 right-0 left-0 z-50">
       <Link
@@ -16,7 +38,7 @@ function RedBar({
         className="flex flex-row items-center justify-center gap-3"
       >
         <Image
-          src={'/icons/ArrowBack.svg'}
+          src={"/icons/ArrowBack.svg"}
           alt="ArrowToGoBack"
           width={18}
           height={19}
@@ -26,18 +48,28 @@ function RedBar({
         </p>
       </Link>
       <Image
-        src={'/icons/Logo.svg'}
-        alt={'Asa, Cerita, Wanita'}
+        src={"/icons/Logo.svg"}
+        alt={"Asa, Cerita, Wanita"}
         width={114}
         height={19}
       />
-      <div className="w-20 h-4 border-white-ivory border-2 relative">
-        <div
-          className="h-full bg-white-ivory absolute top-0 bottom-0 left-0"
-          style={{
-            width: `${progressPercent >= 100 ? 100 : progressPercent}%`,
-          }}
-        ></div>
+      <div className="flex flex-row justify-end items-center gap-4 ">
+        <button onClick={() => setPlaying((prev) => (prev = !prev))}>
+          <Image
+            src={playing ? "/icons/Pause.svg" : "/icons/Play.svg"}
+            alt={playing ? "Pause" : "Play"}
+            width={16}
+            height={16}
+          />
+        </button>
+        <div className="w-20 h-4 border-white-ivory border-2 relative">
+          <div
+            className="h-full bg-white-ivory absolute top-0 bottom-0 left-0"
+            style={{
+              width: `${progressPercent >= 100 ? 100 : progressPercent}%`,
+            }}
+          ></div>
+        </div>
       </div>
     </header>
   );

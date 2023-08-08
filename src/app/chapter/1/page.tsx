@@ -4,10 +4,16 @@ import RedBar from "@/components/RedBar";
 import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import useSound from "use-sound";
 
 function FirstChaper() {
   const [percent, setPercent] = useState(0);
+  // const [play, { stop }] = useSound("/audio/Chapter_1.mp3", { loop: true });
+  // useEffect(() => {
+  //   play();
+  //   return () => stop();
+  // }, []);
   const { elRef: containerRef, resetSavedScroll } = useHorizontalScroll({
     pageName: "Chapter 1",
     callOnScroll: (scrollLeft) => {

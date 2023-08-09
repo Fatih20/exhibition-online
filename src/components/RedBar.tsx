@@ -1,3 +1,4 @@
+import { useLoopAudio } from "@/utils/useLoopAudio";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -6,9 +7,15 @@ import useSound from "use-sound";
 function RedBar({
   linkToGoBack = "/",
   progressPercent = 0,
+  onPlay = () => {},
+  onPause = () => {},
+  isPlaying = false,
 }: {
   progressPercent?: number;
   linkToGoBack?: string;
+  onPlay?: () => void;
+  onPause?: () => void;
+  isPlaying?: boolean;
 }) {
   return (
     <header className="bg-red text-white-ivory p-3 w-full flex items-center justify-between fixed top-0 right-0 left-0 z-50">
@@ -32,7 +39,16 @@ function RedBar({
         width={114}
         height={19}
       />
-      <div className="flex flex-row justify-end items-center gap-4 ">
+      <div className="flex flex-row justify-end items-center gap-4 h-full">
+        <button onClick={isPlaying ? onPause : onPlay} className="h-full">
+          <Image
+            className="h-full w-auto"
+            src={isPlaying ? "/icons/Pause.svg" : "/icons/Play.svg"}
+            alt={isPlaying ? "Pause" : "Play"}
+            width={32}
+            height={32}
+          />
+        </button>
         <div className="w-20 h-4 border-white-ivory border-2 relative">
           <div
             className="h-full bg-white-ivory absolute top-0 bottom-0 left-0"

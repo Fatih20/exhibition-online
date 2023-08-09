@@ -1,14 +1,15 @@
-'use client';
+"use client";
 
-import React, { useEffect, useState } from 'react';
-import { toast, ToastContainer } from 'react-toastify';
+import { useLoopAudio } from "@/utils/useLoopAudio";
+import React, { useEffect, useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 
-const secret = 'kopinikmat';
+const secret = "kopinikmat";
 
 const Admin: React.FC = () => {
-  const [password, setPassword] = useState('');
+  const [password, setPassword] = useState("");
   const [isAdmin, setIsAdmin] = useState(false);
-  const [nav, setNav] = useState('visitor');
+  const [nav, setNav] = useState("visitor");
 
   const [visitors, setVisitors] = useState([]);
   const [dreams, setDreams] = useState([]);
@@ -21,9 +22,9 @@ const Admin: React.FC = () => {
       const visitorRes = await fetch(
         `${process.env.NEXT_PUBLIC_FORM_ENDPOINT as string}/visitor`,
         {
-          method: 'GET',
+          method: "GET",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
         }
       );
@@ -35,9 +36,9 @@ const Admin: React.FC = () => {
       const dreamRes = await fetch(
         `${process.env.NEXT_PUBLIC_FORM_ENDPOINT as string}/dream`,
         {
-          method: 'GET',
+          method: "GET",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
         }
       );
@@ -49,9 +50,9 @@ const Admin: React.FC = () => {
       const feedbackRes = await fetch(
         `${process.env.NEXT_PUBLIC_FORM_ENDPOINT as string}/feedback`,
         {
-          method: 'GET',
+          method: "GET",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
         }
       );
@@ -67,8 +68,8 @@ const Admin: React.FC = () => {
     if (password === secret) {
       setIsAdmin(true);
     } else {
-      toast.error('Failed to enter: wrong password', {
-        position: 'top-center',
+      toast.error("Failed to enter: wrong password", {
+        position: "top-center",
       });
     }
   };
@@ -80,29 +81,29 @@ const Admin: React.FC = () => {
           <div className="bg-white-ivory text-black h-screen flex w-full">
             <nav className="bg-gray-100 w-1/5 h-full p-4 flex flex-col gap-4">
               <p className="font-junicode text-red text-3xl self-center border-b-red border-b mb-4">
-                asa, cerita,{' '}
+                asa, cerita,{" "}
                 <span className="font-ed-mentasta text-4xl">Wanita</span>
               </p>
               <p
-                onClick={() => setNav('visitor')}
+                onClick={() => setNav("visitor")}
                 className={`hover:bg-rose-100 hover:text-red transition-colors px-4 py-2 rounded-md cursor-pointer ${
-                  nav === 'visitor' && 'border border-red text-red'
+                  nav === "visitor" && "border border-red text-red"
                 }`}
               >
                 Visitors
               </p>
               <p
-                onClick={() => setNav('dream')}
+                onClick={() => setNav("dream")}
                 className={`hover:bg-rose-100 hover:text-red transition-colors px-4 py-2 rounded-md cursor-pointer ${
-                  nav === 'dream' && 'border border-red text-red'
+                  nav === "dream" && "border border-red text-red"
                 }`}
               >
                 Dreams
               </p>
               <p
-                onClick={() => setNav('feedback')}
+                onClick={() => setNav("feedback")}
                 className={`hover:bg-rose-100 hover:text-red transition-colors px-4 py-2 rounded-md cursor-pointer ${
-                  nav === 'feedback' && 'border border-red text-red'
+                  nav === "feedback" && "border border-red text-red"
                 }`}
               >
                 Feedback
@@ -112,7 +113,7 @@ const Admin: React.FC = () => {
             {/* Visitors */}
             <div
               className={`p-8 font-zmg overflow-auto w-full ${
-                nav !== 'visitor' && 'hidden'
+                nav !== "visitor" && "hidden"
               }`}
             >
               <h1 className="font-junicode text-5xl font-bold">Visitors</h1>
@@ -129,7 +130,7 @@ const Admin: React.FC = () => {
                 {visitors.map((visitor: any, idx) => (
                   <div
                     key={idx}
-                    className={`w-full flex ${idx % 2 == 0 && 'bg-white'}`}
+                    className={`w-full flex ${idx % 2 == 0 && "bg-white"}`}
                   >
                     <p className="w-[10%]">{visitor.title}</p>
                     <p className="w-[30%]">{visitor.name}</p>
@@ -143,7 +144,7 @@ const Admin: React.FC = () => {
             {/* Dreams */}
             <div
               className={`p-8 font-zmg overflow-auto w-full ${
-                nav !== 'dream' && 'hidden'
+                nav !== "dream" && "hidden"
               }`}
             >
               <h1 className="font-junicode text-5xl font-bold">Dreams</h1>
@@ -158,7 +159,7 @@ const Admin: React.FC = () => {
                 {dreams.map((dream: any, idx) => (
                   <div
                     key={idx}
-                    className={`w-full flex ${idx % 2 == 0 && 'bg-white'}`}
+                    className={`w-full flex ${idx % 2 == 0 && "bg-white"}`}
                   >
                     <p className="w-[15%]">{dream.name}</p>
                     <p className="w-[85%]">{dream.message}</p>
@@ -170,7 +171,7 @@ const Admin: React.FC = () => {
             {/* Feedback */}
             <div
               className={`p-8 font-zmg overflow-auto w-full ${
-                nav !== 'feedback' && 'hidden'
+                nav !== "feedback" && "hidden"
               }`}
             >
               <h1 className="font-junicode text-5xl font-bold">Dreams</h1>
@@ -185,7 +186,7 @@ const Admin: React.FC = () => {
                 {feedback.map((fb: any, idx) => (
                   <div
                     key={idx}
-                    className={`w-full flex ${idx % 2 == 0 && 'bg-white'}`}
+                    className={`w-full flex ${idx % 2 == 0 && "bg-white"}`}
                   >
                     <p className="w-[15%]">{fb.name}</p>
                     <p className="w-[85%]">{fb.feedback}</p>

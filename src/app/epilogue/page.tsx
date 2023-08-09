@@ -7,6 +7,7 @@ import { useHorizontalScroll } from "@/utils/useHorizontalScroll";
 import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import useSound from "use-sound";
+import { useLoopAudio } from "@/utils/useLoopAudio";
 
 interface CreditPersonProps {
   img: string;
@@ -23,8 +24,15 @@ const CreditPerson: React.FC<CreditPersonProps> = ({
   linkedin,
   ig,
 }) => {
+  const { loopAudioRef, pause, play } = useLoopAudio();
+
   return (
-    <div className="flex flex-col w-1/5 px-2 py-1">
+    <div className="flex flex-col w-1/5 px-2 py-1" onClick={play}>
+      <audio
+        src={"/audio/Epilog.mp3"}
+        ref={loopAudioRef}
+        className="invisible"
+      />
       <Image
         width={100}
         height={100}

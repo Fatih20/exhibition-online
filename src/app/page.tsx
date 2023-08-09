@@ -1,19 +1,29 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import FormEntry from "../components/FormEntry";
 import { useRouter } from "next/navigation";
 import LoadingScreen from "../components/Loading/LoadingScreen";
+import { useLoopAudio } from "@/utils/useLoopAudio";
 
 export default function Home() {
   const [isWelcome, setIsWelcome] = useState(true);
   const [fillingForm, setFillingForm] = useState(false);
   const router = useRouter();
+  const { loopAudioRef, pause, play } = useLoopAudio();
 
   return (
-    <main className="relative flex h-screen bg-white-ivory items-end justify-start pr-24 pt-32">
+    <main
+      className="relative flex h-screen bg-white-ivory items-end justify-start pr-24 pt-32"
+      onClick={play}
+    >
+      <audio
+        src={"/audio/Title.mp3"}
+        ref={loopAudioRef}
+        className="invisible"
+      />
       <div className="relative w-8/12 flex flex-grow flex-col items-start justify-end">
         <div
           className={`absolute inset-0 bg-red z-10 mix-blend-lighten ${

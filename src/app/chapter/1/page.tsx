@@ -248,7 +248,16 @@ function FirstChaper() {
             width={612 * 2}
             height={559 * 2}
           ></Image>
-          <div className="row-start-1 col-start-1 col-span-3 text-w\ bg-black text-white row-span-full grid-rows-8 grid grid-cols-1 box-border px-10">
+          <div className="row-start-1 col-start-1 col-span-3 bg-black text-white row-span-full grid-rows-8 grid grid-cols-1 box-border px-10">
+            <div className="row-start-4 row-span-2 col-start-1 col-span-3 flex flex-col items-center justify-start">
+              <iframe
+                className="self-center w-full h-full"
+                src="https://www.youtube.com/embed/E0Um-7pB26c"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                title="video"
+              />
+            </div>
             <p className="col-start-1 whitespace-break-spaces col-span-1 row-start-6">
               Proses pendidikan menjadi pengalaman transformatif terhadap hidup
               Kak Wanda seterusnya.{" "}
@@ -305,6 +314,15 @@ function FirstChaper() {
             width={303}
             height={496}
           ></Image>
+          <div className="row-start-2 row-span-3 col-start-1 col-span-3 flex flex-col items-center justify-start">
+            <iframe
+              className="self-center w-full h-full"
+              src="https://www.youtube.com/embed/atMcDPRudeY"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="video"
+            />
+          </div>
           <p className="whitespace-break-spaces col-start-1 col-span-3 row-start-5">
             Lulus dari S1 Perencanaan Wilayah dan Kota ITB di bidang
             spesialisasi pariwisata, Bu Wiwien memulai karier sebagai peneliti.
@@ -391,7 +409,15 @@ function FirstChaper() {
             width={531 * 2}
             height={689 * 2}
           ></Image>
-          <div className="bg-white-ivory row-span-full col-start-1 flex flex-col items-center justify-center col-span-3"></div>
+          <div className="bg-white-ivory row-span-full col-start-1 flex flex-col items-center justify-center col-span-3 box-border px-8">
+            <iframe
+              className="self-center w-full h-72"
+              src="https://www.youtube.com/embed/Nr5ajtmGStc"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="video"
+            />
+          </div>
           <h2 className="w-fit h-fit relative z-20 row-start-2 col-start-6 col-span-4 flex items-start justify-start">
             <span className="flex justify-start items-start font-junicode text-red">
               <span className="text-6xl">(5)</span>{" "}
@@ -450,6 +476,15 @@ function FirstChaper() {
           <h3 className="w-fit h-fit font-junicode text-4xl leading-none row-start-7 col-start-9 col-span-3 uppercase translate-y-3">
             Konsultan <br /> Lingkungan
           </h3>{" "}
+          <div className="row-start-2 row-span-2 col-start-10 flex flex-col items-center justify-center col-span-3">
+            <iframe
+              className="self-center w-full translate-x-1/2 h-full"
+              src="https://www.youtube.com/embed/rDvBrOnjkXI"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="video"
+            />
+          </div>
           <p className="col-start-10 col-span-3 row-start-4 whitespace-break-spaces">
             Seorang ‘Sunda’ tulen, Kak Pritta lahir dan besar di Kopo, Bandung
             dari kecil hingga masa perkuliahannya. Besar di keluarga yang cukup,
@@ -513,7 +548,7 @@ function FirstChaper() {
             MEMILIH
           </h3>{" "}
         </section>
-        <section className="grid-system-container bg-red  font-zmg text-white-ivory text-sm text-justify pl-5 box-border">
+        <section className="grid-system-container bg-red font-zmg text-white-ivory text-sm text-justify pl-5 box-border">
           <p className="col-start-1 col-span-3 row-start-4 whitespace-break-spaces">
             Besar di lingkungan ibukota yang modern, Kak Abigail Limuria
             merupakan anak pertama dari dua bersaudara. Ia besar dengan
@@ -532,6 +567,24 @@ function FirstChaper() {
             Bijak Memilih yang bertujuan agar anak muda dapat membuat pilihan
             kandidiat didasari informasi pada pemilu 2024 nanti.
           </p>
+          <div className="row-start-2 row-span-2 col-start-4 flex flex-col items-center justify-center col-span-3">
+            <iframe
+              className="self-center w-full h-full"
+              src="https://www.youtube.com/embed/2tdplTbpTjA"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="video"
+            />
+          </div>
+          <div className="row-start-6 row-span-2 col-start-1 flex flex-col items-center justify-center col-span-3">
+            <iframe
+              className="self-center w-full h-full"
+              src="https://www.youtube.com/embed/CZ0-3lVejCw"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="video"
+            />
+          </div>
           <Image
             src={"/images/chapter/1/lalita.png"}
             className="col-start-4 col-span-3 row-start-7 translate-y-5"
@@ -621,11 +674,11 @@ function FirstChaper() {
           </p>
         </section>
         <section className="grid-system-container bg-black  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
-          <div className="row-start-3 col-start-1 col-span-4 relative z-20 w-fit h-fit">
+          <div className="row-start-3 col-start-1 col-span-4 relative w-fit h-fit">
             <p className="absolute left-0 top-10 font-junicode text-5xl">(9)</p>
             <Image
               src={"/images/chapter/1/speaker/9.png"}
-              alt="Wanda Roxanne"
+              alt="Nurul Izzati"
               className=""
               width={354}
               height={549}
@@ -659,6 +712,15 @@ function FirstChaper() {
             peran perempuan yang ia lihat, Mbak Nurul menceritakan dinamika
             lingkungan antara keluarga inti dan keluarga besarnya.
           </p>
+          <div className="row-start-7 row-span-2 col-start-7 flex flex-col items-center justify-center col-span-3">
+            <iframe
+              className="self-center w-full h-full"
+              src="https://www.youtube.com/embed/LfG8NR0b5S0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="video"
+            />
+          </div>
           <p className="col-start-10 col-span-3 row-start-4 translate-y-5 whitespace-break-spaces">
             Merantau untuk pendidikan S1 Kimia Murni di Malang, Mba Nurul
             mendekatkan dirinya dengan bioteknologi selagi berkuliah S2
@@ -669,6 +731,15 @@ function FirstChaper() {
             rektor Universitas Teknologi Sumbawa dan mendirikan komunitas
             biologi sintetik Indonesia melalui synbio.id.
           </p>
+          <div className="row-start-2 row-span-2 col-start-10 flex flex-col items-center justify-center col-span-3">
+            <iframe
+              className="self-center w-full h-full"
+              src="https://www.youtube.com/embed/NVpNGd5a5_k"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="video"
+            />
+          </div>
         </section>
         <section className="grid-system-container bg-black  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
           <Image

@@ -10,27 +10,6 @@ function RedBar({
   progressPercent?: number;
   linkToGoBack?: string;
 }) {
-  const [play, { stop, pause }] = useSound("/audio/Chapter_1.mp3", {
-    loop: true,
-  });
-  const [playing, setPlaying] = useState(false);
-  useEffect(() => {
-    if (playing) {
-      play();
-      return;
-    }
-    stop();
-    // pause();
-  }, [playing]);
-
-  useEffect(() => {
-    stop();
-    console.log("Nothing should play");
-    return () => {
-      stop();
-      console.log("Red Bar destroyed");
-    };
-  }, []);
   return (
     <header className="bg-red text-white-ivory p-3 w-full flex items-center justify-between fixed top-0 right-0 left-0 z-50">
       <Link
@@ -54,14 +33,6 @@ function RedBar({
         height={19}
       />
       <div className="flex flex-row justify-end items-center gap-4 ">
-        <button onClick={() => setPlaying((prev) => (prev = !prev))}>
-          <Image
-            src={playing ? "/icons/Pause.svg" : "/icons/Play.svg"}
-            alt={playing ? "Pause" : "Play"}
-            width={16}
-            height={16}
-          />
-        </button>
         <div className="w-20 h-4 border-white-ivory border-2 relative">
           <div
             className="h-full bg-white-ivory absolute top-0 bottom-0 left-0"

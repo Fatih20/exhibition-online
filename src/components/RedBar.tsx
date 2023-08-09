@@ -51,13 +51,23 @@ function RedBar({
       />
       <div className="flex flex-row justify-end items-center gap-4 h-full">
         <button onClick={isPlaying ? pause : play} className="h-full">
-          <Image
-            className="h-full w-auto"
-            src={isPlaying ? "/icons/Pause.svg" : "/icons/Play.svg"}
-            alt={isPlaying ? "Pause" : "Play"}
-            width={32}
-            height={32}
-          />
+          {isPlaying ? (
+            <Image
+              className="h-full w-auto"
+              src={"/icons/Pause.svg"}
+              alt={"Pause"}
+              width={32}
+              height={32}
+            />
+          ) : (
+            <Image
+              className="h-full w-auto"
+              src={"/icons/Play.svg"}
+              alt={"Play"}
+              width={32}
+              height={32}
+            />
+          )}
         </button>
         <div className="w-20 h-4 border-white-ivory border-2 relative">
           <div

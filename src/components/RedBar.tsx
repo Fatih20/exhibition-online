@@ -7,18 +7,28 @@ import useSound from "use-sound";
 function RedBar({
   linkToGoBack = "/",
   progressPercent = 0,
-  onPlay = () => {},
-  onPause = () => {},
-  isPlaying = false,
-}: {
+  audioFileName,
+}: // onPlay = () => {},
+// onPause = () => {},
+// isPlaying = false,
+{
   progressPercent?: number;
   linkToGoBack?: string;
-  onPlay?: () => void;
-  onPause?: () => void;
-  isPlaying?: boolean;
+  audioFileName?: string;
+  // onPlay?: () => void;
+  // onPause?: () => void;
+  // isPlaying?: boolean;
 }) {
+  const { loopAudioRef, pause, play, isPlaying } = useLoopAudio();
   return (
     <header className="bg-red text-white-ivory p-3 w-full flex items-center justify-between fixed top-0 right-0 left-0 z-50">
+      {audioFileName && (
+        <audio
+          src={`/audio/${audioFileName}`}
+          ref={loopAudioRef}
+          className="invisible"
+        />
+      )}
       <Link
         href={linkToGoBack}
         className="flex flex-row items-center justify-center gap-3"
@@ -40,7 +50,7 @@ function RedBar({
         height={19}
       />
       <div className="flex flex-row justify-end items-center gap-4 h-full">
-        <button onClick={isPlaying ? onPause : onPlay} className="h-full">
+        <button onClick={isPlaying ? pause : play} className="h-full">
           <Image
             className="h-full w-auto"
             src={isPlaying ? "/icons/Pause.svg" : "/icons/Play.svg"}

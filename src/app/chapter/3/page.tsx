@@ -32,7 +32,7 @@ const ThirdChapter: React.FC = () => {
 
   return (
     <div className="flex flex-nowrap whitespace-nowrap h-screen items-start justify-start w-screen scrollbar-hide">
-      <RedBar progressPercent={percent} />
+      <RedBar progressPercent={percent} audioFileName="Chapter_3.mp3" />
       <main
         ref={containerRef}
         className="flex overflow-x-auto overflow-y-hidden items-start flex-nowrap whitespace-nowrap h-full justify-start scrollbar-hide"

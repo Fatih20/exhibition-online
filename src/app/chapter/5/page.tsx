@@ -82,7 +82,7 @@ const FifthChapter: React.FC = () => {
   return (
     <>
       <section className="h-screen w-full flex">
-        <RedBar progressPercent={100} />
+        <RedBar progressPercent={100} audioFileName="Chapter_5.mp3" />
         <div className="w-2/3 bg-white-ivory p-8 mt-[52px] overflow-auto use-scrollbar font-junicode flex justify-center">
           <p className="text-center leading-5 cursor-default my-auto">
             {wishes.map((wish) => {

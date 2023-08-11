@@ -441,6 +441,14 @@ function FirstChaper() {
             ibunya sebagai suri taulaudan di hidupnya. Kedua orangtuanya
             sama-sama bekerja sebagai insinyur.
           </p>
+          <audio
+            className="col-start-10 col-span-3 row-start-6"
+            controls
+            src="/audio/Ayu - Ibu.mp3"
+          >
+            Your browser does not support the
+            <code>audio</code> element.
+          </audio>
         </section>
         <section className="grid-system-container bg-red  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
           <Image
@@ -672,6 +680,14 @@ function FirstChaper() {
               mendasar yang disisihkan’.
             </strong>
           </p>
+          <audio
+            className="col-start-8 col-span-3 row-start-6"
+            controls
+            src="/audio/Evi - Menjadi Jurnalis.mp3"
+          >
+            Your browser does not support the
+            <code>audio</code> element.
+          </audio>
         </section>
         <section className="grid-system-container bg-black  font-zmg text-white-ivory text-sm text-justify p-5 box-border">
           <div className="row-start-3 col-start-1 col-span-4 relative w-fit h-fit">
